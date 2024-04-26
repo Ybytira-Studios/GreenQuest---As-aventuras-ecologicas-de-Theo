@@ -31,7 +31,7 @@ public class GrabObject : MonoBehaviour
         Collider2D[] nearbyObjects = Physics2D.OverlapCircleAll(transform.position, interactDistance);
         foreach (Collider2D objCollider in nearbyObjects)
         {
-            if (objCollider.CompareTag("GlassTrash") || objCollider.CompareTag("MetalTrash"))
+            if (objCollider.CompareTag("GlassTrash") || objCollider.CompareTag("MetalTrash") || objCollider.CompareTag("PlasticTrash") || objCollider.CompareTag("PaperTrash"))
             {
                 carriedObject = objCollider.gameObject;
                 carriedRigidbody = carriedObject.GetComponent<Rigidbody2D>();

@@ -7,6 +7,8 @@ TagManager:
   - Trash
   - GlassTrash
   - MetalTrash
+  - PaperTrash
+  - PlasticTrash
   layers:
   - Default
   - TransparentFX
