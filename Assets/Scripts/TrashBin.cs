@@ -7,7 +7,6 @@ public class TrashBin : MonoBehaviour
 {
     public float proximityDistance = 3f; // Distância para considerar o objeto dentro da lixeira
     public string trashTag;
-    public TrashCounter trashCounter;
 
     public int trashCount = 11; // Contagem de objetos coletáveis
 
@@ -16,10 +15,8 @@ public class TrashBin : MonoBehaviour
         if (other.CompareTag(trashTag))
         {
                 Destroy(other.gameObject); // Destrói o objeto coletável
-                //trashCounter.IncrementCollectedTrash();
                 trashCount--; // Decrementa a contagem
-                CheckTrashCollected(); // Verifica se todos os lixos foram coletados
-                Debug.Log(trashCount);
+                CheckTrashCollected(); // Verifica se todos os lixos foram coletado
         }
     }
 
