@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 97833788}
   m_Layer: 0
   m_Name: 124x124_59 (3)
-  m_TagString: PaperTrash
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14401,7 +14401,7 @@ GameObject:
   - component: {fileID: 388732288}
   m_Layer: 0
   m_Name: 124x124_59 (4)
-  m_TagString: PlasticTrash
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14575,7 +14575,7 @@ GameObject:
   - component: {fileID: 399808010}
   m_Layer: 0
   m_Name: 124x124_59 (1)
-  m_TagString: GlassTrash
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30817,7 +30817,7 @@ GameObject:
   - component: {fileID: 1426184727}
   m_Layer: 0
   m_Name: 124x124_59
-  m_TagString: MetalTrash
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

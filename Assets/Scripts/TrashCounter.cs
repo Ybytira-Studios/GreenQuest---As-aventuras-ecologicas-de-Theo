@@ -19,7 +19,6 @@ public class TrashCounter : MonoBehaviour
         totalTrashCount += objectsWithTag.Length;
     }
         trashCounterText.text = "Lixos restantes: " + totalTrashCount;
-        Debug.Log("Total de lixos restantes: " + totalTrashCount);
 }
     void Update()
     {
