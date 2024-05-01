@@ -5,8 +5,22 @@ using UnityEngine.UI;
 
 public class TrashCounter : MonoBehaviour
 {
-    public TMPro.TextMeshProUGUI trashCounterText; // Referência ao objeto de texto na UI
-      public string[] tagsToCheck = { "MetalTrash", "GlassTrash"};  // Array de tags para verificar
+    public TMPro.TextMeshProUGUI trashCounterText;
+
+    public TMPro.TextMeshProUGUI youWon;
+
+     public string[] tagsToCheck = { "MetalTrash", "GlassTrash"};  // Array de tags para verificar
+
+         void Start()
+    {
+        // Inicialmente, deixe o texto de vitória desativado
+        if (youWon != null)
+        {
+           youWon.gameObject.SetActive(false);
+        }
+    }
+
+     
 
     void UpdateTrashCounter()
 {
@@ -19,7 +33,13 @@ public class TrashCounter : MonoBehaviour
         totalTrashCount += objectsWithTag.Length;
     }
         trashCounterText.text = "Lixos restantes: " + totalTrashCount;
+
+        if(totalTrashCount == 0){
+            youWon.gameObject.SetActive(true);
+        }
 }
+
+
     void Update()
     {
         UpdateTrashCounter(); // Atualiza o contador a cada frame (ou em intervalos específicos)
