@@ -34,12 +34,14 @@ public class Cutscene1 : MonoBehaviour
 
     public IEnumerator Rotina()
     {
+        Debug.Log("Entrou na rotina");
         // Torna a imagem visível alterando sua cor alpha
         Color cor = imageComponents[cont].color;
         cor.a = 1f; // Define o valor alpha como 1 para tornar a imagem totalmente visível
         imageComponents[cont].color = cor;
 
         texto.text = textos[cont];
+        Debug.Log("texto.text = textos[cont]:" + texto.text);
         cont++;
 
         if (cont < 3)

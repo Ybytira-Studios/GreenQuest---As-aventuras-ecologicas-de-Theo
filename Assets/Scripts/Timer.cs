@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
 
     private float timeLevel = 0f; // Inicialize o tempo
     private bool timerRunning = true; // Controle se o timer está ativo
+    public MonoBehaviour playerController;
 
     void Update()
     {
@@ -32,6 +33,7 @@ public class Timer : MonoBehaviour
         {
             timerRunning = false; // Para o timer
             Debug.Log("Timer parado, todos os objetos foram coletados.");
+            playerController.enabled = false;
         }
     }
 }
