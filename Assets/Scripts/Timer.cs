@@ -5,7 +5,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI timerText; // Texto para exibir o timer
-    public string[] tagsToCheck = { "MetalTrash", "GlassTrash" }; // Array de tags para verificar
+    public string[] tagsToCheck = { "MetalTrash", "GlassTrash", "PlasticTrash", "PaperTrash"};  // Array de tags para verificar
 
     private float timeLevel = 0f; // Inicialize o tempo
     private bool timerRunning = true; // Controle se o timer está ativo

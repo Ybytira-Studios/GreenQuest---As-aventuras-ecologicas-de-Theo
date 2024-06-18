@@ -9,7 +9,7 @@ public class TrashCounter : MonoBehaviour
 
     public TMPro.TextMeshProUGUI youWon;
 
-     public string[] tagsToCheck = { "MetalTrash", "GlassTrash"};  // Array de tags para verificar
+     public string[] tagsToCheck = { "MetalTrash", "GlassTrash", "PlasticTrash", "PaperTrash"};  // Array de tags para verificar
 
          void Start()
     {
