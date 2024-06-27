@@ -79831,6 +79831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 9
+  buoyancyForce: 5
 --- !u!212 &1499126680
 SpriteRenderer:
   m_ObjectHideFlags: 0

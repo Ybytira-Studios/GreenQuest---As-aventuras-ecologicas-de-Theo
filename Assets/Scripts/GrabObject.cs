@@ -11,6 +11,10 @@ public class GrabObject : MonoBehaviour
     private GameObject carriedObject;
     private Rigidbody2D carriedRigidbody;
 
+    void Start(){
+        
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(interactKey))

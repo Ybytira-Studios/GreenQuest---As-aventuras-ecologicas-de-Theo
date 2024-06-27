@@ -9,6 +9,9 @@ TagManager:
   - MetalTrash
   - PaperTrash
   - PlasticTrash
+  - sacola
+  - wall
+  - seaGround
   layers:
   - Default
   - TransparentFX
