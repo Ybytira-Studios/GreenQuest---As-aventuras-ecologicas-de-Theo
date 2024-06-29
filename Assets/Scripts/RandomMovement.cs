@@ -35,11 +35,11 @@ public class RandomMovement : MonoBehaviour
             newDirection = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad)).normalized;
         //}
         //while (Vector2.Angle(movementDirection, newDirection) < minDirectionChangeAngle);
-
-        Debug.Log("MovementDirection"+movementDirection);
-        Debug.Log("NewDirection"+newDirection);
-        Debug.Log("angulo entre movement direction e newDirection"+Vector2.Angle(movementDirection, newDirection));
-
+        // esse do while foi uma tentativa de fazer com que a nova direção fosse minimamente diferente da anterior, já
+        //que inicialmente o animal bugava nas paredes pois tentava ir na mesma direção duas vezes. Foi "resolvido adicionando
+        // uma física de "bounce", porém iso gera glitchs nas animações, logo reviver essa funcionalidade seria bom.
+        // ps: o jogo crashava completamente com esse do while
+        
         movementDirection = newDirection;
     }
 }

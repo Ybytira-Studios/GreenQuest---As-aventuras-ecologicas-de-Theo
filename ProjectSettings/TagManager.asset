@@ -12,6 +12,7 @@ TagManager:
   - sacola
   - wall
   - seaGround
+  - AnimalMarinho
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimator;
     public float playerSpeed;
     public float buoyancyForce = 5f; // Força de empuxo a ser aplicada
+    public float KBForce;
+    public float KBCount;
+    public float KBTime;
+    public bool isKnockRight;
     private Vector2 playerDirection;
     private bool isInWaterScene;
 
@@ -40,13 +44,37 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
+        KnockLogic();
+    }
+
+    void KnockLogic(){
+        if (KBCount < 0)
+        {
+            Move();
+        } else
+        {
+            if (isKnockRight)
+            {
+                playerRigidBody2D.velocity = new Vector2(-KBCount, KBForce);
+            } else
+            {
+                playerRigidBody2D.velocity = new Vector2(+KBCount, KBForce);
+            }
+        }
+        KBCount -= Time.deltaTime;
+    }
+
+    void Move(){
+
+    playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
 
         if (isInWaterScene)
        {
             AplicaEmpuxo();
         }
     }
+
+     
 
     void Flip()
     {
