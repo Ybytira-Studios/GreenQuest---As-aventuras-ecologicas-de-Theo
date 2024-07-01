@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody2D;
+
+    public SpriteRenderer spriteRenderer;
+
     private Animator playerAnimator;
     public float playerSpeed;
     public float buoyancyForce = 5f; // Força de empuxo a ser aplicada
@@ -15,11 +18,14 @@ public class PlayerController : MonoBehaviour
     public bool isKnockRight;
     private Vector2 playerDirection;
     private bool isInWaterScene;
+    public float invulnerabilityDuration = 2f;
+    public bool isInvulnerable = false;
 
     void Start()
     {   
         playerAnimator = GetComponent<Animator>();
         playerRigidBody2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Verifica se o nome da cena é "Cena2" ou qualquer outro nome que você deseja verificar
         isInWaterScene = SceneManager.GetActiveScene().name == "Fase2_water";
@@ -47,22 +53,23 @@ public class PlayerController : MonoBehaviour
         KnockLogic();
     }
 
-    void KnockLogic(){
-        if (KBCount < 0)
+  void KnockLogic(){
+    if (KBCount < 0)
+    {
+        Move();
+    } else
+    {
+        if (isKnockRight)
         {
-            Move();
+            playerRigidBody2D.velocity = new Vector2(-KBCount, KBForce);
         } else
         {
-            if (isKnockRight)
-            {
-                playerRigidBody2D.velocity = new Vector2(-KBCount, KBForce);
-            } else
-            {
-                playerRigidBody2D.velocity = new Vector2(+KBCount, KBForce);
-            }
+            playerRigidBody2D.velocity = new Vector2(+KBCount, KBForce);
         }
-        KBCount -= Time.deltaTime;
     }
+    KBCount -= Time.deltaTime;
+}
+
 
     void Move(){
 
@@ -91,5 +98,17 @@ public class PlayerController : MonoBehaviour
     void AplicaEmpuxo()
     {
         playerRigidBody2D.AddForce(Vector2.up * buoyancyForce, ForceMode2D.Force);
+    }
+
+     public IEnumerator InvulnerabilityCoroutine()
+    {
+        isInvulnerable = true;
+        Color originalColor = spriteRenderer.color;
+        spriteRenderer.color = Color.red; // Troca a cor para vermelho ou qualquer outra cor de sua escolha
+
+        yield return new WaitForSeconds(invulnerabilityDuration);
+
+        spriteRenderer.color = originalColor; // Retorna à cor original
+        isInvulnerable = false;
     }
 }
