@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D playerRigidBody2D;
 
     public SpriteRenderer spriteRenderer;
+    public AudioSource footStepAudioSource;
+    public AudioSource grabAudioSource;
+    public AudioClip[] soundEffects;
 
     private Animator playerAnimator;
     public float playerSpeed;
@@ -27,6 +30,7 @@ public class PlayerController : MonoBehaviour
         playerRigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
+        footStepAudioSource.volume = 0.1f;
         // Verifica se o nome da cena é "Cena2" ou qualquer outro nome que você deseja verificar
         isInWaterScene = SceneManager.GetActiveScene().name == "Fase2_water";
     }
@@ -74,6 +78,18 @@ public class PlayerController : MonoBehaviour
     void Move(){
 
     playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
+    
+        if (playerDirection.sqrMagnitude > 0 && !footStepAudioSource.isPlaying)
+    {
+        footStepAudioSource.clip = soundEffects[0];
+        footStepAudioSource.loop = true;
+        footStepAudioSource.Play();
+    } 
+
+    if(playerDirection.sqrMagnitude <= 00 && footStepAudioSource.isPlaying)
+    {
+        footStepAudioSource.Stop();
+    }
 
         if (isInWaterScene)
        {

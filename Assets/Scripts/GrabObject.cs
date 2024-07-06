@@ -5,6 +5,9 @@ using UnityEngine;
 public class GrabObject : MonoBehaviour
 {
     public float interactDistance = 1f;
+    //public AudioSource audioSource;
+    //public AudioClip[] soundEffects;
+    public PlayerController playerController;
     public KeyCode interactKey = KeyCode.E;
     public Vector2 carryOffset = new Vector2(1f, 0f); // Offset para posicionar o objeto coletado à frente do jogador
 
@@ -12,7 +15,8 @@ public class GrabObject : MonoBehaviour
     private Rigidbody2D carriedRigidbody;
 
     void Start(){
-        
+        playerController.grabAudioSource.clip = playerController.soundEffects[1];
+        playerController.grabAudioSource.volume = 1;
     }
 
     void Update()
@@ -37,10 +41,14 @@ public class GrabObject : MonoBehaviour
         {
             if (objCollider.CompareTag("GlassTrash") || objCollider.CompareTag("MetalTrash") || objCollider.CompareTag("PlasticTrash") || objCollider.CompareTag("PaperTrash"))
             {
+                print(playerController.soundEffects[1].name);
+                //audioSource.clip = playerController.soundEffects[2];
+                playerController.grabAudioSource.Play();
                 carriedObject = objCollider.gameObject;
                 carriedRigidbody = carriedObject.GetComponent<Rigidbody2D>();
                 // Define a posição do objeto coletado à frente do jogador, com base no offset
                 UpdateCarriedObjectPosition();
+
                 break;
             }
         }
