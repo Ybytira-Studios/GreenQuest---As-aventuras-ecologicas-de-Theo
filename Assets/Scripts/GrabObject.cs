@@ -16,7 +16,7 @@ public class GrabObject : MonoBehaviour
 
     void Start(){
         playerController.grabAudioSource.clip = playerController.soundEffects[1];
-        playerController.grabAudioSource.volume = 1;
+        playerController.grabAudioSource.volume = 0.2f;
     }
 
     void Update()

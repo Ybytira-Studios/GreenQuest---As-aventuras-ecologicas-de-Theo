@@ -7,14 +7,21 @@ public class TrashBin : MonoBehaviour
 {
     public float proximityDistance = 3f; // Distância para considerar o objeto dentro da lixeira
     public string trashTag;
+    public AudioSource audioSource;
+    public AudioClip dropEffect;
 
     public int trashCount = 11; // Contagem de objetos coletáveis
+
+    void Start(){
+        audioSource.clip = dropEffect;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(trashTag))
         {
                 Destroy(other.gameObject); // Destrói o objeto coletável
+                audioSource.Play();
                 trashCount--; // Decrementa a contagem
                 CheckTrashCollected(); // Verifica se todos os lixos foram coletado
         }

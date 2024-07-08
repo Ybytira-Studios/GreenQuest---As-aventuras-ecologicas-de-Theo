@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource footStepAudioSource;
     public AudioSource grabAudioSource;
     public AudioClip[] soundEffects;
-
+    public ParticleSystem playerParticleSystem;
     private Animator playerAnimator;
     public float playerSpeed;
     public float buoyancyForce = 5f; // Força de empuxo a ser aplicada
@@ -30,7 +30,14 @@ public class PlayerController : MonoBehaviour
         playerRigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        footStepAudioSource.volume = 0.1f;
+          if (footStepAudioSource == null)
+        {
+            Debug.LogWarning("footStepAudioSource não está atribuído. Sons de passos não serão reproduzidos.");
+        }
+        else
+        {
+            footStepAudioSource.volume = 0.1f;
+        }
         // Verifica se o nome da cena é "Cena2" ou qualquer outro nome que você deseja verificar
         isInWaterScene = SceneManager.GetActiveScene().name == "Fase2_water";
     }
@@ -79,6 +86,7 @@ public class PlayerController : MonoBehaviour
 
     playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
     
+        if(footStepAudioSource != null){
         if (playerDirection.sqrMagnitude > 0 && !footStepAudioSource.isPlaying)
     {
         footStepAudioSource.clip = soundEffects[0];
@@ -90,10 +98,14 @@ public class PlayerController : MonoBehaviour
     {
         footStepAudioSource.Stop();
     }
+        }
 
         if (isInWaterScene)
        {
             AplicaEmpuxo();
+            if(playerDirection.sqrMagnitude > 0){
+                playerParticleSystem.Play();
+            }
         }
     }
 
