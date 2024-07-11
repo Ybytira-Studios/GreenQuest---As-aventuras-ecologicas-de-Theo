@@ -6,17 +6,20 @@ using UnityEngine.UI;
 public class TrashCounter : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI trashCounterText;
-
-    public TMPro.TextMeshProUGUI youWon;
+    public Timer timer;
+    public PlayerController playerController;
+    public GameObject finishLevel;
+    public TMPro.TextMeshProUGUI finalTimer;
+    public Animator playerAnimator;
 
      public string[] tagsToCheck = { "MetalTrash", "GlassTrash", "PlasticTrash", "PaperTrash"};  // Array de tags para verificar
 
          void Start()
     {
-        // Inicialmente, deixe o texto de vitória desativado
-        if (youWon != null)
+         //Inicialmente, deixe o texto de vitória desativado
+        if (finishLevel != null)
         {
-           youWon.gameObject.SetActive(false);
+           finishLevel.gameObject.SetActive(false);
         }
     }
 
@@ -34,8 +37,16 @@ public class TrashCounter : MonoBehaviour
     }
         trashCounterText.text = "Lixos restantes: " + totalTrashCount;
 
-        if(totalTrashCount == 0){
-            youWon.gameObject.SetActive(true);
+        if (totalTrashCount == 0 && timer.timerRunning) 
+        {
+            timer.timerRunning = false; // Para o timer
+            Debug.Log("Timer parado, todos os objetos foram coletados.");
+            playerController.enabled = false;
+            timer.timerText.gameObject.SetActive(false);
+            finishLevel.gameObject.SetActive(true);
+            finalTimer.text = "Tempo Final: " + timer.timeLevel.ToString("F2");
+            playerController.footStepAudioSource.Stop();
+            playerAnimator.SetInteger("Movimento", 0);
         }
 }
 

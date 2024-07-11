@@ -7,9 +7,10 @@ public class Timer : MonoBehaviour
     public TMPro.TextMeshProUGUI timerText; // Texto para exibir o timer
     public string[] tagsToCheck = { "MetalTrash", "GlassTrash", "PlasticTrash", "PaperTrash"};  // Array de tags para verificar
 
-    private float timeLevel = 0f; // Inicialize o tempo
-    private bool timerRunning = true; // Controle se o timer está ativo
+    public float timeLevel = 0f; // Inicialize o tempo
+    public bool timerRunning = true; // Controle se o timer está ativo
     public MonoBehaviour playerController;
+    public StarController starController;
 
     void Update()
     {
@@ -29,11 +30,13 @@ public class Timer : MonoBehaviour
         }
 
         // Se a contagem total for zero, pare o timer
-        if (totalTrashCount == 0 && timerRunning) 
-        {
-            timerRunning = false; // Para o timer
-            Debug.Log("Timer parado, todos os objetos foram coletados.");
-            playerController.enabled = false;
-        }
+        //if (totalTrashCount == 0 && timerRunning) 
+       // {
+          //  timerRunning = false; // Para o timer
+            //Debug.Log("Timer parado, todos os objetos foram coletados.");
+            //playerController.enabled = false;
+            //timerText.gameObject.SetActive(false);
+        //}
+        starController.CheckStars(timeLevel);
     }
 }

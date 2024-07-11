@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase1_beach.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Fase2_water.unity
+    guid: 31058d363d01d8a4a9f2077228a24cab
   m_configObjects: {}

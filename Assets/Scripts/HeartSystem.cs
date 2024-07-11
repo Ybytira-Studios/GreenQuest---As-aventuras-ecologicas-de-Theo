@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HeartSystem : MonoBehaviour
 {
@@ -51,8 +52,13 @@ public class HeartSystem : MonoBehaviour
     void morrer(){
         if(vida <= 0){
             Debug.Log("morreu");
-            //todo: penso em exibir uma cutscene breve dele acordando, já que ele está dormindo
+            ReloadScene();
         }
+    }
+      void ReloadScene()
+    {
+        // Recarrega a cena atual
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
