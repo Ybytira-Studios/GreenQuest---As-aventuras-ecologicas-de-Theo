@@ -19,7 +19,7 @@ public class TrashCounter : MonoBehaviour
          //Inicialmente, deixe o texto de vitória desativado
         if (finishLevel != null)
         {
-           finishLevel.gameObject.SetActive(false);
+           finishLevel.SetActive(false);
         }
     }
 
@@ -44,7 +44,7 @@ public class TrashCounter : MonoBehaviour
             playerController.enabled = false;
             timer.timerText.gameObject.SetActive(false);
             finishLevel.gameObject.SetActive(true);
-            finalTimer.text = "Tempo Final: " + timer.timeLevel.ToString("F2");
+            finalTimer.text = "Tempo restante: " + timer.timeLevel.ToString("F2");
             playerController.footStepAudioSource.Stop();
             playerAnimator.SetInteger("Movimento", 0);
         }
