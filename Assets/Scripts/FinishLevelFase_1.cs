@@ -22,7 +22,7 @@ public class FinishLevelFase_1 : MonoBehaviour
 
     void Update()
     {
-        // Qualquer lógica de atualização necessária
+        
     }
 
     public void Retry()
