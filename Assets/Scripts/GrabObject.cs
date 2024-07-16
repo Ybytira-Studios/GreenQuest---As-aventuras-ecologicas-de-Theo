@@ -1,22 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GrabObject : MonoBehaviour
 {
     public float interactDistance = 1f;
-    //public AudioSource audioSource;
-    //public AudioClip[] soundEffects;
+    public Image imageKeyE;
+    public string[] trashTags = { "GlassTrash", "MetalTrash", "PlasticTrash", "PaperTrash" };
     public PlayerController playerController;
     public KeyCode interactKey = KeyCode.E;
     public Vector2 carryOffset = new Vector2(1f, 0f); // Offset para posicionar o objeto coletado à frente do jogador
+    public Vector2 imageOffset = new Vector2(0f, 2f); // Offset para posicionar a imagem da tecla acima do jogador
 
     private GameObject carriedObject;
     private Rigidbody2D carriedRigidbody;
+    private int grabCounter = 0;
 
-    void Start(){
+    void Start()
+    {
         playerController.grabAudioSource.clip = playerController.soundEffects[1];
         playerController.grabAudioSource.volume = 0.2f;
+        imageKeyE.gameObject.SetActive(false);
     }
 
     void Update()
@@ -32,6 +38,8 @@ public class GrabObject : MonoBehaviour
                 DropObject();
             }
         }
+
+        UpdateImagePosition();
     }
 
     void InteractWithObject()
@@ -39,19 +47,29 @@ public class GrabObject : MonoBehaviour
         Collider2D[] nearbyObjects = Physics2D.OverlapCircleAll(transform.position, interactDistance);
         foreach (Collider2D objCollider in nearbyObjects)
         {
-            if (objCollider.CompareTag("GlassTrash") || objCollider.CompareTag("MetalTrash") || objCollider.CompareTag("PlasticTrash") || objCollider.CompareTag("PaperTrash"))
+            if (IsTrashObject(objCollider.tag))
             {
-                print(playerController.soundEffects[1].name);
-                //audioSource.clip = playerController.soundEffects[2];
                 playerController.grabAudioSource.Play();
                 carriedObject = objCollider.gameObject;
                 carriedRigidbody = carriedObject.GetComponent<Rigidbody2D>();
-                // Define a posição do objeto coletado à frente do jogador, com base no offset
                 UpdateCarriedObjectPosition();
-
+                grabCounter ++;
+                imageKeyE.gameObject.SetActive(false);
                 break;
             }
         }
+    }
+
+    bool IsTrashObject(string tag)
+    {
+        foreach (string trashTag in trashTags)
+        {
+            if (tag == trashTag)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     void DropObject()
@@ -67,8 +85,24 @@ public class GrabObject : MonoBehaviour
     {
         if (carriedObject != null)
         {
-            // Mantém o objeto à frente do jogador o tempo todo enquanto estiver segurando
             UpdateCarriedObjectPosition();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (IsTrashObject(other.tag))
+        {
+            if(grabCounter < 2)
+            imageKeyE.gameObject.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (IsTrashObject(other.tag))
+        {
+            imageKeyE.gameObject.SetActive(false);
         }
     }
 
@@ -76,8 +110,17 @@ public class GrabObject : MonoBehaviour
     {
         if (carriedObject != null)
         {
-            // Define a posição do objeto à frente do jogador, com base no offset
             carriedObject.transform.position = (Vector2)transform.position + carryOffset;
+        }
+    }
+
+    void UpdateImagePosition()
+    {
+        if (imageKeyE.gameObject.activeSelf)
+        {
+            Vector3 playerPosition = transform.position;
+            Vector3 newPosition = playerPosition + (Vector3)imageOffset;
+            imageKeyE.transform.position = newPosition;
         }
     }
 }
