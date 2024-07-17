@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         playerRigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-          if (footStepAudioSource == null)
+        if (footStepAudioSource == null)
         {
             Debug.LogWarning("footStepAudioSource não está atribuído. Sons de passos não serão reproduzidos.");
         }
@@ -64,44 +64,44 @@ public class PlayerController : MonoBehaviour
         KnockLogic();
     }
 
-  void KnockLogic(){
-    if (KBCount < 0)
-    {
-        Move();
-    } else
-    {
-        if (isKnockRight)
+    void KnockLogic(){
+        if (KBCount < 0)
         {
-            playerRigidBody2D.velocity = new Vector2(-KBCount, KBForce);
+            Move();
         } else
         {
-            playerRigidBody2D.velocity = new Vector2(+KBCount, KBForce);
+            if (isKnockRight)
+            {
+                playerRigidBody2D.velocity = new Vector2(-KBCount, KBForce);
+            } else
+            {
+                playerRigidBody2D.velocity = new Vector2(+KBCount, KBForce);
+            }
         }
+        KBCount -= Time.deltaTime;
     }
-    KBCount -= Time.deltaTime;
-}
 
 
     void Move(){
 
-    playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
-    
+        playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
+        
         if(footStepAudioSource != null){
-        if (playerDirection.sqrMagnitude > 0 && !footStepAudioSource.isPlaying)
-    {
-        footStepAudioSource.clip = soundEffects[0];
-        footStepAudioSource.loop = true;
-        footStepAudioSource.Play();
-    } 
+            if (playerDirection.sqrMagnitude > 0 && !footStepAudioSource.isPlaying)
+            {
+                footStepAudioSource.clip = soundEffects[0];
+                footStepAudioSource.loop = true;
+                footStepAudioSource.Play();
+            } 
 
-    if(playerDirection.sqrMagnitude <= 00 && footStepAudioSource.isPlaying)
-    {
-        footStepAudioSource.Stop();
-    }
+            if(playerDirection.sqrMagnitude <= 00 && footStepAudioSource.isPlaying)
+            {
+                footStepAudioSource.Stop();
+            }
         }
 
         if (isInWaterScene)
-       {
+        {
             AplicaEmpuxo();
             if(playerDirection.sqrMagnitude > 0){
                 playerParticleSystem.Play();
@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
         playerRigidBody2D.AddForce(Vector2.up * buoyancyForce, ForceMode2D.Force);
     }
 
-     public IEnumerator InvulnerabilityCoroutine()
+    public IEnumerator InvulnerabilityCoroutine()
     {
         isInvulnerable = true;
         Color originalColor = spriteRenderer.color;
