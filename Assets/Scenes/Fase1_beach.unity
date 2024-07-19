@@ -715,7 +715,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 502360901}
@@ -78019,7 +78019,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.47, y: -3.83, z: -10}
+  m_LocalPosition: {x: 0.997, y: 5.744, z: -10}
   m_LocalScale: {x: -0.28, y: 0.39, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79266,14 +79266,25 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929426572}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 448b32273bd204a459f98aeecd066167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!212 &929426575
-SpriteRenderer:
+  m_GameObject: {fileID: 918670023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 539568275}
+  - {fileID: 704697996}
+  - {fileID: 1226506764}
+  - {fileID: 346275858}
+  m_Father: {fileID: 1161441939}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -649, y: 294}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &918670027
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -80275,6 +80286,7 @@ MonoBehaviour:
   finalTimer: {fileID: 0}
   playerAnimator: {fileID: 0}
   audioSourcePlayer: {fileID: 0}
+  playerAnimator: {fileID: 0}
   tagsToCheck: []
 --- !u!1 &1226506763
 GameObject:
@@ -80591,6 +80603,7 @@ MonoBehaviour:
   finalTimer: {fileID: 704697997}
   playerAnimator: {fileID: 1499126684}
   audioSourcePlayer: {fileID: 1499126686}
+  playerAnimator: {fileID: 0}
   tagsToCheck:
   - MetalTrash
   - GlassTrash
@@ -81413,7 +81426,7 @@ Transform:
   m_GameObject: {fileID: 1475125300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.47, y: -3.83, z: -10}
+  m_LocalPosition: {x: 0.997, y: 5.744, z: -10}
   m_LocalScale: {x: 1.28, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -81488,7 +81501,7 @@ GameObject:
   - component: {fileID: 1499126686}
   - component: {fileID: 1499126687}
   m_Layer: 0
-  m_Name: Default_Theodoro
+  m_Name: MainCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81562,13 +81575,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
-  m_Sprite: {fileID: -1244661454, guid: e7ed1d91748d8004a8c64f4e7ce7259b, type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: -935666207, guid: a9856bb8e5bf71b4fa0dbeb0ba9a1c93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8125, y: 1.1875}
+  m_Size: {x: 0.16, y: 0.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -81583,6 +81596,8 @@ Transform:
   m_GameObject: {fileID: 1499126678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.997, y: 5.744, z: 0}
+  m_LocalScale: {x: 12.458622, y: 12.458622, z: 8.305748}
   m_LocalPosition: {x: 0.47, y: -3.83, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -81661,7 +81676,7 @@ Animator:
   m_GameObject: {fileID: 1499126678}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3bd0e4009a04a15488e4230ea968f633, type: 2}
+  m_Controller: {fileID: 9100000, guid: 862e2380390032d40b2059fb01693ff6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -84200,11 +84215,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6353807802671198547, guid: 7d39e1d6e6d169941a48d993e456c7cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: 14.94
       objectReference: {fileID: 0}
     - target: {fileID: 6353807802671198547, guid: 7d39e1d6e6d169941a48d993e456c7cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.93
+      value: 9.16
       objectReference: {fileID: 0}
     - target: {fileID: 6353807802671198547, guid: 7d39e1d6e6d169941a48d993e456c7cc, type: 3}
       propertyPath: m_LocalPosition.z
