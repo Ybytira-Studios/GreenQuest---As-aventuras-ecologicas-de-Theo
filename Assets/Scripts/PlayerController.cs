@@ -6,20 +6,21 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody2D;
-
     public SpriteRenderer spriteRenderer;
     public AudioSource footStepAudioSource;
     public AudioSource grabAudioSource;
     public AudioClip[] soundEffects;
     public ParticleSystem playerParticleSystem;
     private Animator playerAnimator;
+    private Vector2 playerDirection;
+
+    private Vector2 lastPlayerDirection;
     public float playerSpeed;
     public float buoyancyForce = 5f; // Força de empuxo a ser aplicada
     public float KBForce;
     public float KBCount;
     public float KBTime;
     public bool isKnockRight;
-    private Vector2 playerDirection;
     private bool isInWaterScene;
     public float invulnerabilityDuration = 2f;
     public bool isInvulnerable = false;
@@ -44,19 +45,22 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+    {   
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+        
+        if ( moveX == 0 && moveY == 0 && (playerDirection.x != 0 || playerDirection.y != 0)) {
 
-        if (playerDirection.sqrMagnitude > 0)
-        {
-            playerAnimator.SetInteger("Movimento", 1);
-        } 
-        else
-        {
-            playerAnimator.SetInteger("Movimento", 0);
+            lastPlayerDirection = playerDirection;
         }
 
-        Flip();
+        playerDirection = new Vector2(moveX, moveY).normalized;
+
+        playerAnimator.SetFloat("Horizontal", playerDirection.x);
+        playerAnimator.SetFloat("Vertical", playerDirection.y);
+        playerAnimator.SetFloat("Speed", playerDirection.sqrMagnitude);
+        playerAnimator.SetFloat("LastHorizontalMove", lastPlayerDirection.x);
+        playerAnimator.SetFloat("LastVerticalMove", lastPlayerDirection.y);
     }
 
     void FixedUpdate()
