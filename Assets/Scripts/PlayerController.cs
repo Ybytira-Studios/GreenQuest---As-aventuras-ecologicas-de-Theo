@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private bool isInWaterScene;
     public float invulnerabilityDuration = 2f;
     public bool isInvulnerable = false;
+    public float stepVolume = 0.05f;
 
     void Start()
     {   
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            footStepAudioSource.volume = 0.1f;
+            footStepAudioSource.volume = stepVolume;
         }
         // Verifica se o nome da cena é "Cena2" ou qualquer outro nome que você deseja verificar
         isInWaterScene = SceneManager.GetActiveScene().name == "Fase2_water";

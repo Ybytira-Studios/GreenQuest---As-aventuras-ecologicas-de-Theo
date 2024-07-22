@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public TMPro.TextMeshProUGUI timerText; // Texto para exibir o timer
     public AudioSource audioSourcePlayer;
     public Animator playerAnimator;
-    public TMPro.TextMeshProUGUI endText; // Texto para exibir quando o tempo acabar
+    public TextMeshProUGUI endText; // Texto para exibir quando o tempo acabar
     public float timeLevel = 120f; // Inicialize o tempo
     public bool timerRunning = true; // Controle se o timer está ativo
     public PlayerController playerController;
