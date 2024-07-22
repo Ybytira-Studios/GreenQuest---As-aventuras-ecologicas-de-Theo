@@ -17,11 +17,12 @@ public class GrabObject : MonoBehaviour
     private GameObject carriedObject;
     private Rigidbody2D carriedRigidbody;
     private int grabCounter = 0;
+    public float volumeGrabbing;
 
     void Start()
     {
         playerController.grabAudioSource.clip = playerController.soundEffects[1];
-        playerController.grabAudioSource.volume = 0.2f;
+        playerController.grabAudioSource.volume = volumeGrabbing;
         imageKeyE.gameObject.SetActive(false);
     }
 
@@ -100,7 +101,7 @@ public class GrabObject : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (IsTrashObject(other.tag))
+        if (IsTrashObject(other.tag) && imageKeyE != null)
         {
             imageKeyE.gameObject.SetActive(false);
         }
