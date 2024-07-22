@@ -184,12 +184,12 @@ TextureImporter:
       name: beachPalmTrees_4
       rect:
         serializedVersion: 2
-        x: 223
+        x: 224
         y: 241
         width: 77
         height: 58
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
         width: 77
         height: 58
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
