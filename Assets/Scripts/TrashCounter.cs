@@ -14,9 +14,9 @@ public class TrashCounter : MonoBehaviour
     public Animator playerAnimator;
     public AudioSource audioSourcePlayer;
 
-     public string[] tagsToCheck = { "MetalTrash", "GlassTrash", "PlasticTrash", "PaperTrash"};  // Array de tags para verificar
+    public string[] tagsToCheck = { "MetalTrash", "GlassTrash", "PlasticTrash", "PaperTrash"};  // Array de tags para verificar
 
-         void Start()
+    void Start()
     {
          //Inicialmente, deixe o texto de vitória desativado
         if (finishLevel != null)
