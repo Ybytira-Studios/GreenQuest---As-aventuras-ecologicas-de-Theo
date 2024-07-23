@@ -13,7 +13,6 @@ public class GrabObject : MonoBehaviour
     public KeyCode interactKey = KeyCode.E;
     public Vector2 carryOffset = new Vector2(1f, 0f); // Offset para posicionar o objeto coletado à frente do jogador
     public Vector2 imageOffset = new Vector2(0f, 2f); // Offset para posicionar a imagem da tecla acima do jogador
-
     private GameObject carriedObject;
     private Rigidbody2D carriedRigidbody;
     private int grabCounter = 0;
@@ -97,6 +96,7 @@ public class GrabObject : MonoBehaviour
             if(grabCounter < 2)
             imageKeyE.gameObject.SetActive(true);
         }
+        Debug.LogWarning("Entrou no trigger.");
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -105,6 +105,7 @@ public class GrabObject : MonoBehaviour
         {
             imageKeyE.gameObject.SetActive(false);
         }
+        Debug.LogWarning("Saiu do trigger.");
     }
 
     void UpdateCarriedObjectPosition()
