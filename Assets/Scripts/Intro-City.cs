@@ -13,8 +13,8 @@ public class Cutscene1 : MonoBehaviour
 
     void Start()
     {
-        textos[0] = "Baia da Aventura é uma cidade do litoral com belas praias e outras paisagens naturais, onde a principal fonte de renda é o turismo, ";
-        textos[1] = "entretanto com o crescimento desordenado da cidade, o descarte irregular de lixo e a poluição da praia e dos rios aumentou drasticamente, pela nova população local.";
+        textos[0] = "Baía da Aventura é uma cidade do litoral com belas praias e outras paisagens naturais, onde a principal fonte de renda é o turismo, ";
+        textos[1] = "entretanto com o crescimento desordenado da cidade, o descarte irregular de lixo e a poluição das praias e dos rios aumentou drasticamente, pela nova população local";
         textos[2] = "Pensando nisso a LAL(Liga anti lixo), uma OSC ambiental que ajuda cidades dependentes do turismo a se reerguer de problemas ambientais, entrou em ação nesta cidade.";
 
         texto.text = textos[0];
@@ -54,7 +54,7 @@ public class Cutscene1 : MonoBehaviour
         else
         {
             Debug.Log("Todas as imagens foram exibidas. Carregando próxima cena.");
-            SceneManager.LoadScene("Fase1_beach");
+            SceneManager.LoadScene("Intro-Theo");
         }
     }
 }
