@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a1e6c8dc7317b64b8a5f81feaf6d779
+guid: a71fc727315b97e4dabcaa7858d4d34c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,274 +97,358 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beachPalmTrees_0
+      name: vehicles_0
       rect:
         serializedVersion: 2
-        x: 214
-        y: 381
-        width: 46
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
+        x: 20
+        y: 223
+        width: 62
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d996c0e6d97d334ab6247f2e526b3e5
-      internalID: 1773167769
+      spriteID: 4c380b8e49b72b24091808342a72cb14
+      internalID: 1293811218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_1
+      name: vehicles_1
       rect:
         serializedVersion: 2
-        x: 408
-        y: 264
-        width: 77
-        height: 36
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
+        x: 102
+        y: 223
+        width: 68
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa17d3c1f1bab544eb581cdac7a5d0ed
-      internalID: -1800632522
+      spriteID: b6709a45e7877d346afed168cd7f5258
+      internalID: 1038229091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_2
+      name: vehicles_2
       rect:
         serializedVersion: 2
-        x: 214
-        y: 320
-        width: 46
-        height: 58
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 193
+        y: 223
+        width: 76
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26dc2ba852f30004eaec4edf98e905d0
-      internalID: -842496688
+      spriteID: 6924f802d3b6e1f4ca35a68c622f398c
+      internalID: -688878135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_3
+      name: vehicles_3
       rect:
         serializedVersion: 2
-        x: 268
-        y: 319
-        width: 46
-        height: 58
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e5e225a67874d142ba10b4c4baaa193
-      internalID: 1392386422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_4
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 322
-        width: 44
+        x: 291
+        y: 223
+        width: 81
         height: 54
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03247d446f7732d49aa4dda8580f86f7
-      internalID: 2140244798
+      spriteID: c05ba22605a9aa24691fe6648b430a56
+      internalID: -1520230918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_5
+      name: vehicles_4
       rect:
         serializedVersion: 2
-        x: 381
-        y: 324
-        width: 44
+        x: 394
+        y: 223
+        width: 79
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037bed7c6cb569744a450374ac098398
+      internalID: 1186525720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vehicles_5
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 224
+        width: 82
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5598c038ddbcc41488a0230cad73a48e
+      internalID: 658592222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vehicles_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 226
+        width: 83
         height: 54
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d8de9dfde726b4b9ab37d7059cdb2d
-      internalID: -812785265
+      spriteID: 3d55255774ab69247972a311af29cb33
+      internalID: 1694985857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_6
+      name: vehicles_7
       rect:
         serializedVersion: 2
-        x: 223
-        y: 241
-        width: 77
+        x: 20
+        y: 134
+        width: 88
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26023db68916674c9aca5ff4b722c2b
+      internalID: -262720094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vehicles_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 134
+        width: 88
         height: 58
-      alignment: 9
-      pivot: {x: 0.4787899, y: 0.306316}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f07ed4fe3b482a34485a6c467936b9dd
-      internalID: -1286913613
+      spriteID: 89db7fcd7f883fe47805fff209add961
+      internalID: 1234357924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_7
+      name: vehicles_9
       rect:
         serializedVersion: 2
-        x: 311
-        y: 240
-        width: 77
-        height: 58
-      alignment: 9
-      pivot: {x: 0.49469706, y: 0.2992764}
+        x: 246
+        y: 134
+        width: 79
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c2afa819f503da44ac3f4b7adfa1ed2
-      internalID: -1770966954
+      spriteID: 56813d648bd7e10429057f1e84145581
+      internalID: 931411107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_8
+      name: vehicles_10
       rect:
         serializedVersion: 2
-        x: 143
-        y: 167
-        width: 72
-        height: 45
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
+        x: 354
+        y: 134
+        width: 86
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f581bb57a357cd349a2b65db83df1457
-      internalID: 1402507124
+      spriteID: 85b232b884d535d4ba7c8a70b888debd
+      internalID: 895076884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_9
+      name: vehicles_11
       rect:
         serializedVersion: 2
-        x: 221
-        y: 141
-        width: 71
-        height: 81
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 467
+        y: 134
+        width: 90
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6439c486ed899c4c947a8fe092d6f0d
-      internalID: -47980439
+      spriteID: e20035b0781f2f549a0cdb5bbeeb5546
+      internalID: -1119760433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_10
+      name: vehicles_12
       rect:
         serializedVersion: 2
-        x: 297
-        y: 141
-        width: 71
-        height: 81
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 584
+        y: 134
+        width: 92
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfa616a6e4938374fa5f00e1a2135cae
-      internalID: -772287680
+      spriteID: 326b5a708e2c60b489a9f4938080b53e
+      internalID: 1603729463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_11
+      name: vehicles_13
       rect:
         serializedVersion: 2
-        x: 373
-        y: 141
-        width: 71
-        height: 81
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 20
+        y: 23
+        width: 139
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4a300a2561f7204ca8eaa67543854a6
-      internalID: -2037479627
+      spriteID: f633ea01f86317240b0667a38ddca40e
+      internalID: 207928388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beachPalmTrees_12
+      name: vehicles_14
       rect:
         serializedVersion: 2
-        x: 450
-        y: 141
-        width: 71
-        height: 81
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 196
+        y: 23
+        width: 126
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d4c1f701b2c3454da8c034aa4e391a4
-      internalID: 1494576882
+      spriteID: 7d47fd5b6953c1f4a8a753186bedec79
+      internalID: -2011919487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vehicles_15
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 23
+        width: 132
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41a92503351b9f46bfe5803a6f3bdae
+      internalID: 1174135524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vehicles_16
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 23
+        width: 149
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b32d37e3b20594ea729b5e9a9952bc
+      internalID: 2072269651
       vertices: []
       indices: 
       edges: []
@@ -380,19 +464,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      beachPalmTrees_0: 1773167769
-      beachPalmTrees_1: -1800632522
-      beachPalmTrees_10: -772287680
-      beachPalmTrees_11: -2037479627
-      beachPalmTrees_12: 1494576882
-      beachPalmTrees_2: -842496688
-      beachPalmTrees_3: 1392386422
-      beachPalmTrees_4: 2140244798
-      beachPalmTrees_5: -812785265
-      beachPalmTrees_6: -1286913613
-      beachPalmTrees_7: -1770966954
-      beachPalmTrees_8: 1402507124
-      beachPalmTrees_9: -47980439
+      vehicles_0: 1293811218
+      vehicles_1: 1038229091
+      vehicles_10: 895076884
+      vehicles_11: -1119760433
+      vehicles_12: 1603729463
+      vehicles_13: 207928388
+      vehicles_14: -2011919487
+      vehicles_15: 1174135524
+      vehicles_16: 2072269651
+      vehicles_2: -688878135
+      vehicles_3: -1520230918
+      vehicles_4: 1186525720
+      vehicles_5: 658592222
+      vehicles_6: 1694985857
+      vehicles_7: -262720094
+      vehicles_8: 1234357924
+      vehicles_9: 931411107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

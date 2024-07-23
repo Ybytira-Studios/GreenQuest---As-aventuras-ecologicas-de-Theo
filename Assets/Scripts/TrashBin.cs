@@ -20,11 +20,12 @@ public class TrashBin : MonoBehaviour
     {
         if (other.CompareTag(trashTag))
         {
-                Destroy(other.gameObject); // Destrói o objeto coletável
-                audioSource.Play();
-                trashCount--; // Decrementa a contagem
-                CheckTrashCollected(); // Verifica se todos os lixos foram coletado
+            Destroy(other.gameObject); // Destrói o objeto coletável
+            audioSource.Play();
+            trashCount--; // Decrementa a contagem
+            CheckTrashCollected(); // Verifica se todos os lixos foram coletado
         }
+        Debug.LogWarning("Destroi o lixo.");
     }
 
     void CheckTrashCollected()
