@@ -96,7 +96,6 @@ public class GrabObject : MonoBehaviour
             if(grabCounter < 2)
             imageKeyE.gameObject.SetActive(true);
         }
-        Debug.LogWarning("Entrou no trigger.");
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -105,7 +104,7 @@ public class GrabObject : MonoBehaviour
         {
             imageKeyE.gameObject.SetActive(false);
         }
-        Debug.LogWarning("Saiu do trigger.");
+        //Debug.LogWarning("Saiu do trigger.");
     }
 
     void UpdateCarriedObjectPosition()

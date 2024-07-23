@@ -18,14 +18,16 @@ public class TrashBin : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        print("Entrei no triggerEnter do thashbin");
+        print("Objeto detectado: "+other.name);
         if (other.CompareTag(trashTag))
         {
             Destroy(other.gameObject); // Destrói o objeto coletável
+            print("Destroi o lixo.");
             audioSource.Play();
             trashCount--; // Decrementa a contagem
             CheckTrashCollected(); // Verifica se todos os lixos foram coletado
         }
-        Debug.LogWarning("Destroi o lixo.");
     }
 
     void CheckTrashCollected()
