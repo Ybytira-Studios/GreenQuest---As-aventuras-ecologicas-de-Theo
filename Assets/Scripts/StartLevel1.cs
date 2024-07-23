@@ -18,6 +18,8 @@ public class StartLevel1 : MonoBehaviour
     public Animator playerAnimator;
     public AudioSource audioSourcePlayer;
     public AudioController audioControllerMusic;
+    private bool canSkip;
+    public KeyCode keyCodeSkip = KeyCode.Space;
 
     void Start()
     {
