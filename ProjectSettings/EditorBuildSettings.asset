@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase2_water.unity
     guid: 31058d363d01d8a4a9f2077228a24cab
+  - enabled: 1
+    path: Assets/Scenes/Intro-Theo.unity
+    guid: 99ee4de9ac15c114ba5033cdc3b1397b
+  - enabled: 1
+    path: Assets/Scenes/Intro-City.unity
+    guid: 7dd4eabbbdfa58a439b4c241b7108c9e
   m_configObjects: {}
