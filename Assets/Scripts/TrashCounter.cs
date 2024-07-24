@@ -48,7 +48,6 @@ public class TrashCounter : MonoBehaviour
             finishLevel.SetActive(true);
             finalTimer.text = "Tempo restante: " + timer.timeLevel.ToString("F1") + "s";
             playerController.footStepAudioSource.Stop();
-            playerAnimator.SetInteger("Movimento", 0);
             audioSourcePlayer.Stop();
         }
 }
