@@ -31311,7 +31311,7 @@ MonoBehaviour:
   timerIcon: {fileID: 1633308908}
   trashIcon: {fileID: 1826129822}
   trashText: {fileID: 910173693}
-  displayDuration: 2
+  displayDuration: 15
   fadeDuration: 1
   intervalBetweenPanels: 1
   playerController: {fileID: 1499126679}
