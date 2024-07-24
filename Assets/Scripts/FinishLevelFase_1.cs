@@ -28,10 +28,12 @@ public class FinishLevelFase_1 : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        print("clicou");
     }
 
     public void Next()
     {
         SceneManager.LoadScene("Fase2_water");
+        print("clicou");
     }
 }
