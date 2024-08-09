@@ -11,10 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase2_water.unity
     guid: 31058d363d01d8a4a9f2077228a24cab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Intro-Theo.unity
     guid: 99ee4de9ac15c114ba5033cdc3b1397b
   - enabled: 1
     path: Assets/Scenes/Intro-City.unity
     guid: 7dd4eabbbdfa58a439b4c241b7108c9e
+  - enabled: 1
+    path: Assets/Scenes/Intro-Theo-Quarto.unity
+    guid: c978a753823c15445a27e204caf21ed0
+  - enabled: 1
+    path: Assets/Scenes/Intro-Theo-Escola.unity
+    guid: 32c863a5f847530489fc207395f2cfe3
+  - enabled: 1
+    path: Assets/Scenes/Intro-Theo-Cozinha.unity
+    guid: 0c1ec20d3cc11db4bb6f1f0fed9d8e41
   m_configObjects: {}

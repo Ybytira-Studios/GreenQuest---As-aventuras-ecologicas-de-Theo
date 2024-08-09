@@ -54,7 +54,7 @@ public class Cutscene1 : MonoBehaviour
         else
         {
             Debug.Log("Todas as imagens foram exibidas. Carregando próxima cena.");
-            SceneManager.LoadScene("Intro-Theo");
+            SceneManager.LoadScene("Intro-Theo-Escola");
         }
     }
 }

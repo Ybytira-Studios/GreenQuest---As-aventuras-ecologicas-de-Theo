@@ -20,7 +20,7 @@ public class MainInterface : MonoBehaviour
     }
 
     public void Play(){
-        SceneManager.LoadScene("Fase1_beach");
+        SceneManager.LoadScene("Intro-City");
     }
 
     public void Options(){

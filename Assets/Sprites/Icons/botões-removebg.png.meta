@@ -1,0 +1,2974 @@
+fileFormatVersion: 2
+guid: 9dafcdf3f62f3234c89757dd4b08a3bc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_0"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 505
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e343827c8e0a854b8840be54db3ac64
+      internalID: -2028376306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_1"
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 504
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e705e485d69ef44b299800b8d79779
+      internalID: 141133394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_2"
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 504
+        width: 37
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ce4c19af0b1464981576d699bd536f
+      internalID: -1096846476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_3"
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 504
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c04daebf2cf7e40bf0c1d2a5fbe343
+      internalID: 1110361494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_4"
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 504
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a506ed90807b36a4cb7e6eeaf499fac6
+      internalID: 815700697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_5"
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 504
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94054203c188e647a8f45b67ddb5219
+      internalID: 95810917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_6"
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 504
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360ffe8f270d0b540aae3144fd6f7703
+      internalID: -1492129470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_7"
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 471
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e1e8099e9ac48449a50facc93be293
+      internalID: -1967246623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_8"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 423
+        width: 165
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0d030d79a69054c81ca79fc5318a20
+      internalID: 1473540401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_9"
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 423
+        width: 166
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc09defbeddd874c9720d97b8a61c28
+      internalID: -1243952094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_10"
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 375
+        width: 48
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf74a439b4f7ab40bc66a964bd1a40d
+      internalID: -1405427063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_11"
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 432
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e1dc0b364f3064e9fc7ad297c891ad
+      internalID: 144710640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_12"
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 375
+        width: 45
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e840beb93bf545e408b3d5a844616682
+      internalID: 1166777097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_13"
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 432
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7ec1ca6a2ef524d8703ac6aaf84433
+      internalID: 802763083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_14"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 474
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527b4a048d665f842a766ee6a92e3262
+      internalID: -1896709247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_15"
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 456
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb44721d6c052b498ac853245c3337f
+      internalID: -2037094300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_16"
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 474
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a3bf8265f0b6c41b1c62e648557e9e
+      internalID: -805502480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_17"
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 456
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb8c2b682a23ae479b910d7efe66b0f
+      internalID: 8540252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_18"
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 456
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0dd2dbdb2af29b498ff7a83e1a68360
+      internalID: -1686959383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_19"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 465
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9293fd29737e143b242b6c1a8d7762
+      internalID: 2101433149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_20"
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 465
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18541437179c744fb4fe30d65b17457
+      internalID: 1469864921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_21"
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 456
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c558753c772a341812f37a21bada2b
+      internalID: -233031421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_22"
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 456
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09ef5119b0de384ba84033b5373124e
+      internalID: -800938767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_23"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 456
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904162e6fead7044ab47f728f91683c2
+      internalID: -636752041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_24"
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 456
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6420484564af22a499093dc82e275d9c
+      internalID: 998018719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_25"
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 456
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21a8be40740ce34599d81904255e3f8
+      internalID: -1726940268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_26"
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 375
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17ee05c4a9f03949a908f56096ec794
+      internalID: 1602580125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_27"
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 375
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ab420887b5a5b41918c9c6c637cece
+      internalID: 1588063413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_28"
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 420
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddad5faacebb0347b20ddbde747a7b5
+      internalID: -1592804564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_29"
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 419
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f461c2c01f35c124caa8399527077200
+      internalID: -1561460900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_30"
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 411
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63e081d2f11da045a4408f149da04f7
+      internalID: -365352727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_31"
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 408
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f67970fb3b2cf45b8b04e70340c951
+      internalID: -509753257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_32"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 353
+        width: 165
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 64, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c38d602f35012540b87bae451690320
+      internalID: -593259406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_33"
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 354
+        width: 166
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c9808596e436e4f98da4c84310233b
+      internalID: -932091986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_34"
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 411
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adadc4189abe45644b9ca5609ee866fc
+      internalID: 143111078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_35"
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 411
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef6d1fddde4d3b44a15c8f2e146c29d
+      internalID: 1518336753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_36"
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 372
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10847ee5695a244aa6ad3fe6cfa319c
+      internalID: -593146040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_37"
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 369
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56a09403a69f9a45ad6e8b7641d916b
+      internalID: 1949435597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_38"
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 366
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31f5afad56c5aa43bc969e955f06f5b
+      internalID: -1414433021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_39"
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 372
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b463de1b3b29dc4381450c84432b626
+      internalID: 2041520631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_40"
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 284
+        width: 166
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a576c1685cf7fd14e872a5be8d6d0ec6
+      internalID: -127062407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_41"
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 318
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bf312195e71a14396c79ba4a7e6e1a
+      internalID: -2147343199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_42"
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 318
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39576db1ac1d3114387fef4b66442b18
+      internalID: 1337865268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_43"
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 318
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048d7b6617b084a4e87a36de4deb6f41
+      internalID: 889110659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_44"
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 318
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1022b1a6485bb4bbdadf2e02f44e64
+      internalID: -1436799532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_45"
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 327
+        width: 54
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f356e5c471ec7e249921355c91dd514c
+      internalID: -1816184592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_46"
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 327
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e183c7b96b548254a9ae90293ca5986e
+      internalID: 749884193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_47"
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 327
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4d1d5f806640a4ca06194ebca81087
+      internalID: 1100768518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_48"
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 327
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261c3c22912bb334d854f6d4e3d7604a
+      internalID: 955017276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_49"
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 327
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035fb6d9d31ddf24b9006087074ac3d7
+      internalID: 2129844282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_50"
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 327
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56719e96f0ab29c428f2d3097a439afe
+      internalID: -1017412637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_51"
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 327
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b284cfab91967dd4b95cdbf484efff2a
+      internalID: -842969687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_52"
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 327
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424d47e2f59a2f546b5d4925ffc14f37
+      internalID: -1618542438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_53"
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 288
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32fb4888467c504e9a413cbb9a558fa
+      internalID: 1442435516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_54"
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 261
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a287d064f938f47af1af9cd10436d8
+      internalID: 1558171919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_55"
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 261
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba2c3968731f2b4a90e6f87b2ac702a
+      internalID: -135149351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_56"
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 261
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60f1394270b36547854a861bb460b9c
+      internalID: 296931561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_57"
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 261
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c2cdbad6c293c42a9aca1faaeaea07
+      internalID: -2111136533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_58"
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 284
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c608fd0d283f0b43a208972ba323026
+      internalID: -48802700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_59"
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 284
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b62cb8cc215f24cbff31badc80a44d
+      internalID: 1381357354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_60"
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 288
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8ddf1c9e3167445b1c10858f5a72be
+      internalID: 2120446991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_61"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 234
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255050d91b924964086985735fc55bd6
+      internalID: -1887220698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_62"
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 234
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b72c6b037317064eb865770df3381a2
+      internalID: 293400876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_63"
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 231
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae48be0a8fa950d4cad433d8cb9d5967
+      internalID: -879181990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_64"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 204
+        width: 39
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec3a20973c6a0c4588b2ecb4abff4fd
+      internalID: -1695098883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_65"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 213
+        width: 55
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e223f4b51803c52419d90408a46bb79c
+      internalID: -1232221960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_66"
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 213
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49099b32a3e850145b41cb98acc55588
+      internalID: 1204438717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_67"
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 213
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4421f1b1162a1459dd32ef7ecd033d
+      internalID: -1331988012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_68"
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 213
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6518029b6ee9d874e964471bd8f9180b
+      internalID: -1907541629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_69"
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 213
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de89e3469797b64691f15d87c66f3e2
+      internalID: -1102650805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_70"
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 213
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb8f15f70fe3364cb57fd4abc0a0a23
+      internalID: 911973205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_71"
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 213
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72c02afee12fc54a96bab0a8e880a04
+      internalID: 1843682504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_72"
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 213
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee52456f15d1b640a5c4e5ea8538137
+      internalID: -50335931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_73"
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 213
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b3d0960d933354f860faac63cbd1d8
+      internalID: 1759518262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_74"
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 213
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da5d92a5f3936c45a6c9ea709b1d5a7
+      internalID: 1261833704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_75"
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 213
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a266415bffb1b1047a0abbff5e80b461
+      internalID: -1839789981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_76"
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 213
+        width: 54
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20338c6374f74524dae7d458b9ee4476
+      internalID: -1529575905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_77"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 147
+        width: 165
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951db160d9125cb4eb03226d230cb6d7
+      internalID: -1981038980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_78"
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 198
+        width: 53
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aebec9028a90034cb9429eece76060a
+      internalID: -1866812225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_79"
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 207
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750034092b77b38498e36b313cea8e10
+      internalID: 807981279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_80"
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 198
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dccf85ab082a304985331ede2cfb854
+      internalID: 2050422045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_81"
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 198
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837bc17b7f048d04691f33ab9a0502f9
+      internalID: -547653160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_82"
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 198
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac58cb60b0619654f820f05ac5808915
+      internalID: 1006750510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_83"
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 198
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa9526b36797024791d47a96dda4bb2
+      internalID: 1682520632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_84"
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 147
+        width: 165
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0901bb5132f7fd044b9dcc3931c616ea
+      internalID: 29020948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_85"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 147
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09abdd379d67ac468d1982ab598e461
+      internalID: -440118659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_86"
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 147
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d5392e9bf4e044a881e0d6bc872c77
+      internalID: 48761011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_87"
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 147
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ac3db99c1f1d64c834b91ce1ee664e
+      internalID: 1292712856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_88"
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 147
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f33e2e5f9bd3bb4eabfe4cae82501e6
+      internalID: 1919106643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_89"
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 138
+        width: 186
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ce6793ab30cd94e856bee3ebca5030
+      internalID: -1457206791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_90"
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 150
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ba1f444f4a6684a9edef332bb5eab7
+      internalID: -2003765281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_91"
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 150
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec29f621dddc28c459a9b3717d9456a1
+      internalID: 2141467301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_92"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 96
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a540b18dfda334f955904dae786fcd
+      internalID: 885708141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_93"
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 96
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a29e6d67970e84499ca3fb733196efb
+      internalID: -149265444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_94"
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 96
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ec30886d8c5eb42bfd896e7dc52290
+      internalID: 994375317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_95"
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 96
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6cdd1d5231f6549af923d3a0f0ad09
+      internalID: 159233475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_96"
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 129
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009196f5682cc904c86e859fdb27a9fa
+      internalID: -1511640857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_97"
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 122
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55de5660133994b4badfdff7ae507dc1
+      internalID: 1029682213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_98"
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 107
+        width: 36
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d8ba41d472c5d41822716467534e5d
+      internalID: 1150939921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_99"
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddc91337506d9940b69984d2837531e
+      internalID: -1562854342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_100"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be654bb32dff041479e976f7f23645b8
+      internalID: 506816281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_101"
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 102
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2881ba4af024ede47b687544b94ba6e3
+      internalID: 1157242357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_102"
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c68ac3c1597c346b67e30dee676dd1
+      internalID: 1381381579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_103"
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd65677a09a1c74e91b5195888c0a30
+      internalID: 1450217553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_104"
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be442fde82e93347b32d63680c9f79f
+      internalID: 407548949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_105"
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 102
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83a8f962c0ff4c4f810469e36cf04d9
+      internalID: 2123138947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_106"
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadbc577908a15441b13c9bda95a0837
+      internalID: 316149916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_107"
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd435dcf60f22a43afebc2ac658e93b
+      internalID: -1102924060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_108"
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 30
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b34bf3ecf95b754f9f10a0efd1e4667
+      internalID: 1064113007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_109"
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d560a5130db1a242bd356bd1fde8322
+      internalID: -579030083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_110"
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253f910e43c889f4a83dc38b6b70e89a
+      internalID: 1094585898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_111"
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 102
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484346fa6e3326b4783e721b7651d366
+      internalID: -1562486738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_112"
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 84
+        width: 90
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7865f39bf44098a44b352f388c3a6e78
+      internalID: -2007881160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_113"
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 84
+        width: 90
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82175e011dd00ea45b6127fb2583a171
+      internalID: 402717218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_114"
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 93
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3e081a9f0c5c7498a5fd603e56a5f0
+      internalID: -1995847349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_115"
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 99
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b081119b31eff6749a988519fa5a3db5
+      internalID: -683572946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_116"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 30
+        width: 147
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2c1169101c8e444a8bb913f6946d9f
+      internalID: -658593223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_117"
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 30
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcf5340c46e2b544ab3c0558daa0439
+      internalID: -956676441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_118"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 45
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df262eb019b56994b82b0f1451ef7698
+      internalID: 779030482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_119"
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 45
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da05979acb822f4aa7243834ba5978a
+      internalID: 971526905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_120"
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 45
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92393d5ef5bca8e469f4228af09d3e02
+      internalID: 2066733259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_121"
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 45
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd410324420f11d489f1070e65fa183e
+      internalID: -1670826650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_122"
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 15
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e95dde4aeae3e4d8a524c1ffc7e750
+      internalID: 595408558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_123"
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 15
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57845ec6c0293cb46a150471d72dc1f9
+      internalID: 629802894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_124"
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 15
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213f999288deef34d91d06ce8ca8a883
+      internalID: -1782524813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_125"
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 15
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1215a1adcc38acc46b50a64f5bcb1501
+      internalID: -1712973910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_126"
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 18
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfd67bd17bf4b746830a06f9888f1ab
+      internalID: -1946771565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_127"
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 216
+        width: 166
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137a1c5af22c55842914bada112dd397
+      internalID: -146572087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_128"
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 216
+        width: 169
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7c90d9070f7074f938a4b46f8eb71a
+      internalID: 10122424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es-removebg_129"
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 286
+        width: 166
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a523809f339fd418dbe13da952e332
+      internalID: 1544862544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "bot\xF5es-removebg_0": -2028376306
+      "bot\xF5es-removebg_1": 141133394
+      "bot\xF5es-removebg_10": -1405427063
+      "bot\xF5es-removebg_100": 506816281
+      "bot\xF5es-removebg_101": 1157242357
+      "bot\xF5es-removebg_102": 1381381579
+      "bot\xF5es-removebg_103": 1450217553
+      "bot\xF5es-removebg_104": 407548949
+      "bot\xF5es-removebg_105": 2123138947
+      "bot\xF5es-removebg_106": 316149916
+      "bot\xF5es-removebg_107": -1102924060
+      "bot\xF5es-removebg_108": 1064113007
+      "bot\xF5es-removebg_109": -579030083
+      "bot\xF5es-removebg_11": 144710640
+      "bot\xF5es-removebg_110": 1094585898
+      "bot\xF5es-removebg_111": -1562486738
+      "bot\xF5es-removebg_112": -2007881160
+      "bot\xF5es-removebg_113": 402717218
+      "bot\xF5es-removebg_114": -1995847349
+      "bot\xF5es-removebg_115": -683572946
+      "bot\xF5es-removebg_116": -658593223
+      "bot\xF5es-removebg_117": -956676441
+      "bot\xF5es-removebg_118": 779030482
+      "bot\xF5es-removebg_119": 971526905
+      "bot\xF5es-removebg_12": 1166777097
+      "bot\xF5es-removebg_120": 2066733259
+      "bot\xF5es-removebg_121": -1670826650
+      "bot\xF5es-removebg_122": 595408558
+      "bot\xF5es-removebg_123": 629802894
+      "bot\xF5es-removebg_124": -1782524813
+      "bot\xF5es-removebg_125": -1712973910
+      "bot\xF5es-removebg_126": -1946771565
+      "bot\xF5es-removebg_127": -146572087
+      "bot\xF5es-removebg_128": 10122424
+      "bot\xF5es-removebg_129": 1544862544
+      "bot\xF5es-removebg_13": 802763083
+      "bot\xF5es-removebg_14": -1896709247
+      "bot\xF5es-removebg_15": -2037094300
+      "bot\xF5es-removebg_16": -805502480
+      "bot\xF5es-removebg_17": 8540252
+      "bot\xF5es-removebg_18": -1686959383
+      "bot\xF5es-removebg_19": 2101433149
+      "bot\xF5es-removebg_2": -1096846476
+      "bot\xF5es-removebg_20": 1469864921
+      "bot\xF5es-removebg_21": -233031421
+      "bot\xF5es-removebg_22": -800938767
+      "bot\xF5es-removebg_23": -636752041
+      "bot\xF5es-removebg_24": 998018719
+      "bot\xF5es-removebg_25": -1726940268
+      "bot\xF5es-removebg_26": 1602580125
+      "bot\xF5es-removebg_27": 1588063413
+      "bot\xF5es-removebg_28": -1592804564
+      "bot\xF5es-removebg_29": -1561460900
+      "bot\xF5es-removebg_3": 1110361494
+      "bot\xF5es-removebg_30": -365352727
+      "bot\xF5es-removebg_31": -509753257
+      "bot\xF5es-removebg_32": -593259406
+      "bot\xF5es-removebg_33": -932091986
+      "bot\xF5es-removebg_34": 143111078
+      "bot\xF5es-removebg_35": 1518336753
+      "bot\xF5es-removebg_36": -593146040
+      "bot\xF5es-removebg_37": 1949435597
+      "bot\xF5es-removebg_38": -1414433021
+      "bot\xF5es-removebg_39": 2041520631
+      "bot\xF5es-removebg_4": 815700697
+      "bot\xF5es-removebg_40": -127062407
+      "bot\xF5es-removebg_41": -2147343199
+      "bot\xF5es-removebg_42": 1337865268
+      "bot\xF5es-removebg_43": 889110659
+      "bot\xF5es-removebg_44": -1436799532
+      "bot\xF5es-removebg_45": -1816184592
+      "bot\xF5es-removebg_46": 749884193
+      "bot\xF5es-removebg_47": 1100768518
+      "bot\xF5es-removebg_48": 955017276
+      "bot\xF5es-removebg_49": 2129844282
+      "bot\xF5es-removebg_5": 95810917
+      "bot\xF5es-removebg_50": -1017412637
+      "bot\xF5es-removebg_51": -842969687
+      "bot\xF5es-removebg_52": -1618542438
+      "bot\xF5es-removebg_53": 1442435516
+      "bot\xF5es-removebg_54": 1558171919
+      "bot\xF5es-removebg_55": -135149351
+      "bot\xF5es-removebg_56": 296931561
+      "bot\xF5es-removebg_57": -2111136533
+      "bot\xF5es-removebg_58": -48802700
+      "bot\xF5es-removebg_59": 1381357354
+      "bot\xF5es-removebg_6": -1492129470
+      "bot\xF5es-removebg_60": 2120446991
+      "bot\xF5es-removebg_61": -1887220698
+      "bot\xF5es-removebg_62": 293400876
+      "bot\xF5es-removebg_63": -879181990
+      "bot\xF5es-removebg_64": -1695098883
+      "bot\xF5es-removebg_65": -1232221960
+      "bot\xF5es-removebg_66": 1204438717
+      "bot\xF5es-removebg_67": -1331988012
+      "bot\xF5es-removebg_68": -1907541629
+      "bot\xF5es-removebg_69": -1102650805
+      "bot\xF5es-removebg_7": -1967246623
+      "bot\xF5es-removebg_70": 911973205
+      "bot\xF5es-removebg_71": 1843682504
+      "bot\xF5es-removebg_72": -50335931
+      "bot\xF5es-removebg_73": 1759518262
+      "bot\xF5es-removebg_74": 1261833704
+      "bot\xF5es-removebg_75": -1839789981
+      "bot\xF5es-removebg_76": -1529575905
+      "bot\xF5es-removebg_77": -1981038980
+      "bot\xF5es-removebg_78": -1866812225
+      "bot\xF5es-removebg_79": 807981279
+      "bot\xF5es-removebg_8": 1473540401
+      "bot\xF5es-removebg_80": 2050422045
+      "bot\xF5es-removebg_81": -547653160
+      "bot\xF5es-removebg_82": 1006750510
+      "bot\xF5es-removebg_83": 1682520632
+      "bot\xF5es-removebg_84": 29020948
+      "bot\xF5es-removebg_85": -440118659
+      "bot\xF5es-removebg_86": 48761011
+      "bot\xF5es-removebg_87": 1292712856
+      "bot\xF5es-removebg_88": 1919106643
+      "bot\xF5es-removebg_89": -1457206791
+      "bot\xF5es-removebg_9": -1243952094
+      "bot\xF5es-removebg_90": -2003765281
+      "bot\xF5es-removebg_91": 2141467301
+      "bot\xF5es-removebg_92": 885708141
+      "bot\xF5es-removebg_93": -149265444
+      "bot\xF5es-removebg_94": 994375317
+      "bot\xF5es-removebg_95": 159233475
+      "bot\xF5es-removebg_96": -1511640857
+      "bot\xF5es-removebg_97": 1029682213
+      "bot\xF5es-removebg_98": 1150939921
+      "bot\xF5es-removebg_99": -1562854342
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

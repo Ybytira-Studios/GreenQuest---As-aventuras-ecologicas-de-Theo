@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,280 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: beachPalmTrees_0
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 381
-        width: 46
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d996c0e6d97d334ab6247f2e526b3e5
-      internalID: 1773167769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_1
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 264
-        width: 77
-        height: 36
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa17d3c1f1bab544eb581cdac7a5d0ed
-      internalID: -1800632522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_2
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 320
-        width: 46
-        height: 58
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26dc2ba852f30004eaec4edf98e905d0
-      internalID: -842496688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_3
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 319
-        width: 46
-        height: 58
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e5e225a67874d142ba10b4c4baaa193
-      internalID: 1392386422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_4
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 322
-        width: 44
-        height: 54
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03247d446f7732d49aa4dda8580f86f7
-      internalID: 2140244798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_5
-      rect:
-        serializedVersion: 2
-        x: 381
-        y: 324
-        width: 44
-        height: 54
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9d8de9dfde726b4b9ab37d7059cdb2d
-      internalID: -812785265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_6
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 241
-        width: 77
-        height: 58
-      alignment: 9
-      pivot: {x: 0.4787899, y: 0.306316}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f07ed4fe3b482a34485a6c467936b9dd
-      internalID: -1286913613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_7
-      rect:
-        serializedVersion: 2
-        x: 311
-        y: 240
-        width: 77
-        height: 58
-      alignment: 9
-      pivot: {x: 0.49469706, y: 0.2992764}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c2afa819f503da44ac3f4b7adfa1ed2
-      internalID: -1770966954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_8
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 167
-        width: 72
-        height: 45
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f581bb57a357cd349a2b65db83df1457
-      internalID: 1402507124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_9
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 141
-        width: 71
-        height: 81
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6439c486ed899c4c947a8fe092d6f0d
-      internalID: -47980439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_10
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 141
-        width: 71
-        height: 81
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfa616a6e4938374fa5f00e1a2135cae
-      internalID: -772287680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_11
-      rect:
-        serializedVersion: 2
-        x: 373
-        y: 141
-        width: 71
-        height: 81
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4a300a2561f7204ca8eaa67543854a6
-      internalID: -2037479627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beachPalmTrees_12
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 141
-        width: 71
-        height: 81
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d4c1f701b2c3454da8c034aa4e391a4
-      internalID: 1494576882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -379,20 +106,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      beachPalmTrees_0: 1773167769
-      beachPalmTrees_1: -1800632522
-      beachPalmTrees_10: -772287680
-      beachPalmTrees_11: -2037479627
-      beachPalmTrees_12: 1494576882
-      beachPalmTrees_2: -842496688
-      beachPalmTrees_3: 1392386422
-      beachPalmTrees_4: 2140244798
-      beachPalmTrees_5: -812785265
-      beachPalmTrees_6: -1286913613
-      beachPalmTrees_7: -1770966954
-      beachPalmTrees_8: 1402507124
-      beachPalmTrees_9: -47980439
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
