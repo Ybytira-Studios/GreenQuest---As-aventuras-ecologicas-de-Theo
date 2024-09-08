@@ -13,6 +13,7 @@ TagManager:
   - wall
   - seaGround
   - AnimalMarinho
+  - claw
   layers:
   - Default
   - TransparentFX

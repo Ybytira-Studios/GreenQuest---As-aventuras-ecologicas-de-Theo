@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GrabObject : MonoBehaviour
 {
     public float interactDistance = 1f;
     public Image imageKeyE;
-    public string[] trashTags = { "GlassTrash", "MetalTrash", "PlasticTrash", "PaperTrash" };
+    public string[] trashTags = { "GlassTrash", "MetalTrash", "PlasticTrash", "PaperTrash", "claw"};
     public PlayerController playerController;
     public KeyCode interactKey = KeyCode.E;
     public Vector2 carryOffset = new Vector2(1f, 0f); // Offset para posicionar o objeto coletado à frente do jogador
@@ -16,12 +17,17 @@ public class GrabObject : MonoBehaviour
     private GameObject carriedObject;
     private Rigidbody2D carriedRigidbody;
     private int grabCounter = 0;
+    private bool isInRiverScene;
+    
     public float volumeGrabbing;
 
     void Start()
     {
+        isInRiverScene = SceneManager.GetActiveScene().name == "Fase4_river";
+        if(!isInRiverScene){
         playerController.grabAudioSource.clip = playerController.soundEffects[1];
         playerController.grabAudioSource.volume = volumeGrabbing;
+        }
         imageKeyE.gameObject.SetActive(false);
     }
 
@@ -49,7 +55,9 @@ public class GrabObject : MonoBehaviour
         {
             if (IsTrashObject(objCollider.tag))
             {
-                playerController.grabAudioSource.Play();
+                if(!isInRiverScene){
+                    playerController.grabAudioSource.Play();
+                }
                 carriedObject = objCollider.gameObject;
                 carriedRigidbody = carriedObject.GetComponent<Rigidbody2D>();
                 UpdateCarriedObjectPosition();
@@ -74,10 +82,12 @@ public class GrabObject : MonoBehaviour
 
     void DropObject()
     {
+        if(!isInRiverScene){
         if (carriedObject != null)
         {
             carriedObject = null;
             carriedRigidbody = null;
+        }
         }
     }
 
