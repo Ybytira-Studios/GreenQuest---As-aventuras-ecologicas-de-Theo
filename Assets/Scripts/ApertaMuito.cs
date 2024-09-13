@@ -8,6 +8,8 @@ public class ApertaMuito : MonoBehaviour
     public float decreaseRate = 0.05f; // Taxa de diminuição da variável
     public float limit = 1f; // Limite para a variável
 
+    public bool isCompleted = false;
+
     public float timeBetweenPresses = 0.5f; // Tempo necessário entre toques da tecla
     private float timeSinceLastPress = 0f; // Tempo desde o último toque
 
@@ -20,6 +22,8 @@ public class ApertaMuito : MonoBehaviour
 
     public GameObject panel; // Referência ao painel
     private bool isPanelActive; // Estado do painel
+
+    public PlayerControllerRiver playerControllerRiver; // Referência ao controle do jogador
 
     void Start()
     {
@@ -43,6 +47,12 @@ public class ApertaMuito : MonoBehaviour
         {
             panel.SetActive(false); // Certifica-se de que o painel está desativado no início
         }
+
+        // Impede o movimento do jogador enquanto o painel está ativo
+        if (playerControllerRiver != null)
+        {
+            playerControllerRiver.canMove = false;
+        }
     }
 
     void Update()
@@ -55,7 +65,6 @@ public class ApertaMuito : MonoBehaviour
             {
                 variableValue += increaseAmount;
                 timeSinceLastPress = 0f; // Reseta o tempo desde o último toque
-                Debug.Log("Increased: " + variableValue); // Log para depuração
             }
 
             variableValue -= decreaseRate * Time.deltaTime;
@@ -85,9 +94,10 @@ public class ApertaMuito : MonoBehaviour
             slider.value = variableValue; // Define o valor do slider
         }
 
-        // Se a variável atingir o limite, feche o painel e troque o sprite
+        // Se a variável atingir o limite, feche o painel, troque o sprite e permita que o jogador se mova novamente
         if (variableValue >= limit)
         {
+            isCompleted = true;
             if (panel != null)
             {
                 panel.SetActive(false); // Fecha o painel
@@ -96,6 +106,12 @@ public class ApertaMuito : MonoBehaviour
             if (targetSpriteRenderer != null && newSprite != null)
             {
                 targetSpriteRenderer.sprite = newSprite; // Troca o sprite
+            }
+
+            // Permite que o jogador volte a se mover
+            if (playerControllerRiver != null)
+            {
+                playerControllerRiver.canMove = true;
             }
         }
     }

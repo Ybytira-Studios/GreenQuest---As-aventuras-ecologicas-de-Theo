@@ -14,7 +14,7 @@ public class MoveObjectOnKeyPress : MonoBehaviour
     {
         // Verifica se o jogador está segurando a garra
         GameObject carriedObject = grabObject.GetCarriedObject();
-        if (Input.GetKeyDown(KeyCode.Space) && !isMoving && carriedObject != null && carriedObject.tag == "claw")
+        if (Input.GetKeyDown(KeyCode.Q) && !isMoving && carriedObject != null && carriedObject.tag == "claw")
         {
             initialPosition = transform.position;
             targetPosition = new Vector3(initialPosition.x, initialPosition.y - 2f, initialPosition.z);
