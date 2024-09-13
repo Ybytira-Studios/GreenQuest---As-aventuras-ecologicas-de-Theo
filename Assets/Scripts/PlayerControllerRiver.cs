@@ -8,24 +8,33 @@ public class PlayerControllerRiver : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     private Vector2 playerDirection;
     public float playerSpeed;
-    // Start is called before the first frame update
-     void Start()
+    public bool canMove = true; // Variável que controla se o player pode se mover
+
+    void Start()
     {   
-        
         playerRigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-        playerDirection = new Vector2(moveX, moveY).normalized;
+        if (canMove) // O jogador só se move se puder
+        {
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
+            playerDirection = new Vector2(moveX, moveY).normalized;
+        }
+        else
+        {
+            playerDirection = Vector2.zero; // Impede movimento
+        }
     }
 
-    void FixedUpdate(){
-        playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
+    void FixedUpdate()
+    {
+        if (canMove)
+        {
+            playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
+        }
     }
 }
