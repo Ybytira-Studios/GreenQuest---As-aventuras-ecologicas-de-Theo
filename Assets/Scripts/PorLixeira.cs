@@ -1,26 +1,38 @@
+using Microsoft.Unity.VisualStudio.Editor;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PorLixeira : MonoBehaviour
 {
     public GameObject panel;
     public ApertaMuito apertaMuito;
+    public GameObject imageKeyE;
     public PlayerControllerRiver playerControllerRiver;
     private bool isPlayerNearby = false; // Verifica se o jogador está perto
     public bool isPanelActive = false; // Estado do painel
 
     void Start()
     {
-        //panel.SetActive(false); // Certifica-se de que o painel está desativado no início
+        imageKeyE.SetActive(false);
     }
 
     void Update()
     {
-        // Verifica se o jogador está perto e pressionou a tecla "E"
+        if(apertaMuito.isCompleted)
+        {
+            imageKeyE.SetActive(false);
+        }
+        else 
+        {
+            imageKeyE.SetActive(isPlayerNearby);
+        }
+
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            if(!apertaMuito.isCompleted){
-            // Alterna o estado do painel
-            TogglePanel();
+            if(!apertaMuito.isCompleted)
+            {
+                // Alterna o estado do painel
+                TogglePanel();
             }
         }
     }
@@ -39,17 +51,17 @@ public class PorLixeira : MonoBehaviour
         Debug.Log(isPanelActive ? "Painel aberto." : "Painel fechado.");
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             isPlayerNearby = true; // O jogador está perto
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnCollisionExit2D(Collision2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             isPlayerNearby = false; // O jogador se afastou
         }

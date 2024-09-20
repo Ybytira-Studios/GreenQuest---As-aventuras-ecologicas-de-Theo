@@ -8,12 +8,16 @@ public class PlayerControllerRiver : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     private Vector2 playerDirection;
     public float playerSpeed;
+    public AudioClip[] soundEffects;
+    public float stepVolume = 0.05f;
+    public AudioSource footStepAudioSource;
     public bool canMove = true; // Variável que controla se o player pode se mover
 
     void Start()
     {   
         playerRigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        footStepAudioSource.volume = stepVolume;
     }
 
     void Update()
@@ -34,7 +38,21 @@ public class PlayerControllerRiver : MonoBehaviour
     {
         if (canMove)
         {
-            playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
+             playerRigidBody2D.MovePosition(playerRigidBody2D.position + playerDirection * playerSpeed * Time.fixedDeltaTime);
+        
+        if(footStepAudioSource != null){
+            if (playerDirection.sqrMagnitude > 0 && !footStepAudioSource.isPlaying)
+            {
+                footStepAudioSource.clip = soundEffects[0];
+                footStepAudioSource.loop = true;
+                footStepAudioSource.Play();
+            } 
+
+            if(playerDirection.sqrMagnitude <= 00 && footStepAudioSource.isPlaying)
+            {
+                footStepAudioSource.Stop();
+            }
+        }
         }
     }
 }

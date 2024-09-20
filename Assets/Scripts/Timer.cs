@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     public float timeLevel = 120f; // Inicialize o tempo
     public bool timerRunning = true; // Controle se o timer está ativo
     public PlayerController playerController;
+    public PlayerControllerRiver playerControllerRiver;
     public StarController starController;
 
     void Update()
@@ -25,16 +26,22 @@ public class Timer : MonoBehaviour
             if (timeLevel <= 0)
             {
                 timerRunning = false; // Para o timer
+                if(SceneManager.GetActiveScene().name == "Fase1_beach"){
                 playerController.enabled = false; // Desativa o andar do player
+                } else if(SceneManager.GetActiveScene().name == "Fase4_river"){
+                playerControllerRiver.enabled = false; // Desativa o andar do player
+                }
                 playerAnimator.SetInteger("Movimento", 0);
-                playerController.footStepAudioSource.Stop();
+                playerControllerRiver.footStepAudioSource.Stop();
                 timeLevel = 0; // Certifica que o tempo não fica negativo
                 //endText.gameObject.SetActive(true); // Exibe o texto de fim
                 Invoke("RestartLevel", 1.5f); // Reinicia o nível após 3 segundos
             }
         }
 
-        starController.CheckStars(timeLevel); // Verifica o número de estrelas com base no tempo restante
+        if(SceneManager.GetActiveScene().name == "Fase1_beach"){
+                starController.CheckStars(timeLevel); // Verifica o número de estrelas com base no tempo restante
+                }
     }
 
     void RestartLevel()

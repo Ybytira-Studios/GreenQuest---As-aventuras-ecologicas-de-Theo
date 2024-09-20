@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ProgressCounter : MonoBehaviour
 {
+    public int miniGamesCounter;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class ProgressCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        print(miniGamesCounter);
     }
 }

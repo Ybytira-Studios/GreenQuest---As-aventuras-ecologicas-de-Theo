@@ -7,9 +7,9 @@ public class ApertaMuito : MonoBehaviour
     public float increaseAmount = 0.1f; // Quantidade que aumenta a variável
     public float decreaseRate = 0.05f; // Taxa de diminuição da variável
     public float limit = 1f; // Limite para a variável
-
+    
     public bool isCompleted = false;
-
+    public ProgressCounter progressCounter;
     public float timeBetweenPresses = 0.5f; // Tempo necessário entre toques da tecla
     private float timeSinceLastPress = 0f; // Tempo desde o último toque
 
@@ -97,6 +97,7 @@ public class ApertaMuito : MonoBehaviour
         // Se a variável atingir o limite, feche o painel, troque o sprite e permita que o jogador se mova novamente
         if (variableValue >= limit)
         {
+            progressCounter.miniGamesCounter++;
             isCompleted = true;
             if (panel != null)
             {
