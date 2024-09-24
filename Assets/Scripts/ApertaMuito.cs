@@ -7,6 +7,7 @@ public class ApertaMuito : MonoBehaviour
     public float increaseAmount = 0.1f; // Quantidade que aumenta a variável
     public float decreaseRate = 0.05f; // Taxa de diminuição da variável
     public float limit = 1f; // Limite para a variável
+    public PorLixeira porLixeira;
     
     public bool isCompleted = false;
     public ProgressCounter progressCounter;
@@ -97,13 +98,14 @@ public class ApertaMuito : MonoBehaviour
         // Se a variável atingir o limite, feche o painel, troque o sprite e permita que o jogador se mova novamente
         if (variableValue >= limit)
         {
-            progressCounter.miniGamesCounter++;
+            progressCounter.miniGamesCompletedCounter++;
             isCompleted = true;
             if (panel != null)
             {
                 panel.SetActive(false); // Fecha o painel
             }
-
+            porLixeira.isAvaible = true;
+            print("Lixeira agora disponível.");
             if (targetSpriteRenderer != null && newSprite != null)
             {
                 targetSpriteRenderer.sprite = newSprite; // Troca o sprite

@@ -63,7 +63,6 @@ public class MoveObjectOnKeyPress : MonoBehaviour
         if (other.CompareTag("Trash"))
         {
             Destroy(other.gameObject); // Destrói o objeto coletável
-            print("Destroi o lixo.");
         }
     }
 

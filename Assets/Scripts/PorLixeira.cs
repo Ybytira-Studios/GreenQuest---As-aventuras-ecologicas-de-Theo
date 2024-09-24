@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PorLixeira : MonoBehaviour
 {
+    public bool isAvaible;
     public GameObject panel;
     public ApertaMuito apertaMuito;
     public GameObject imageKeyE;
