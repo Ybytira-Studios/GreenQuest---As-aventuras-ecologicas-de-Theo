@@ -11,6 +11,7 @@ public class GrabObject : MonoBehaviour
     public Image imageKeyE;
     public string[] trashTags = { "GlassTrash", "MetalTrash", "PlasticTrash", "PaperTrash", "claw"};
     public PlayerController playerController;
+    public PlayerControllerRiver playerControllerRiver;
     public KeyCode interactKey = KeyCode.E;
     public Vector2 carryOffset = new Vector2(1f, 0f); // Offset para posicionar o objeto coletado à frente do jogador
     public Vector2 imageOffset = new Vector2(0f, 2f); // Offset para posicionar a imagem da tecla acima do jogador
@@ -64,6 +65,8 @@ public class GrabObject : MonoBehaviour
             {
                 if(!isInRiverScene){
                     playerController.grabAudioSource.Play();
+                } else if(isInRiverScene) {
+                    playerControllerRiver.grabGarraAudioSource.Play();
                 }
                 isGrabbing = true;
                 carriedObject = objCollider.gameObject;

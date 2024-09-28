@@ -1,14 +1,19 @@
 using UnityEngine;
 
-public class MoveObjectOnKeyPress : MonoBehaviour
+public class ClawController : MonoBehaviour
 {
-    public PlayerControllerRiver playerController;
+    public PlayerControllerRiver playerControllerRiver;
     public GrabObject grabObject;
+    public AudioSource audioSourceClaw;
     public Vector3 initialPosition;
     public Vector3 targetPosition;
-    public float speed = 2.0f;
+    public float speed = 4.0f;
     private bool movingDown = false;
     private bool isMoving = false;
+
+    void Start(){
+        playerControllerRiver.disparaGarraAudioSource.clip = playerControllerRiver.soundEffects[2];
+    }
 
     void Update()
     {
@@ -16,11 +21,12 @@ public class MoveObjectOnKeyPress : MonoBehaviour
         GameObject carriedObject = grabObject.GetCarriedObject();
         if (Input.GetKeyDown(KeyCode.Q) && !isMoving && carriedObject != null && carriedObject.tag == "claw")
         {
+            
+            playerControllerRiver.disparaGarraAudioSource.Play();
             initialPosition = transform.position;
-            targetPosition = new Vector3(initialPosition.x, initialPosition.y - 2f, initialPosition.z);
-
+            targetPosition = new Vector3(initialPosition.x, initialPosition.y - 3f, initialPosition.z);
             grabObject.DropObject(); // Dropa o objeto
-            playerController.canMove = false; // Impede o movimento do jogador
+            playerControllerRiver.canMove = false; // Impede o movimento do jogador
             isMoving = true; // Ativa o movimento da garra
         }
 
@@ -53,7 +59,7 @@ public class MoveObjectOnKeyPress : MonoBehaviour
                 isMoving = false; // Movimento terminou
                 grabObject.isGrabbing = false;
                 grabObject.InteractWithObject(); // Recolhe o objeto automaticamente
-                playerController.canMove = true; // Permite que o jogador volte a se mover
+                playerControllerRiver.canMove = true; // Permite que o jogador volte a se mover
             }
         }
     }
@@ -62,6 +68,7 @@ public class MoveObjectOnKeyPress : MonoBehaviour
     {
         if (other.CompareTag("Trash"))
         {
+            audioSourceClaw.Play();
             Destroy(other.gameObject); // Destrói o objeto coletável
         }
     }

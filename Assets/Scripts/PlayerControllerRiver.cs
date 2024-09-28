@@ -9,8 +9,10 @@ public class PlayerControllerRiver : MonoBehaviour
     private Vector2 playerDirection;
     public float playerSpeed;
     public AudioClip[] soundEffects;
-    public float stepVolume = 0.05f;
+    public float stepVolume = 1.5f;
     public AudioSource footStepAudioSource;
+    public AudioSource disparaGarraAudioSource;
+    public AudioSource grabGarraAudioSource;
     public bool canMove = true; // Variável que controla se o player pode se mover
 
     void Start()

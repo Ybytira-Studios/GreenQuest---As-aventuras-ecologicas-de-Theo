@@ -15,6 +15,7 @@ public class PorLixeira : MonoBehaviour
     void Start()
     {
         imageKeyE.SetActive(false);
+        panel.SetActive(false);
     }
 
     void Update()
@@ -39,18 +40,23 @@ public class PorLixeira : MonoBehaviour
     }
 
     void TogglePanel()
+{
+    isPanelActive = !isPanelActive; // Alterna o estado do painel
+
+    print(isPanelActive);
+
+    panel.SetActive(isPanelActive); // Ativa ou desativa o painel com base no novo estado
+
+    if (isPanelActive)
     {
-        isPanelActive = !isPanelActive; // Alterna o estado do painel
-
-        panel.SetActive(isPanelActive); // Ativa ou desativa o painel com base no novo estado
-
-        if (playerControllerRiver != null)
-        {
-            playerControllerRiver.canMove = !isPanelActive; // Impede o jogador de se mover se o painel estiver ativo
-        }
-
-        Debug.Log(isPanelActive ? "Painel aberto." : "Painel fechado.");
+        panel.SetActive(true); 
     }
+
+    if (playerControllerRiver != null)
+    {
+        playerControllerRiver.canMove = !isPanelActive; // Impede o jogador de se mover se o painel estiver ativo
+    }
+}
 
     void OnCollisionEnter2D(Collision2D other)
     {
