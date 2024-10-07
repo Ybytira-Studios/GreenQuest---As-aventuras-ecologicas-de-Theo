@@ -16,23 +16,40 @@ public class StartLevelRiver : MonoBehaviour
     public Animator playerAnimator;
     public AudioSource audioSourcePlayer;
     public AudioSource audioSourceMusicaRiver;
-    private bool canSkip;
-    public KeyCode keyCodeSkip = KeyCode.Space;
+    public Button skipButton; // Button to skip the dialogue
+    private bool skipPanel = false; // Flag to check if the player wants to skip
 
     void Start()
     {
         topPanel.SetActive(false);
         timer.timerRunning = false;
         playerControllerRiver.enabled = false;
+        
+        skipButton.gameObject.SetActive(true); // Ensure the button is active
+        skipButton.onClick.AddListener(SkipDialogue); // Add the skip function to the button listener
+        
         StartCoroutine(ShowIntroPanels());
+    }
+
+    // This method will be called when the skip button is pressed
+    void SkipDialogue()
+    {
+        skipPanel = true;
     }
 
     IEnumerator ShowIntroPanels()
     {
+        // Show the first panel
         yield return StartCoroutine(ShowIntroPanel(introPanel));
+
+        // Wait for the interval before showing the second panel
         yield return new WaitForSeconds(intervalBetweenPanels);
+
+        // Show the second panel
         yield return StartCoroutine(ShowIntroPanel(secondPanel));
-        StartGame(); // Start the game after the second panel
+
+        // Start the game after the second panel
+        StartGame();
     }
 
     IEnumerator ShowIntroPanel(CanvasGroup panel)
@@ -42,8 +59,16 @@ public class StartLevelRiver : MonoBehaviour
         // Fade in
         yield return StartCoroutine(FadeIn(panel, fadeDuration));
 
-        // Wait for the display duration
-        yield return new WaitForSeconds(displayDuration);
+        // Check if the panel should be skipped
+        float elapsedTime = 0f;
+        while (elapsedTime < displayDuration && !skipPanel)
+        {
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Reset the skip flag for the next panel
+        skipPanel = false;
 
         // Fade out
         yield return StartCoroutine(FadeOut(panel, fadeDuration));
@@ -80,5 +105,6 @@ public class StartLevelRiver : MonoBehaviour
         playerControllerRiver.enabled = true;
         timer.timerRunning = true;
         Debug.Log("Fase iniciada!");
+        skipButton.gameObject.SetActive(false); // Hide the skip button once the game starts
     }
 }
