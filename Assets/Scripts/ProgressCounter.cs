@@ -14,9 +14,9 @@ public class ProgressCounter : MonoBehaviour
     public Timer timer;
     public Image timerIcon;
     public PlayerControllerRiver playerControllerRiver;
-    //public GameObject finishLevel;
-    //public TMPro.TextMeshProUGUI finalTimer;
-    //public Animator playerAnimator;
+    public GameObject finishLevel;
+    public TMPro.TextMeshProUGUI finalTimer;
+    public Animator playerAnimator;
     public AudioSource audioSourcePlayer;
 
     public string tagToCheck = "Trash"; //tag para verificar
@@ -24,10 +24,10 @@ public class ProgressCounter : MonoBehaviour
     void Start()
     {
          //Inicialmente, deixe o texto de vitória desativado
-        //if (finishLevel != null)
-        //{
-           //finishLevel.SetActive(false);
-        //}
+        if (finishLevel != null)
+        {
+           finishLevel.SetActive(false);
+        }
     }
 
 
@@ -47,13 +47,11 @@ public class ProgressCounter : MonoBehaviour
             timer.timerRunning = false; // Para o timer
             Debug.Log("Timer parado, todos os objetos foram coletados e minigames completados.");
             playerControllerRiver.enabled = false;
-            timer.gameObject.SetActive(false);
             timerIcon.gameObject.SetActive(false);
-            //finishLevel.SetActive(true);
-            //finalTimer.text = "Tempo restante: " + timer.timeLevel.ToString("F1") + "s";
+            finishLevel.SetActive(true);
+            finalTimer.text = "Tempo restante: " + timer.timeLevel.ToString("F1") + "s";
             playerControllerRiver.footStepAudioSource.Stop();
             audioSourcePlayer.Stop();
-            SceneManager.LoadScene("Fase1_beach");
         }
 }
 
