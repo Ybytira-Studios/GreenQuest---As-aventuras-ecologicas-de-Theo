@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972943251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c93b2b0346b34ef4cb7cf048978ca6db, type: 3}
+  m_Script: {fileID: 11500000, guid: 3191cc43e5c57eb479fadf27870488b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCObj: {fileID: 1057410410}
@@ -1192,43 +1192,9 @@ MonoBehaviour:
   speechText: {fileID: 619855287}
   actorNameText: {fileID: 264173511}
   nextButton: {fileID: 487175764}
-  typingSpeed: 0.1
-  dialogueCs:
-  - profile: {fileID: 21300000, guid: 7b338edd234713f4da2859af6280b6cd, type: 3}
-    actorName: "M\xE3e do Theo"
-    setences:
-    - "Nessas f\xE9rias vamos ajudar a LAL, a Liga Anti Lixo, ela \xE9 uma ONG, eles
-      querem limpar a cidade e trazer os turistas de volta. "
-    - "Quem sabe assim seu pai n\xE3o pode voltar para casa? Mas para a LAL realmente
-      conseguir trazer  os turistas de volta. Todos da cidade devem ajudar. "
-    - "\xC9 necess\xE1rio que todos se unam para superarmos os problemas da cidade
-      ter crescido muito r\xE1pido"
-  - profile: {fileID: -935666207, guid: a9856bb8e5bf71b4fa0dbeb0ba9a1c93, type: 3}
-    actorName: Theo
-    setences:
-    - "S\xE9rio, m\xE3e? Que legal! Quando vamos come\xE7ar?"
-  - profile: {fileID: 21300000, guid: 7b338edd234713f4da2859af6280b6cd, type: 3}
-    actorName: "M\xE3e do Theo"
-    setences:
-    - "Amanh\xE3 de manh\xE3 vamos ajudar a limpar a praia."
-  - profile: {fileID: -935666207, guid: a9856bb8e5bf71b4fa0dbeb0ba9a1c93, type: 3}
-    actorName: Theo
-    setences:
-    - "Isso \xE9 demais!"
-  - profile: {fileID: 21300000, guid: 7b338edd234713f4da2859af6280b6cd, type: 3}
-    actorName: "M\xE3e do Theo"
-    setences:
-    - "Aproveite hoje para ficar no computador porque amanh\xE3 acordamos cedo!"
-  - profile: {fileID: -935666207, guid: a9856bb8e5bf71b4fa0dbeb0ba9a1c93, type: 3}
-    actorName: Theo
-    setences:
-    - "Pode deixar m\xE3e!"
-  - profile: {fileID: 21300000, guid: 2e4c41b0166da5c4ca4c4a83e3e34234, type: 3}
-    actorName: Narrador
-    setences:
-    - "Theo estava empolgado. Quem sabe, ajudando a limpar a cidade, seu pai n\xE3o
-      poderia voltar para casa mais r\xE1pido? Amanh\xE3 seria um dia importante."
-  nextSceneName: Fase1_beach
+  typingSpeed: 2
+  dialogueCs: []
+  nextSceneName: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

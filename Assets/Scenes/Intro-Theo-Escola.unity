@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972943251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3643401ddd481544a8e8360286acb149, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e7cdf35f4ccc5149977ebc28c1d59c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueObj: {fileID: 1057410410}
@@ -1192,27 +1192,9 @@ MonoBehaviour:
   speechText: {fileID: 619855287}
   actorNameText: {fileID: 264173511}
   nextButton: {fileID: 487175764}
-  typingSpeed: 0.1
-  dialogues:
-  - profile: {fileID: 21300000, guid: 2e4c41b0166da5c4ca4c4a83e3e34234, type: 3}
-    actorName: Narrador
-    setences:
-    - "Theodoro Corr\xEAa J\xFAnior \xE9 um menino de 9 anos alegre e inquieto. Ele
-      tem uma imagina\xE7\xE3o f\xE9rtil e, apesar de achar a escola entediante,
-      sempre vai bem"
-    - ' mas ultimamente, Theo estava triste.'
-    - "Seu pai teve que se mudar para a cidade vizinha para trabalhar, pois a polui\xE7\xE3o
-      afastou os turistas da Ba\xEDa da Aventura."
-  - profile: {fileID: 21300000, guid: 62d3d92149ee5ee4dba150cc668f31a8, type: 3}
-    actorName: "Jo\xE3o (melhor amigo de theo)"
-    setences:
-    - "E a\xED, Theo! Animado para jogarmos a noite toda? Finalmente f\xE9rias!!!"
-  - profile: {fileID: -935666207, guid: a9856bb8e5bf71b4fa0dbeb0ba9a1c93, type: 3}
-    actorName: Theo
-    setences:
-    - "Oi, Jo\xE3o, bora, agora que meu pai est\xE1 longe n\xE3o tenho ningu\xE9m
-      para surfar comigo, como sempre a gente fazia\u2026"
-  nextSceneName: Intro-Theo-Quarto
+  typingSpeed: 2
+  dialogues: []
+  nextSceneName: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

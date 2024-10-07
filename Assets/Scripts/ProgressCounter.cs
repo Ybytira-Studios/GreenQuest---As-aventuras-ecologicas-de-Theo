@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ProgressCounter : MonoBehaviour
 {
@@ -52,6 +53,7 @@ public class ProgressCounter : MonoBehaviour
             //finalTimer.text = "Tempo restante: " + timer.timeLevel.ToString("F1") + "s";
             playerControllerRiver.footStepAudioSource.Stop();
             audioSourcePlayer.Stop();
+            SceneManager.LoadScene("Fase1_beach");
         }
 }
 

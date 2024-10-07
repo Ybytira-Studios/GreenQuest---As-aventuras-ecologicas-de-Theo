@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972943251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99db7246d38336346afa8afaef0076e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 256917c473aa4114899871a92b553582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueQObj: {fileID: 1057410410}
@@ -1192,21 +1192,9 @@ MonoBehaviour:
   speechText: {fileID: 619855287}
   actorNameText: {fileID: 264173511}
   nextButton: {fileID: 487175764}
-  typingSpeed: 0.1
-  dialogueQs:
-  - profile: {fileID: 21300000, guid: 2e4c41b0166da5c4ca4c4a83e3e34234, type: 3}
-    actorName: Narrador
-    setences:
-    - Theo vai para casa e vai direto para seu quarto.
-  - profile: {fileID: 21300000, guid: 7b338edd234713f4da2859af6280b6cd, type: 3}
-    actorName: "M\xE3e do Theo"
-    setences:
-    - "Theo, venha aqui! Estou na cozinha fazendo o almo\xE7o"
-  - profile: {fileID: -935666207, guid: a9856bb8e5bf71b4fa0dbeb0ba9a1c93, type: 3}
-    actorName: Theo
-    setences:
-    - "Ta bom m\xE3e, t\xF4 indo!"
-  nextSceneName: Intro-Theo-Cozinha
+  typingSpeed: 2
+  dialogueQs: []
+  nextSceneName: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

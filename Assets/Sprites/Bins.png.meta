@@ -180,6 +180,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Bins_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 41
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72b8b79122847340a669005dfb64360
+      internalID: 182993279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -195,6 +216,7 @@ TextureImporter:
       Bins_1: -1219002014
       Bins_2: 1279593587
       Bins_3: 1520465783
+      Bins_4: 182993279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

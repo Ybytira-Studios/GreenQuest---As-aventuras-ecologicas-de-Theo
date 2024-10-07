@@ -4,6 +4,7 @@ public class ClawController : MonoBehaviour
 {
     public PlayerControllerRiver playerControllerRiver;
     public GrabObject grabObject;
+    public GameObject pressQ;
     public AudioSource audioSourceClaw;
     public Vector3 initialPosition;
     public Vector3 targetPosition;
@@ -13,12 +14,21 @@ public class ClawController : MonoBehaviour
 
     void Start(){
         playerControllerRiver.disparaGarraAudioSource.clip = playerControllerRiver.soundEffects[2];
+        pressQ.SetActive(false);
     }
 
     void Update()
     {
         // Verifica se o jogador está segurando a garra
         GameObject carriedObject = grabObject.GetCarriedObject();
+        if (carriedObject != null && carriedObject.CompareTag("claw"))
+    {
+        pressQ.SetActive(true); // Mostra a indicação para pressionar Q
+    }
+    else
+    {
+        pressQ.SetActive(false); // Esconde a indicação se não estiver segurando a garra
+    }
         if (Input.GetKeyDown(KeyCode.Q) && !isMoving && carriedObject != null && carriedObject.tag == "claw")
         {
             
