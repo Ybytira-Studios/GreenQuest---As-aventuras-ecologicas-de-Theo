@@ -203,6 +203,9 @@ public class DialogueQControlCozinhaTheo : MonoBehaviour
         }
 
         dialogueQIndex++;
+    private void LoadNextScene()
+    {
+        SceneManager.LoadScene("Intro-Fase1");
     }
 
     private void AdjustImageSize(Image image, Sprite sprite)

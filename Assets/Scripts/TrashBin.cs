@@ -35,7 +35,6 @@ public class TrashBin : MonoBehaviour
         if (trashCount == 0)
         {
             Debug.Log("Todos os lixos foram coletados e destruídos!");
-            // Faça algo aqui, como ativar um próximo nível ou exibir uma mensagem de conclusão
         }
     }
 }

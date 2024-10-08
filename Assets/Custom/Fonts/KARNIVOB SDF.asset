@@ -73,9 +73,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.9
+    - _ScaleRatioB: 0.73125
+    - _ScaleRatioC: 0.73125
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -120,9 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: KARNIVOB SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -1708838763
   material: {fileID: -6732382140255118287}
-  materialHashCode: 0
+  materialHashCode: 670656789
   m_Version: 1.1.0
   m_SourceFontFileGUID: 750fd5d836bf8ff4f99cc844b78b7af5
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 750fd5d836bf8ff4f99cc844b78b7af5, type: 3}

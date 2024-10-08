@@ -7,6 +7,7 @@ public class StartLevelRiver : MonoBehaviour
 {
     public CanvasGroup dialoguePanel; // Painel de diálogo
     public TextMeshProUGUI dialogueText; // Texto do diálogo
+    public GameObject topPanel;
     public string[] dialogues; // Array de diálogos
     public float displayDuration = 3f; // Duração de cada diálogo
     public float fadeDuration = 1f; // Duração para fade in/out
@@ -20,6 +21,7 @@ public class StartLevelRiver : MonoBehaviour
 
     void Start()
     {
+        topPanel.SetActive(false);
         playerControllerRiver.enabled = false;
         timer.timerRunning = false;
         skipButton.onClick.AddListener(SkipDialogue);
@@ -94,6 +96,7 @@ public class StartLevelRiver : MonoBehaviour
 
     void EndDialogue()
     {
+        topPanel.SetActive(true);
         dialoguePanel.gameObject.SetActive(false);
         playerControllerRiver.enabled = true;
         timer.timerRunning = true;

@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerControllerRiver : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody2D;
+    public Animator playerAnimator;
     public SpriteRenderer spriteRenderer;
     private Vector2 playerDirection;
+    private Vector2 lastPlayerDirection;
     public float playerSpeed;
     public AudioClip[] soundEffects;
     public float stepVolume = 1.5f;
@@ -17,6 +19,7 @@ public class PlayerControllerRiver : MonoBehaviour
 
     void Start()
     {   
+        playerAnimator = GetComponent<Animator>();
         playerRigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         footStepAudioSource.volume = stepVolume;
@@ -26,9 +29,21 @@ public class PlayerControllerRiver : MonoBehaviour
     {
         if (canMove) // O jogador só se move se puder
         {
-            float moveX = Input.GetAxisRaw("Horizontal");
-            float moveY = Input.GetAxisRaw("Vertical");
-            playerDirection = new Vector2(moveX, moveY).normalized;
+             float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+        
+        if ( moveX == 0 && moveY == 0 && (playerDirection.x != 0 || playerDirection.y != 0)) {
+
+            lastPlayerDirection = playerDirection;
+        }
+
+        playerDirection = new Vector2(moveX, moveY).normalized;
+
+        playerAnimator.SetFloat("Horizontal", playerDirection.x);
+        playerAnimator.SetFloat("Vertical", playerDirection.y);
+        playerAnimator.SetFloat("Speed", playerDirection.sqrMagnitude);
+        playerAnimator.SetFloat("LastHorizontalMove", lastPlayerDirection.x);
+        playerAnimator.SetFloat("LastVerticalMove", lastPlayerDirection.y);
         }
         else
         {
