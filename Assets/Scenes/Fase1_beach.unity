@@ -6823,7 +6823,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03, y: 27.550001, z: -10}
+  m_LocalPosition: {x: -11.000001, y: 22.040003, z: -10}
   m_LocalScale: {x: -0.28, y: 0.39, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32389,8 +32389,8 @@ MonoBehaviour:
   displayDuration: 15
   fadeDuration: 1
   playerController: {fileID: 1499126679}
-  playerAnimator: {fileID: 0}
-  audioSourcePlayer: {fileID: 0}
+  playerAnimator: {fileID: 1499126684}
+  audioSourcePlayer: {fileID: 1499126686}
   audioControllerMusic: {fileID: 1420237513}
   introSkipButton: {fileID: 460827036}
   secondSkipButton: {fileID: 812612417}
@@ -33118,7 +33118,7 @@ Transform:
   m_GameObject: {fileID: 1475125300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03, y: 27.55, z: -10}
+  m_LocalPosition: {x: -11, y: 22.04, z: -10}
   m_LocalScale: {x: 1.28, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -147326,6 +147326,26 @@ PrefabInstance:
       propertyPath: carryOffset.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1206330668358323637, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
+      propertyPath: m_Size.x
+      value: 0.53942204
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206330668358323637, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
+      propertyPath: m_Size.y
+      value: 1.1499641
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206330668358323637, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0021338463
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206330668358323637, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.30015343
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206330668358323637, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4013820881399470082, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -147336,11 +147356,11 @@ PrefabInstance:
       objectReference: {fileID: 1499126684}
     - target: {fileID: 7823282367716068373, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.03
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 7823282367716068373, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.55
+      value: 22.04
       objectReference: {fileID: 0}
     - target: {fileID: 7823282367716068373, guid: 9b9f0a7620b97324fa2bfe5e709793b7, type: 3}
       propertyPath: m_LocalPosition.z

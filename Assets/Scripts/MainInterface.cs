@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainInterface : MonoBehaviour
 {
     public GameObject OptionMenu;
+    public GameObject MainMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,8 @@ public class MainInterface : MonoBehaviour
     }
 
     public void Play(){
-        SceneManager.LoadScene("Intro-City");
+        MainMenu.SetActive(false);
+        SceneManager.LoadScene("Intro-City", LoadSceneMode.Single);
     }
 
     public void Options(){

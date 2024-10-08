@@ -167,7 +167,7 @@ public class DialogueQControlCozinhaTheo : MonoBehaviour
                         break;
                     case 3:
                         Speech(maeImage, new string[] {
-                            "¡Orgullo de mamá!"
+                            "Orgullo de mamá!"
                         }, "Mamá de Theo");
                         break;
                 }
@@ -203,6 +203,7 @@ public class DialogueQControlCozinhaTheo : MonoBehaviour
         }
 
         dialogueQIndex++;
+    }
     private void LoadNextScene()
     {
         SceneManager.LoadScene("Intro-Fase1");

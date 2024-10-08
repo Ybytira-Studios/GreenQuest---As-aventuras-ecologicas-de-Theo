@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class Language : MonoBehaviour
 {
-private string language = "es";
+    public static Language Instance { get; private set; } // Instância Singleton
+    public string language;
 
-    public void setPortuguese(){
-        language = "pt";
+    private void Awake()
+    {
+        // Se já existir uma instância, destrua este objeto
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject); // Mantém a instância entre as cenas
     }
-    public void setEnglish(){
-        language = "en";
-    }
-    public void setEspanish(){
-        language = "es";
-    }
-    public void setFrench(){
-        language = "fr";
-    }
-    public string getLanguage(){
-        return language;
-    }
+
+    public void setPortuguese() { language = "pt"; }
+    public void setEnglish() { language = "en"; }
+    public void setEspanish() { language = "es"; }
+    public void setFrench() { language = "fr"; }
+    public string getLanguage() { return language; }
 }

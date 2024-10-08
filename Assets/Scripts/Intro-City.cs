@@ -13,6 +13,7 @@ public class Cutscene1 : MonoBehaviour
     void Start()
     {
         Language lg = new Language();
+        print("lingua: "+lg.getLanguage());
 
         switch(lg.getLanguage())
         {
