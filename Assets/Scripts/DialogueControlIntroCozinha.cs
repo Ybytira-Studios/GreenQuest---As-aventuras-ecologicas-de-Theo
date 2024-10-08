@@ -93,7 +93,7 @@ public class DialogueCControlIntroTheoCozinha : MonoBehaviour
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene("Fase1_beach");
+        SceneManager.LoadScene("Intro-Fase1");
     }
 
     private void AdjustImageSize(Image image, Sprite sprite)

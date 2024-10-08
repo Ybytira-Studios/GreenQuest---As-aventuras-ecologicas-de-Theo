@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -13,9 +12,39 @@ public class Cutscene1 : MonoBehaviour
 
     void Start()
     {
-        textos[0] = "Baía da Aventura é uma cidade do litoral com belas praias e outras paisagens naturais, onde a principal fonte de renda é o turismo, ";
-        textos[1] = "entretanto com o crescimento desordenado da cidade, o descarte irregular de lixo e a poluição das praias e dos rios aumentou drasticamente, pela nova população local";
-        textos[2] = "Pensando nisso a LAL(Liga anti lixo), uma OSC ambiental que ajuda cidades dependentes do turismo a se reerguer de problemas ambientais, entrou em ação nesta cidade.";
+        Language lg = new Language();
+
+        switch(lg.getLanguage())
+        {
+            case "pt":
+                textos[0] = "Baía da Aventura é uma cidade do litoral com belas praias e outras paisagens naturais,";
+                textos[1] = "entretanto com o crescimento desordenado da cidade, o descarte irregular de lixo e a poluição das praias e dos rios aumentou drasticamente.";
+                textos[2] = "Pensando nisso, as pessoas da cidade criaram a LAL(Liga anti lixo), uma OSC ambiental que vai ajudar a cidade a ficar limpa e bonita de novo.";
+                break;
+
+            case "en":
+                textos[0] = "Baía da Aventura is a coastal city with beautiful beaches and other natural landscapes,";
+                textos[1] = "however, with the uncontrolled growth of the city, improper waste disposal and pollution of beaches and rivers have drastically increased.";
+                textos[2] = "With this in mind, the people of the city created LAL (Anti-Litter League), an environmental NGO that will help the city stay clean and beautiful again.";
+                break;
+
+            case "es":
+                textos[0] = "Baía da Aventura es una ciudad costera con hermosas playas y otros paisajes naturales,";
+                textos[1] = "sin embargo, con el crecimiento descontrolado de la ciudad, la eliminación inadecuada de residuos y la contaminación de las playas y ríos ha aumentado drásticamente.";
+                textos[2] = "Pensando en eso, la gente de la ciudad creó la LAL (Liga Anti Basura), una ONG ambiental que ayudará a la ciudad a mantenerse limpia y hermosa de nuevo.";
+                break;
+
+            case "fr":
+                textos[0] = "Baía da Aventura est une ville côtière avec de belles plages et d'autres paysages naturels,";
+                textos[1] = "cependant, avec la croissance incontrôlée de la ville, le dépôt irrégulier de déchets et la pollution des plages et des rivières ont considérablement augmenté.";
+                textos[2] = "En pensant à cela, les habitants de la ville ont créé la LAL (Ligue anti-déchets), une ONG environnementale qui aidera la ville à rester propre et belle à nouveau.";
+                break;
+
+            default:
+                // Caso não encontre o idioma, exibe uma mensagem padrão (opcional)
+                textos[0] = "Language not supported.";
+                break;
+        }
 
         texto.text = textos[0];
 
@@ -26,7 +55,6 @@ public class Cutscene1 : MonoBehaviour
 
     public IEnumerator Rotina()
     {
-        Debug.Log("Entrou na rotina");
 
         if (cont < textos.Length)
         {
@@ -43,7 +71,11 @@ public class Cutscene1 : MonoBehaviour
                 Debug.Log("Texto exibido: " + texto.text);
                 cont++;
                 
-                yield return new WaitForSeconds(8);
+                if(cont== 0){
+                    yield return new WaitForSeconds(5);
+                    StartCoroutine(Rotina());    
+                }
+                yield return new WaitForSeconds(10);
                 StartCoroutine(Rotina());
             }
             else
@@ -53,8 +85,7 @@ public class Cutscene1 : MonoBehaviour
         }
         else
         {
-            Debug.Log("Todas as imagens foram exibidas. Carregando próxima cena.");
-            SceneManager.LoadScene("Intro-Theo-Escola");
+            SceneManager.LoadScene("Intro-Theo");
         }
     }
 }

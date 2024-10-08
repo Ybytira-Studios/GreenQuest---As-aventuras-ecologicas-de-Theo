@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource grabAudioSource;
     public AudioClip[] soundEffects;
     public ParticleSystem playerParticleSystem;
-    private Animator playerAnimator;
+    public Animator playerAnimator;
     private Vector2 playerDirection;
 
     private Vector2 lastPlayerDirection;
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public float invulnerabilityDuration = 2f;
     public bool isInvulnerable = false;
     public float stepVolume = 0.05f;
+    public bool canMove = true;
 
     void Start()
     {   

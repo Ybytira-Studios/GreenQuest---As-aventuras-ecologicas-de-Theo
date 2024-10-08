@@ -12,7 +12,8 @@ public class ClawController : MonoBehaviour
     private bool movingDown = false;
     private bool isMoving = false;
 
-    void Start(){
+    void Start()
+    {
         playerControllerRiver.disparaGarraAudioSource.clip = playerControllerRiver.soundEffects[2];
         pressQ.SetActive(false);
     }
@@ -22,21 +23,26 @@ public class ClawController : MonoBehaviour
         // Verifica se o jogador está segurando a garra
         GameObject carriedObject = grabObject.GetCarriedObject();
         if (carriedObject != null && carriedObject.CompareTag("claw"))
-    {
-        pressQ.SetActive(true); // Mostra a indicação para pressionar Q
-    }
-    else
-    {
-        pressQ.SetActive(false); // Esconde a indicação se não estiver segurando a garra
-    }
-        if (Input.GetKeyDown(KeyCode.Q) && !isMoving && carriedObject != null && carriedObject.tag == "claw")
         {
-            
+            pressQ.SetActive(true); // Mostra a indicação para pressionar Q
+        }
+        else
+        {
+            pressQ.SetActive(false); // Esconde a indicação se não estiver segurando a garra
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q) && !isMoving && carriedObject != null && carriedObject.CompareTag("claw"))
+        {
             playerControllerRiver.disparaGarraAudioSource.Play();
             initialPosition = transform.position;
             targetPosition = new Vector3(initialPosition.x, initialPosition.y - 3f, initialPosition.z);
             grabObject.DropObject(); // Dropa o objeto
+            
+            // Ativa a animação idle do jogador
+            //playerControllerRiver.playerAnimator.SetTrigger("DispararGarra");
+            
             playerControllerRiver.canMove = false; // Impede o movimento do jogador
+            playerControllerRiver.playerAnimator.enabled = true;
             isMoving = true; // Ativa o movimento da garra
         }
 
@@ -69,12 +75,13 @@ public class ClawController : MonoBehaviour
                 isMoving = false; // Movimento terminou
                 grabObject.isGrabbing = false;
                 grabObject.InteractWithObject(); // Recolhe o objeto automaticamente
-                playerControllerRiver.canMove = true; // Permite que o jogador volte a se mover
+                playerControllerRiver.canMove = true;
+                playerControllerRiver.playerAnimator.enabled = true; // Permite que o jogador volte a se mover
             }
         }
     }
-    
-     void OnTriggerEnter2D(Collider2D other)
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Trash"))
         {
@@ -82,5 +89,4 @@ public class ClawController : MonoBehaviour
             Destroy(other.gameObject); // Destrói o objeto coletável
         }
     }
-
 }

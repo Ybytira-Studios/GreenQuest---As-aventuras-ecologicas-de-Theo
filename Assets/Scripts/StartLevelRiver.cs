@@ -5,75 +5,71 @@ using UnityEngine.UI;
 
 public class StartLevelRiver : MonoBehaviour
 {
-    public CanvasGroup introPanel; // Use CanvasGroup to control the alpha
-    public CanvasGroup secondPanel; // Reference to the second panel
-    public Timer timer;
+    public CanvasGroup dialoguePanel; // Painel de diálogo
+    public TextMeshProUGUI dialogueText; // Texto do diálogo
     public GameObject topPanel;
-    public float displayDuration = 1f; // Duration the panel is displayed
-    public float fadeDuration = 1f; // Duration for the fade in and fade out
-    public float intervalBetweenPanels = 1f; // Interval time between the two panels
+    public string[] dialogues; // Array de diálogos
+    public float displayDuration = 3f; // Duração de cada diálogo
+    public float fadeDuration = 1f; // Duração para fade in/out
+    public Button skipButton; // Botão para pular o diálogo
+    public Timer timer;
     public PlayerControllerRiver playerControllerRiver;
-    public Animator playerAnimator;
-    public AudioSource audioSourcePlayer;
     public AudioSource audioSourceMusicaRiver;
-    public Button skipButton; // Button to skip the dialogue
-    private bool skipPanel = false; // Flag to check if the player wants to skip
+
+    private int currentDialogueIndex = 0;
+    private bool dialogueRunning = true;
 
     void Start()
     {
         topPanel.SetActive(false);
-        timer.timerRunning = false;
         playerControllerRiver.enabled = false;
-        
-        skipButton.gameObject.SetActive(true); // Ensure the button is active
-        skipButton.onClick.AddListener(SkipDialogue); // Add the skip function to the button listener
-        
-        StartCoroutine(ShowIntroPanels());
+        timer.timerRunning = false;
+        skipButton.onClick.AddListener(SkipDialogue);
+        StartCoroutine(ShowDialogue());
     }
 
-    // This method will be called when the skip button is pressed
-    void SkipDialogue()
+      void Update()
     {
-        skipPanel = true;
-    }
-
-    IEnumerator ShowIntroPanels()
-    {
-        // Show the first panel
-        yield return StartCoroutine(ShowIntroPanel(introPanel));
-
-        // Wait for the interval before showing the second panel
-        yield return new WaitForSeconds(intervalBetweenPanels);
-
-        // Show the second panel
-        yield return StartCoroutine(ShowIntroPanel(secondPanel));
-
-        // Start the game after the second panel
-        StartGame();
-    }
-
-    IEnumerator ShowIntroPanel(CanvasGroup panel)
-    {
-        panel.gameObject.SetActive(true); // Ensure the panel is active
-
-        // Fade in
-        yield return StartCoroutine(FadeIn(panel, fadeDuration));
-
-        // Check if the panel should be skipped
-        float elapsedTime = 0f;
-        while (elapsedTime < displayDuration && !skipPanel)
+        // Verifica se a tecla "Espaço" ou "Enter" foi pressionada
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
-            elapsedTime += Time.deltaTime;
-            yield return null;
+            SkipDialogue();
+        }
+    }
+
+   public IEnumerator ShowDialogue()
+    {
+        dialoguePanel.alpha = 0;
+        dialoguePanel.gameObject.SetActive(true);
+
+        while (currentDialogueIndex < dialogues.Length)
+        {
+            dialogueRunning = true; // Reseta para permitir o próximo diálogo
+
+            // Exibe o diálogo atual
+            dialogueText.text = dialogues[currentDialogueIndex];
+            yield return StartCoroutine(FadeIn(dialoguePanel, fadeDuration));
+
+            // Espera ou até o tempo passar ou o botão ser clicado
+            float elapsed = 0;
+            while (elapsed < displayDuration && dialogueRunning)
+            {
+                elapsed += Time.deltaTime;
+                yield return null;
+            }
+
+            // Faz fade out antes de passar ao próximo diálogo
+            yield return StartCoroutine(FadeOut(dialoguePanel, fadeDuration));
+            currentDialogueIndex++;
         }
 
-        // Reset the skip flag for the next panel
-        skipPanel = false;
+        EndDialogue(); // Finaliza o diálogo
+    }
 
-        // Fade out
-        yield return StartCoroutine(FadeOut(panel, fadeDuration));
-
-        panel.gameObject.SetActive(false); // Hide the panel after fade out
+    void SkipDialogue()
+    {
+        print("clickou");
+        dialogueRunning = false; // Permite o avanço ao próximo diálogo
     }
 
     IEnumerator FadeIn(CanvasGroup canvasGroup, float duration)
@@ -98,13 +94,13 @@ public class StartLevelRiver : MonoBehaviour
         }
     }
 
-    void StartGame()
+    void EndDialogue()
     {
         topPanel.SetActive(true);
-        audioSourceMusicaRiver.Play();
+        dialoguePanel.gameObject.SetActive(false);
         playerControllerRiver.enabled = true;
         timer.timerRunning = true;
-        Debug.Log("Fase iniciada!");
-        skipButton.gameObject.SetActive(false); // Hide the skip button once the game starts
+        audioSourceMusicaRiver.Play();
+        Debug.Log("Diálogo finalizado e jogo iniciado!");
     }
 }
