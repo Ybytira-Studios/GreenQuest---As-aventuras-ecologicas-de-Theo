@@ -13,12 +13,15 @@ public class FinalDialogueRiver : MonoBehaviour
     public float newFadeDuration = 1f; // Duração para fade in/out
     public Button newSkipButton; // Botão para pular o diálogo
 
+    public Image blackScreen; // Imagem preta para fade out
+    public float fadeToBlackDuration = 2f; // Duração do fade to black
+
     private int currentDialogueIndex = 0;
     private bool dialogueRunning = true;
 
     void Start()
     {
-
+        blackScreen.gameObject.SetActive(false); // Certifique-se de que a tela preta esteja desativada inicialmente
         newSkipButton.onClick.AddListener(SkipNewDialogue);
         StartCoroutine(ShowNewDialogue());
     }
@@ -49,6 +52,7 @@ public class FinalDialogueRiver : MonoBehaviour
             currentDialogueIndex++;
         }
 
+        yield return StartCoroutine(FadeToBlack()); // Aplica o fade to black antes de trocar a cena
         EndNewDialogue();
     }
 
@@ -79,11 +83,25 @@ public class FinalDialogueRiver : MonoBehaviour
         }
     }
 
+    IEnumerator FadeToBlack()
+    {
+        blackScreen.gameObject.SetActive(true); // Ativa a tela preta
+        Color screenColor = blackScreen.color;
+        float counter = 0f;
+
+        // Faz o fade in da tela preta
+        while (counter < fadeToBlackDuration)
+        {
+            counter += Time.deltaTime;
+            screenColor.a = Mathf.Lerp(0, 1, counter / fadeToBlackDuration);
+            blackScreen.color = screenColor;
+            yield return null;
+        }
+    }
+
     void EndNewDialogue()
     {
-        newDialoguePanel.gameObject.SetActive(false);
-        Debug.Log("Novo diálogo finalizado!");
-        print("entrei nessa merda");
+        // Carrega a nova cena após o fade to black
         SceneManager.LoadScene("Fase1_beach");
     }
 }
