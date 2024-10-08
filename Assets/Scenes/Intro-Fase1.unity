@@ -710,7 +710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 487324486}
   audioSource: {fileID: 22225463}
-  nextScene: Fase4_river
+  nextScene: Intro-Theo-Quarto
   fadeDuration: 0.8
   displayDuration: 0.7
 --- !u!1660057539 &9223372036854775807

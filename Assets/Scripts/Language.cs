@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Language : MonoBehaviour
 {
-private string language = "pt";
+private string language = "es";
 
     public void setPortuguese(){
         language = "pt";

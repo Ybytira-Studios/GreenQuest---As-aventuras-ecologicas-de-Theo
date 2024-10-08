@@ -78,7 +78,7 @@ public class Cutscene2 : MonoBehaviour
         }
 
         // Quando todos os textos forem exibidos, carrega a próxima cena
-        SceneManager.LoadScene("Intro-Theo-Escola");
+        SceneManager.LoadScene("Intro-Fase1");
     }
 
     void AtualizaImagens(int index)
