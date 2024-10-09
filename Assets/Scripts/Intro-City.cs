@@ -12,6 +12,7 @@ public class Cutscene1 : MonoBehaviour
 
     void Start()
     {
+        Camera.main.backgroundColor = Color.clear;
         Language languageScript = FindObjectOfType<Language>();
         print("languageScript.getLanguage(): "+languageScript.getLanguage());
         Language lg = new Language();
