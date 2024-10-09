@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 60030298}
   - component: {fileID: 60030300}
   - component: {fileID: 60030299}
-  - component: {fileID: 60030301}
   m_Layer: 5
   m_Name: Text (TMP) (7)
   m_TagString: Untagged
@@ -181,10 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "N\xF3s podemos ajudar a popula\xE7\xE3o local retirando os dejetos do
-    rio. Voc\xEA n\xE3o poder\xE1 entrar dentro do c\xF3rrego como os profissionais,
-    filho, pois \xE9 perigoso! Ao inv\xE9s disso, use a garra limpa-limpa para pegar
-    os lixos estando na margem!\n"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 16e56ef961052634780d4fdb4ba23960, type: 2}
   m_sharedMaterial: {fileID: 8420855137460002349, guid: 16e56ef961052634780d4fdb4ba23960, type: 2}
@@ -261,19 +257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60030297}
   m_CullTransparentMesh: 1
---- !u!114 &60030301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60030297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5bf996831d3f694db4edd251ddb341b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 60030299}
 --- !u!1 &74153817
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,8 +946,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Lixos restantes : 17'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2ed34252771ad55428836170457a0752, type: 2}
-  m_sharedMaterial: {fileID: -1488481422915614446, guid: 2ed34252771ad55428836170457a0752, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 16e56ef961052634780d4fdb4ba23960, type: 2}
+  m_sharedMaterial: {fileID: 8420855137460002349, guid: 16e56ef961052634780d4fdb4ba23960, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1393,8 +1376,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Lixeiras restantes : 17'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2ed34252771ad55428836170457a0752, type: 2}
-  m_sharedMaterial: {fileID: -1488481422915614446, guid: 2ed34252771ad55428836170457a0752, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 16e56ef961052634780d4fdb4ba23960, type: 2}
+  m_sharedMaterial: {fileID: 8420855137460002349, guid: 16e56ef961052634780d4fdb4ba23960, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31025,6 +31008,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1137009040}
+  - component: {fileID: 1137009048}
   - component: {fileID: 1137009041}
   - component: {fileID: 1137009042}
   - component: {fileID: 1137009043}
@@ -31070,6 +31054,7 @@ MonoBehaviour:
   quantidadeMinigames: 2
   trashCounterText: {fileID: 339792724}
   trashBinCounterText: {fileID: 378414529}
+  timerText: {fileID: 1849698057}
   timer: {fileID: 1137009043}
   timerIcon: {fileID: 1679939384}
   playerControllerRiver: {fileID: 1292737441}
@@ -31276,6 +31261,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text1: {fileID: 1555715474}
   text2: {fileID: 1216108494}
+--- !u!114 &1137009048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137009039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45f7d64a9d3a9640bd25d6266551482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  language: en
 --- !u!1 &1145632502
 GameObject:
   m_ObjectHideFlags: 0
@@ -31294,7 +31292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1145632503
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35443,8 +35441,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2ed34252771ad55428836170457a0752, type: 2}
-  m_sharedMaterial: {fileID: -1488481422915614446, guid: 2ed34252771ad55428836170457a0752, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 16e56ef961052634780d4fdb4ba23960, type: 2}
+  m_sharedMaterial: {fileID: 8420855137460002349, guid: 16e56ef961052634780d4fdb4ba23960, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

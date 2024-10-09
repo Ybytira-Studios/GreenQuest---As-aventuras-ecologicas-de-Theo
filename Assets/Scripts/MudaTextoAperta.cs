@@ -13,31 +13,33 @@ public class MudaTextoAperta : MonoBehaviour
 
     void UpdateTexts()
     {
-        Language languageScript = FindObjectOfType<Language>();
-
+        if (Language.Instance == null)
+        {
+            Debug.LogError("Language.Instance não está inicializada!");
+            return;
+        }
         // Verifica a linguagem atual e atualiza os textos
-        switch (languageScript.getLanguage())
+        switch (Language.Instance.getLanguage())
         {
             case "pt": // Português
-                text1.text = "Pressione espaço para parafusar!";
-                text2.text = "Pressione espaço para parafusar!";
+                text1.text = "Pressione espaco para parafusar!".Replace(((char)23).ToString(), "");
+                text2.text = "Pressione espaco para parafusar!".Replace(((char)23).ToString(), "");
                 break;
             case "en": // Inglês
-                text1.text = "Press space to screw!";
-                text2.text = "Press space to screw!";
+                text1.text = "Press space to screw!".Replace(((char)23).ToString(), "");
+                text2.text = "Press space to screw!".Replace(((char)23).ToString(), "");
                 break;
             case "es": // Espanhol
-                text1.text = "¡Presiona espacio para atornillar!";
-                text2.text = "¡Presiona espacio para atornillar!";
+                text1.text = "Presiona espacio para atornillar!".Replace(((char)23).ToString(), "");
+                text2.text = "Presiona espacio para atornillar!".Replace(((char)23).ToString(), "");
                 break;
             case "fr": // Francês
-                text1.text = "Appuyez sur espace pour visser!";
-                text2.text = "Appuyez sur espace pour visser!";
+                text1.text = "Appuyez sur espace pour visser!".Replace(((char)23).ToString(), "");
+                text2.text = "Appuyez sur espace pour visser!".Replace(((char)23).ToString(), "");
                 break;
-            // Adicione outros idiomas aqui, se necessário
             default: // Idioma padrão
-                text1.text = "Pressione espaço para parafusar!";
-                text2.text = "Pressione espaço para parafusar!";
+                text1.text = "Pressione espaço para parafusar!".Replace(((char)23).ToString(), "");
+                text2.text = "Pressione espaço para parafusar!".Replace(((char)23).ToString(), "");
                 break;
         }
     }
