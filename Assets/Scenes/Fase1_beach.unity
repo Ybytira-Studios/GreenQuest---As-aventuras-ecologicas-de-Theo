@@ -32159,6 +32159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1420237509}
+  - component: {fileID: 1420237517}
   - component: {fileID: 1420237510}
   - component: {fileID: 1420237511}
   - component: {fileID: 1420237513}
@@ -32415,6 +32416,19 @@ MonoBehaviour:
   pauseMenu: {fileID: 298346452}
   playerControllerRiver: {fileID: 0}
   playerController: {fileID: 1499126679}
+--- !u!114 &1420237517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420237507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45f7d64a9d3a9640bd25d6266551482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  language: pt
 --- !u!1 &1421042538 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2989213487065444771, guid: 932c887a252e2a245b5ea79d35fcf1db, type: 3}
@@ -147081,7 +147095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2133506067
 RectTransform:
   m_ObjectHideFlags: 0

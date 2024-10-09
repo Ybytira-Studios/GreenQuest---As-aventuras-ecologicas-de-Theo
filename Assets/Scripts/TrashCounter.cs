@@ -14,31 +14,63 @@ public class TrashCounter : MonoBehaviour
     public Animator playerAnimator;
     public AudioSource audioSourcePlayer;
 
-    public string[] tagsToCheck = { "MetalTrash", "GlassTrash", "PlasticTrash", "PaperTrash"};  // Array de tags para verificar
+    public string[] tagsToCheck = { "MetalTrash", "GlassTrash", "PlasticTrash", "PaperTrash" };  // Array de tags para verificar
+
+    private string remainingTrashText;
+    private string timeRemainingText;
 
     void Start()
     {
-         //Inicialmente, deixe o texto de vitória desativado
+        // Inicialmente, deixe o texto de vitória desativado
         if (finishLevel != null)
         {
-           finishLevel.SetActive(false);
+            finishLevel.SetActive(false);
+        }
+
+        // Inicializa os textos de acordo com a linguagem selecionada
+        UpdateLocalization();
+    }
+
+    void UpdateLocalization()
+    {
+        switch (Language.Instance.getLanguage())
+        {
+            case "pt":
+                remainingTrashText = "Lixos restantes: ";
+                timeRemainingText = "Tempo restante: ";
+                break;
+            case "en":
+                remainingTrashText = "Remaining trash: ";
+                timeRemainingText = "Time remaining: ";
+                break;
+            case "es":
+                remainingTrashText = "Basura restante: ";
+                timeRemainingText = "Tiempo restante: ";
+                break;
+            case "fr":
+                remainingTrashText = "Déchets restants: ";
+                timeRemainingText = "Temps restant: ";
+                break;
+            default:
+                remainingTrashText = "Remaining trash: ";
+                timeRemainingText = "Time remaining: ";
+                break;
         }
     }
 
-
     void UpdateTrashCounter()
-{
-
-    int totalTrashCount = 0;
-
-    foreach (string tag in tagsToCheck)
     {
-        GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag(tag);
-        totalTrashCount += objectsWithTag.Length;
-    }
-        trashCounterText.text = "Lixos restantes: " + totalTrashCount;
+        int totalTrashCount = 0;
 
-        if (totalTrashCount == 0 && timer.timerRunning) 
+        foreach (string tag in tagsToCheck)
+        {
+            GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag(tag);
+            totalTrashCount += objectsWithTag.Length;
+        }
+
+        trashCounterText.text = remainingTrashText + totalTrashCount;
+
+        if (totalTrashCount == 0 && timer.timerRunning)
         {
             timer.timerRunning = false; // Para o timer
             Debug.Log("Timer parado, todos os objetos foram coletados.");
@@ -46,12 +78,11 @@ public class TrashCounter : MonoBehaviour
             timer.gameObject.SetActive(false);
             timerIcon.gameObject.SetActive(false);
             finishLevel.SetActive(true);
-            finalTimer.text = "Tempo restante: " + timer.timeLevel.ToString("F1") + "s";
+            finalTimer.text = timeRemainingText + timer.timeLevel.ToString("F1") + "s";
             playerController.footStepAudioSource.Stop();
             audioSourcePlayer.Stop();
         }
-}
-
+    }
 
     void Update()
     {
