@@ -15,6 +15,7 @@ public class StartLevelRiver : MonoBehaviour
     public Timer timer;
     public PlayerControllerRiver playerControllerRiver;
     public AudioSource audioSourceMusicaRiver;
+    public string penis = "pt";
 
     private int currentDialogueIndex = 0;
     private bool dialogueRunning = true;
@@ -25,10 +26,56 @@ public class StartLevelRiver : MonoBehaviour
         playerControllerRiver.enabled = false;
         timer.timerRunning = false;
         skipButton.onClick.AddListener(SkipDialogue);
+
+        // Definindo os diálogos com base na linguagem
+        //COLOCAR Language languageScript = FindObjectOfType<Language>();
+        
+        switch (penis)
+        {
+            case "pt":
+                dialogues = new string[]
+                {
+                    "Nós podemos ajudar a população local retirando os dejetos do rio. Você não poderá entrar dentro do córrego como os profissionais, filho, pois é perigoso! Ao invés disso, use a garra limpa-limpa para pegar os lixos estando na margem!", // Posição 0
+                    "Além disso, temos que instalar lixeiras por aqui também, pois isso estimula as pessoas a não jogarem lixo na natureza." // Posição 1
+                };
+                break;
+
+            case "en":
+                dialogues = new string[]
+                {
+                    "We can help the local community by removing debris from the river. You can't go into the stream like the professionals, son, because it's dangerous! Instead, use the clean-clean claw to grab the trash from the shore!", // Posição 0
+                    "Also, we need to install trash bins around here, as this encourages people not to litter in nature." // Posição 1
+                };
+                break;
+
+            case "es":
+                dialogues = new string[]
+                {
+                    "Podemos ayudar a la comunidad local retirando los desechos del río. No puedes entrar en el arroyo como los profesionales, hijo, ¡porque es peligroso! En lugar de eso, usa la garra limpia-limpa para recoger la basura desde la orilla.", // Posição 0
+                    "Además, tenemos que instalar contenedores de basura aquí, ya que esto anima a la gente a no tirar basura en la naturaleza." // Posição 1
+                };
+                break;
+
+            case "fr":
+                dialogues = new string[]
+                {
+                    "Nous pouvons aider la communauté locale en retirant les débris de la rivière. Tu ne peux pas entrer dans le ruisseau comme les professionnels, mon fils, car c'est dangereux ! Utilise plutôt la pince propre-propre pour ramasser les déchets depuis la rive !", // Posição 0
+                    "De plus, nous devons installer des poubelles ici aussi, car cela encourage les gens à ne pas jeter leurs déchets dans la nature." // Posição 1
+                };
+                break;
+
+            default:
+                dialogues = new string[]
+                {
+                    "Language not supported." // Posição 0
+                };
+                break;
+        }
+
         StartCoroutine(ShowDialogue());
     }
 
-      void Update()
+    void Update()
     {
         // Verifica se a tecla "Espaço" ou "Enter" foi pressionada
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
@@ -37,7 +84,7 @@ public class StartLevelRiver : MonoBehaviour
         }
     }
 
-   public IEnumerator ShowDialogue()
+    public IEnumerator ShowDialogue()
     {
         dialoguePanel.alpha = 0;
         dialoguePanel.gameObject.SetActive(true);

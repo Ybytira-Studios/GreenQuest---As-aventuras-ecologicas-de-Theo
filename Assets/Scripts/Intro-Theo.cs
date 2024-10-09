@@ -14,11 +14,12 @@ public class Cutscene2 : MonoBehaviour
 
     void Start()
     {
+        Language languageScript = FindObjectOfType<Language>();
         // Instancia a classe de linguagem
         Language lg = new Language();
 
         // Define os textos com base no idioma
-        switch (lg.getLanguage())
+        switch (languageScript.getLanguage())
         {
             case "pt":
                 textos[0] = "Theodoro Correia Junior, apelidado de Theo, é uma criança alegre e agitada. Ele não gosta muito da escola, mas é um bom aluno. Tem 12 anos e sempre viveu na Baía da Aventura.";

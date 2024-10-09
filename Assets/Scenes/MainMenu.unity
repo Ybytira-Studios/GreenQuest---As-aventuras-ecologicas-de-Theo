@@ -1498,7 +1498,7 @@ GameObject:
   - component: {fileID: 902736688}
   - component: {fileID: 902736689}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameManagerMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1549,6 +1549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   languageDropdown: {fileID: 832267419}
+  language: {fileID: 902736689}
 --- !u!114 &902736689
 MonoBehaviour:
   m_ObjectHideFlags: 0

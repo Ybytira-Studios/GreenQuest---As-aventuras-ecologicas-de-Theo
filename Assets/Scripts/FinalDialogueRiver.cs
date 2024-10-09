@@ -12,7 +12,7 @@ public class FinalDialogueRiver : MonoBehaviour
     public float newDisplayDuration = 3f; // Duração de cada diálogo
     public float newFadeDuration = 1f; // Duração para fade in/out
     public Button newSkipButton; // Botão para pular o diálogo
-
+    public string penis = "pt";
     public Image blackScreen; // Imagem preta para fade out
     public float fadeToBlackDuration = 2f; // Duração do fade to black
 
@@ -23,6 +23,51 @@ public class FinalDialogueRiver : MonoBehaviour
     {
         blackScreen.gameObject.SetActive(false); // Certifique-se de que a tela preta esteja desativada inicialmente
         newSkipButton.onClick.AddListener(SkipNewDialogue);
+        Language languageScript = FindObjectOfType<Language>();
+
+        // Definindo os diálogos com base na linguagem
+        switch (languageScript.getLanguage())
+        {
+            case "pt":
+                newDialogues = new string[]
+                {
+                    "Muito bem Theo! Você foi muito eficiente para pegar o lixo e instalar as lixeiras!", // Posição 0
+                    "Vamos para casa que amanhã a LAL estará na praia da ampulheta e nós vamos acompanhá-los." // Posição 1
+                };
+                break;
+
+            case "en":
+                newDialogues = new string[]
+                {
+                    "Well done Theo! You were very efficient in collecting trash and installing the bins!", // Posição 0
+                    "Let's go home, tomorrow the LAL will be at Hourglass Beach and we'll join them." // Posição 1
+                };
+                break;
+
+            case "es":
+                newDialogues = new string[]
+                {
+                    "¡Muy bien Theo! ¡Fuiste muy eficiente para recoger la basura e instalar los contenedores!", // Posição 0
+                    "Vamos a casa, mañana la LAL estará en la Playa del Reloj de Arena y los acompañaremos." // Posição 1
+                };
+                break;
+
+            case "fr":
+                newDialogues = new string[]
+                {
+                    "Bien joué Theo ! Tu as été très efficace pour ramasser les déchets et installer les poubelles !", // Posição 0
+                    "Allons à la maison, demain la LAL sera à la plage du sablier et nous les accompagnerons." // Posição 1
+                };
+                break;
+
+            default:
+                newDialogues = new string[]
+                {
+                    "Language not supported." // Posição 0
+                };
+                break;
+        }
+
         StartCoroutine(ShowNewDialogue());
     }
 

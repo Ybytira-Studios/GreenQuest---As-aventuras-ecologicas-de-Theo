@@ -89,9 +89,10 @@ public class DialogueQControlIntroTheoQuarto : MonoBehaviour
     private void StartNextDialogueQ()
     {
         // Insere os diálogos diretamente no código, com switch-case para os idiomas
+        Language languageScript = FindObjectOfType<Language>();
         Language lg = new();
         string language = lg.getLanguage();
-        switch (language)
+        switch (languageScript.getLanguage())
         {
             case "pt":
                 if (dialogueQIndex == 0)

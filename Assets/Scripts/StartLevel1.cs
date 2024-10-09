@@ -11,6 +11,12 @@ public class StartLevel1 : MonoBehaviour
     public Image timerIcon;
     public Image trashIcon;
     public TextMeshProUGUI trashText;
+    public TextMeshProUGUI welcomeText; // Texto de boas-vindas
+    public TextMeshProUGUI memberText; // Texto do membro
+    public TextMeshProUGUI metalText; // Texto para metal
+    public TextMeshProUGUI plasticText; // Texto para plástico
+    public TextMeshProUGUI paperText; // Texto para papel
+    public TextMeshProUGUI glassText; // Texto para vidro
     public float displayDuration = 1f; // Duração do display de cada painel
     public float fadeDuration = 1f; // Duração do fade in/out
     public PlayerController playerController;
@@ -27,6 +33,7 @@ public class StartLevel1 : MonoBehaviour
     private bool isGameStarted = false;
     private bool canSkip = false; // Variável para verificar se é possível pular
     private float timeUntilCanSkip = 0f; // Tempo até que o pulo seja permitido
+    private string penis = "en"; // Idioma padrão
 
     void Start()
     {
@@ -42,6 +49,9 @@ public class StartLevel1 : MonoBehaviour
 
         // Inicia a música e a sequência de painéis
         audioControllerMusic.PlayBeachSound();
+        SetWelcomeText(); // Atualiza o texto de boas-vindas
+        SetMemberText();   // Atualiza o texto do membro
+        SetSecondPanelText(); // Atualiza os textos do segundo painel
         StartCoroutine(ShowIntroPanels());
     }
 
@@ -181,5 +191,84 @@ public class StartLevel1 : MonoBehaviour
         timer.timerRunning = true;
         Debug.Log("Fase iniciada!");
     }
+
+    // Função para atualizar o texto de boas-vindas
+    void SetWelcomeText()
+    {
+        Language languageScript = FindObjectOfType<Language>();
+        switch (languageScript.getLanguage())
+        {
+            case "pt": // Português
+                welcomeText.text = "Sejam muito bem vindos à esta atividade litorânea da LAL aqui na Baia da Aventura! A primeira atitude que temos que entender é: Não basta limparmos e despoluir, o foco principal é parar de poluir e sujar! Depois de entendido isso, temos que limpar essa triste sujeira que o povo fez aqui na cidade!";
+                break;
+            case "en": // Inglês
+                welcomeText.text = "Welcome to this coastal activity of LAL here at Adventure Bay! The first thing we need to understand is: It’s not enough to clean and de-pollute; the main focus is to stop polluting and making a mess! Once we understand this, we need to clean up this sad mess that people have made here in the city!";
+                break;
+            case "es": // Espanhol
+                welcomeText.text = "¡Bienvenidos a esta actividad costera de LAL aquí en la Bahía de la Aventura! ¡La primera actitud que tenemos que entender es: No basta con limpiar y descontaminar; el enfoque principal es dejar de contaminar y ensuciar! Después de entender esto, tenemos que limpiar esta triste suciedad que la gente ha hecho aquí en la ciudad!";
+                break;
+            case "fr": // Francês
+                welcomeText.text = "Bienvenue à cette activité côtière de LAL ici à la Baie de l'Aventure ! La première chose que nous devons comprendre est : il ne suffit pas de nettoyer et de décontaminer ; le principal objectif est d'arrêter de polluer et de salir ! Une fois que nous avons compris cela, nous devons nettoyer ce triste désordre que les gens ont fait ici dans la ville !";
+                break;
+            // Adicione mais idiomas conforme necessário
+        }
+    }
+
+    // Função para atualizar o texto do membro
+     void SetMemberText()
+    {
+        Language languageScript = FindObjectOfType<Language>();
+        string memberName = "Leonardo"; // Nome padrão do membro
+        switch (languageScript.getLanguage())
+        {
+            case "pt":
+                memberText.text = "Membro: " + memberName;
+                break;
+            case "en":
+                memberText.text = "Member: " + memberName;
+                break;
+            case "es":
+                memberText.text = "Miembro: " + memberName;
+                break;
+            case "fr":
+                memberText.text = "Membre: " + memberName;
+                break;
+            default:
+                memberText.text = "Membro: " + memberName;
+                break;
+        }
+    }
+
+    // Função para atualizar os textos do segundo painel
+    void SetSecondPanelText()
+    {
+        Language languageScript = FindObjectOfType<Language>();
+        switch (languageScript.getLanguage())
+        {
+            case "pt": // Português
+                metalText.text = "Metal. Aqui você deve colocar latas de refrigerante, latas de conserva e papel alumínio.";
+                plasticText.text = "Plástico. Aqui você deve colocar garrafas PET e embalagens de plástico.";
+                paperText.text = "Papel e cartão. Aqui você deve colocar revistas, jornais e caixas de papelão.";
+                glassText.text = "Vidro. Aqui você deve colocar garrafas de vidro, potes e frascos de vidro.";
+                break;
+            case "en": // Inglês
+                metalText.text = "Metal. Here you should place soda cans, food cans, and aluminum foil.";
+                plasticText.text = "Plastic. Here you should place PET bottles and plastic packaging.";
+                paperText.text = "Paper and cardboard. Here you should place magazines, newspapers, and cardboard boxes.";
+                glassText.text = "Glass. Here you should place glass bottles, jars, and glass containers.";
+                break;
+            case "es": // Espanhol
+                metalText.text = "Metal. Aquí debes colocar latas de refresco, latas de conserva y papel aluminio.";
+                plasticText.text = "Plástico. Aquí debes colocar botellas PET y envases de plástico.";
+                paperText.text = "¡Papel y cartón. Aquí debes colocar revistas, periódicos y cajas de cartón.!";
+                glassText.text = "¡Vidrio. Aquí debes colocar botellas de vidrio, frascos y tarros de vidrio.";
+                break;
+            case "fr": // Francês
+                metalText.text = "Métal. Ici, vous devez mettre des canettes de soda, des boîtes de conserve et du papier d'aluminium.";
+                plasticText.text = "Plastique. Ici, vous devez mettre des bouteilles PET et des emballages en plastique.";
+                paperText.text = "Papier et carton. Ici, vous devez mettre des magazines, des journaux et des cartons.";
+                glassText.text = "Verre. Ici, vous devez mettre des bouteilles en verre, des pots et des récipients en verre.";
+                break;
+        }
+    }
 }
-  

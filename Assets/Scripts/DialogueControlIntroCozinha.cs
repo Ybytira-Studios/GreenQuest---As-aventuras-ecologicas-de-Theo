@@ -88,8 +88,8 @@ public class DialogueQControlCozinhaTheo : MonoBehaviour
     {
         Language lg = new();
         string language = lg.getLanguage();
-
-        switch (language)
+        Language languageScript = FindObjectOfType<Language>();
+        switch (languageScript.getLanguage())
         {
             case "pt":
                 switch (dialogueQIndex)

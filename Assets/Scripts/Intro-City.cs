@@ -12,10 +12,12 @@ public class Cutscene1 : MonoBehaviour
 
     void Start()
     {
+        Language languageScript = FindObjectOfType<Language>();
+        print("languageScript.getLanguage(): "+languageScript.getLanguage());
         Language lg = new Language();
         print("lingua: "+lg.getLanguage());
 
-        switch(lg.getLanguage())
+        switch(languageScript.getLanguage())
         {
             case "pt":
                 textos[0] = "Baía da Aventura é uma cidade do litoral com belas praias e outras paisagens naturais,";

@@ -24526,7 +24526,7 @@ GameObject:
   - component: {fileID: 685447164}
   - component: {fileID: 685447163}
   m_Layer: 5
-  m_Name: Text (TMP) (4)
+  m_Name: VidroExt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29457,7 +29457,7 @@ GameObject:
   - component: {fileID: 1153524794}
   - component: {fileID: 1153524793}
   m_Layer: 5
-  m_Name: Text (TMP) (7)
+  m_Name: PlasticoText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30786,7 +30786,7 @@ GameObject:
   - component: {fileID: 1285728958}
   - component: {fileID: 1285728957}
   m_Layer: 5
-  m_Name: Text (TMP) (6)
+  m_Name: PapelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31184,7 +31184,7 @@ GameObject:
   - component: {fileID: 1341825630}
   - component: {fileID: 1341825629}
   m_Layer: 5
-  m_Name: Text (TMP) (5)
+  m_Name: MetalText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32226,14 +32226,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1080012295}
-  audioSourcePlayer: {fileID: 1499126686}
   playerAnimator: {fileID: 1499126684}
   endText: {fileID: 0}
   timeLevel: 120
   timerRunning: 1
   playerController: {fileID: 1499126679}
   playerControllerRiver: {fileID: 0}
-  starController: {fileID: 1420237514}
 --- !u!82 &1420237512
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32386,6 +32384,12 @@ MonoBehaviour:
   timerIcon: {fileID: 1633308908}
   trashIcon: {fileID: 1826129822}
   trashText: {fileID: 910173693}
+  welcomeText: {fileID: 48050706}
+  memberText: {fileID: 609548121}
+  metalText: {fileID: 1341825629}
+  plasticText: {fileID: 1153524793}
+  paperText: {fileID: 1285728957}
+  glassText: {fileID: 685447163}
   displayDuration: 15
   fadeDuration: 1
   playerController: {fileID: 1499126679}

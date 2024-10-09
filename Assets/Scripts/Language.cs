@@ -17,8 +17,13 @@ public class Language : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject); // Mantém a instância entre as cenas
+        if (string.IsNullOrEmpty(language))
+        {
+            setPortuguese();
+            language = "pt";  // Defina aqui o idioma que você deseja como padrão
+        }
     }
-
+  
     public void setPortuguese() { language = "pt"; }
     public void setEnglish() { language = "en"; }
     public void setEspanish() { language = "es"; }
