@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Audio;
 
 public class MenuOptions : MonoBehaviour
 {
@@ -10,19 +9,21 @@ public class MenuOptions : MonoBehaviour
     public Sprite volumeOffSprite; // O sprite quando o volume está desligado
     private float previousVolume = 1f; // Armazena o volume anterior
     private bool isMuted = false; // Estado de mudo
+    public GameObject menuOptions;
 
     void Start()
     {
-        gameObject.SetActive(false);
+        menuOptions.SetActive(false);
+
+        // Verificar se o volume já está salvo; se não, configurar para 70% (0.7)
         if (!PlayerPrefs.HasKey("volume"))
         {
-            PlayerPrefs.SetFloat("volume", 1);
-            Load();
+            PlayerPrefs.SetFloat("volume", 0.7f); // Definir volume inicial em 70%
         }
-        else
-        {
-            Load();
-        }
+        volumeSlider.value = 0.7f;
+
+        // Carregar volume salvo ou inicial
+        Load();
 
         volumeButton.onClick.AddListener(ToggleVolume);
     }
@@ -38,18 +39,20 @@ public class MenuOptions : MonoBehaviour
 
     private void Load()
     {
+        // Carregar volume salvo nos PlayerPrefs
         volumeSlider.value = PlayerPrefs.GetFloat("volume");
         AudioListener.volume = volumeSlider.value;
     }
 
     private void Save()
     {
+        // Salvar o valor do volume atual
         PlayerPrefs.SetFloat("volume", volumeSlider.value);
     }
 
     public void ExitOption()
     {
-        gameObject.SetActive(false);
+        menuOptions.SetActive(false);
     }
 
     private void ToggleVolume()

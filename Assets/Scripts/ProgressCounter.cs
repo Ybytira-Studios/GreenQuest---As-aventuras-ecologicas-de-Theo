@@ -1,60 +1,109 @@
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ProgressCounter : MonoBehaviour
 {
     public int miniGamesCompletedCounter = 0;
     public int quantidadeMinigames = 2;
     private int quantidadeInversaParaExibir;
-    public TMPro.TextMeshProUGUI trashCounterText;
-    public TMPro.TextMeshProUGUI trashBinCounterText;
+    public TextMeshProUGUI trashCounterText;
+    public TextMeshProUGUI trashBinCounterText;
     public Timer timer;
     public Image timerIcon;
     public PlayerControllerRiver playerControllerRiver;
     public GameObject finishLevel;
-    public TMPro.TextMeshProUGUI finalTimer;
+    public TextMeshProUGUI finalTimer;
     public Animator playerAnimator;
     public AudioSource audioSourcePlayer;
 
-    public string tagToCheck = "Trash"; //tag para verificar
+    public string tagToCheck = "Trash"; // tag para verificar
+
+    private Language languageScript;
 
     void Start()
     {
-         //Inicialmente, deixe o texto de vitória desativado
+        languageScript = FindObjectOfType<Language>(); // Encontrar o script de idioma
         if (finishLevel != null)
         {
-           finishLevel.SetActive(false);
+            finishLevel.SetActive(false); // Inicialmente, deixe o texto de vitória desativado
         }
+        UpdateTrashCounterText(); // Atualizar os textos com base no idioma
     }
 
-
     void UpdateTrashCounter()
-{
-
-    int totalTrashCount = 0;
-   
+    {
+        int totalTrashCount = 0;
         GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag(tagToCheck);
         totalTrashCount += objectsWithTag.Length;
         quantidadeInversaParaExibir = quantidadeMinigames - miniGamesCompletedCounter;
-        trashBinCounterText.text = "Lixeiras restantes: "+ quantidadeInversaParaExibir;
-        trashCounterText.text = "Lixos restantes: " + totalTrashCount;
 
-        if (totalTrashCount == 0 && timer.timerRunning && miniGamesCompletedCounter == quantidadeMinigames) 
+        // Atualizar textos com base no idioma
+        UpdateTrashCounterText();
+
+        if (totalTrashCount == 0 && timer.timerRunning && miniGamesCompletedCounter == quantidadeMinigames)
         {
             timer.timerRunning = false; // Para o timer
-            Debug.Log("Timer parado, todos os objetos foram coletados e minigames completados.");
             playerControllerRiver.enabled = false;
             timerIcon.gameObject.SetActive(false);
             finishLevel.SetActive(true);
-            finalTimer.text = "Tempo restante: " + timer.timeLevel.ToString("F1") + "s";
+            finalTimer.text = GetFinalTimerText(); // Texto traduzido para o tempo final
             playerControllerRiver.footStepAudioSource.Stop();
             audioSourcePlayer.Stop();
         }
-}
+    }
 
+    // Função que atualiza os textos com base no idioma
+    void UpdateTrashCounterText()
+    {
+        string trashCounterString = "";
+        string trashBinCounterString = "";
+        string language = languageScript.getLanguage(); // Obter o idioma
+
+        switch (language)
+        {
+            case "Portuguese":
+                trashCounterString = "Lixos restantes: ";
+                trashBinCounterString = "Lixeiras restantes: ";
+                break;
+            case "English":
+                trashCounterString = "Remaining trash: ";
+                trashBinCounterString = "Remaining trash bins: ";
+                break;
+            // Adicione outros idiomas aqui
+            default:
+                trashCounterString = "Lixos restantes: ";
+                trashBinCounterString = "Lixeiras restantes: ";
+                break;
+        }
+
+        trashCounterText.text = trashCounterString + GameObject.FindGameObjectsWithTag(tagToCheck).Length;
+        trashBinCounterText.text = trashBinCounterString + quantidadeInversaParaExibir;
+    }
+
+    // Função que obtém o texto final do timer traduzido
+    string GetFinalTimerText()
+    {
+        string finalTimerString = "";
+        string language = languageScript.getLanguage(); // Obter o idioma
+
+        switch (language)
+        {
+            case "Portuguese":
+                finalTimerString = "Tempo restante: ";
+                break;
+            case "English":
+                finalTimerString = "Remaining time: ";
+                break;
+            // Adicione outros idiomas aqui
+            default:
+                finalTimerString = "Tempo restante: ";
+                break;
+        }
+
+        return finalTimerString + timer.timeLevel.ToString("F1") + "s";
+    }
 
     void Update()
     {
