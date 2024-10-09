@@ -22,8 +22,8 @@ public class MudaTextoAperta : MonoBehaviour
         switch (Language.Instance.getLanguage())
         {
             case "pt": // Português
-                text1.text = "Pressione espaco para parafusar!".Replace(((char)23).ToString(), "");
-                text2.text = "Pressione espaco para parafusar!".Replace(((char)23).ToString(), "");
+                text1.text = "Pressione espaço para parafusar!".Replace(((char)23).ToString(), "");
+                text2.text = "Pressione espaço para parafusar!".Replace(((char)23).ToString(), "");
                 break;
             case "en": // Inglês
                 text1.text = "Press space to screw!".Replace(((char)23).ToString(), "");

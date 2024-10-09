@@ -16,8 +16,7 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        // Inicializa o script de linguagem no Start
-        languageScript = FindObjectOfType<Language>();
+
     }
 
     void Update()
@@ -53,15 +52,20 @@ public class Timer : MonoBehaviour
         string timerString = "";
 
         // Obter o idioma através de languageScript
-        switch (languageScript.getLanguage())
+        switch (Language.Instance.getLanguage())
         {
-            case "Portuguese":
+            case "pt":
                 timerString = "Tempo: ";
                 break;
-            case "English":
+            case "en":
                 timerString = "Time: ";
                 break;
-            // Adicione outros idiomas aqui
+            case "es":
+                timerString = "Tiempo: ";
+                break;
+            case "fr":
+                timerString = "Temps: ";
+                break;
             default:
                 timerString = "Tempo: ";
                 break;

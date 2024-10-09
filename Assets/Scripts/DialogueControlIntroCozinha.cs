@@ -96,7 +96,7 @@ public class DialogueQControlCozinhaTheo : MonoBehaviour
                 {
                     case 0:
                         Speech(maeImage, new string[] {
-                            "Se a gente não ajudar filho, o bairro vai continuar todo sujo. A água do rio tá cheia de lixo e você sabe que ter que ir comigo, você não ficar sozinho em casa."
+                            "Se a gente não ajudar filho, o bairro vai continuar todo sujo. A água do rio tá cheia de lixo e você sabe que ter que ir comigo, você não fica sozinho em casa."
                         }, "Mãe de Theo");
                         break;
                     case 1:

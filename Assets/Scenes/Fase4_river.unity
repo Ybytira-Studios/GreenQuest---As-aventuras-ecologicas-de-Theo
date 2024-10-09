@@ -108355,7 +108355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45f7d64a9d3a9640bd25d6266551482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  language: en
+  language: pt
 --- !u!1 &1145632502
 GameObject:
   m_ObjectHideFlags: 0

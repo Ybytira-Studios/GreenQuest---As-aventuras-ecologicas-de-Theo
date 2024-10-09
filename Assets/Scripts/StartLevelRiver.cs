@@ -15,7 +15,7 @@ public class StartLevelRiver : MonoBehaviour
     public Timer timer;
     public PlayerControllerRiver playerControllerRiver;
     public AudioSource audioSourceMusicaRiver;
-    public string penis = "pt";
+    public string penis = "pt"; // Isso parece um nome de variável não intencional, considere renomear
 
     private int currentDialogueIndex = 0;
     private bool dialogueRunning = true;
@@ -32,39 +32,39 @@ public class StartLevelRiver : MonoBehaviour
             case "pt":
                 dialogues = new string[]
                 {
-                    "Nos podemos ajudar a população local retirando os dejetos do rio. Você não podera entrar dentro do corrego como os profissionais, filho, pois é perigoso! Ao invés disso, use a garra limpa-limpa para pegar os lixos estando na margem!".Replace(((char)23).ToString(), ""),
-                    "Alem disso, temos que instalar lixeiras por aqui tambem, pois isso estimula as pessoas a nao jogarem lixo na natureza.".Replace(((char)23).ToString(), "") // Posição 1
+                    "Nós podemos ajudar a população local a retirar os dejetos do rio. Você não pode entrar no córrego como os profissionais, filho, pois é perigoso! Ao invés disso, use a garra limpa-limpa para pegar o lixo estando na margem!".Replace(((char)23).ToString(), ""),
+                    "Além disso, precisamos instalar lixeiras por aqui também, pois isso estimula as pessoas a não jogarem lixo na natureza." // Posição 1
                 };
                 break;
 
             case "en":
                 dialogues = new string[]
                 {
-                    "We can help the local community by removing debris from the river. You can't go into the stream like the professionals, son, because it's dangerous! Instead, use the clean-clean claw to grab the trash from the shore!".Replace(((char)23).ToString(), ""),
-                    "Also, we need to install trash bins around here, as this encourages people not to litter in nature.".Replace(((char)23).ToString(), "")
+                    "We can help the local community by removing debris from the river. You can't go into the stream like the professionals, son, because it's dangerous! Instead, use the clean-clean claw to grab the trash from the shore!",
+                    "Also, we need to install trash bins around here, as this encourages people not to litter in nature."
                 };
                 break;
 
             case "es":
                 dialogues = new string[]
                 {
-                    "Podemos ayudar a la comunidad local retirando los desechos del rio. No puedes entrar en el arroyo como los profesionales, hijo, ¡porque es peligroso! En lugar de eso, usa la garra limpia-limpa para recoger la basura desde la orilla.".Replace(((char)23).ToString(), ""),
-                    "Ademas, tenemos que instalar contenedores de basura aquí, ya que esto anima a la gente a no tirar basura en la naturaleza.".Replace(((char)23).ToString(), "")
+                    "Podemos ayudar a la comunidad local retirando los desechos del río. No puedes entrar en el arroyo como los profesionales, hijo, ¡porque es peligroso! En lugar de eso, usa la garra limpia-limpa para recoger la basura desde la orilla.",
+                    "Además, tenemos que instalar contenedores de basura aquí, ya que esto anima a la gente a no tirar basura en la naturaleza."
                 };
                 break;
 
             case "fr":
                 dialogues = new string[]
                 {
-                    "Nous pouvons aider la communaute locale en retirant les debris de la riviere. Tu ne peux pas entrer dans le ruisseau comme les professionnels, mon fils, car c'est dangereux ! Utilise plutot la pince propre-propre pour ramasser les dechets depuis la rive !".Replace(((char)23).ToString(), ""),
-                    "De plus, nous devons installer des poubelles ici aussi, car cela encourage les gens à ne pas jeter leurs dechets dans la nature.".Replace(((char)23).ToString(), "")
+                    "Nous pouvons aider la communauté locale en retirant les débris de la rivière. Tu ne peux pas entrer dans le ruisseau comme les professionnels, mon fils, car c'est dangereux ! Utilise plutôt la pince propre-propre pour ramasser les déchets depuis la rive !",
+                    "De plus, nous devons installer des poubelles ici aussi, car cela encourage les gens à ne pas jeter leurs déchets dans la nature."
                 };
                 break;
 
             default:
                 dialogues = new string[]
                 {
-                    "Language not supported."
+                    "Idioma não suportado."
                 };
                 break;
         }
@@ -112,7 +112,7 @@ public class StartLevelRiver : MonoBehaviour
 
     void SkipDialogue()
     {
-        print("clickou");
+        print("Clique para pular o diálogo");
         dialogueRunning = false; // Permite o avanço ao próximo diálogo
     }
 
