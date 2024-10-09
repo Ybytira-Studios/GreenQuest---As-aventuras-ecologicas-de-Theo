@@ -2398,7 +2398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &410063415
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33559,7 +33559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniGamesCompletedCounter: 0
-  quantidadeMinigames: 2
+  quantidadeMinigames: 6
   trashCounterText: {fileID: 339792724}
   trashBinCounterText: {fileID: 378414529}
   timer: {fileID: 1137009043}
@@ -33569,6 +33569,7 @@ MonoBehaviour:
   finalTimer: {fileID: 763258648}
   playerAnimator: {fileID: 1292737443}
   audioSourcePlayer: {fileID: 1292737444}
+  penis: pt
   tagToCheck: Trash
 --- !u!82 &1137009042
 AudioSource:
@@ -33685,6 +33686,7 @@ MonoBehaviour:
   timerRunning: 1
   playerController: {fileID: 0}
   playerControllerRiver: {fileID: 1292737441}
+  penis: pt
 --- !u!114 &1137009044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33768,6 +33770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text1: {fileID: 1555715474}
   text2: {fileID: 1216108494}
+  penis: pt
 --- !u!1 &1137279286
 GameObject:
   m_ObjectHideFlags: 0
@@ -33876,7 +33879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1145632503
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38950,7 +38953,7 @@ RectTransform:
   m_Father: {fileID: 1557588324}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -40424,7 +40427,7 @@ RectTransform:
   m_Father: {fileID: 339780704}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -41188,7 +41191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2100671352
 MonoBehaviour:
   m_ObjectHideFlags: 0

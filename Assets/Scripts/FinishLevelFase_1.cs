@@ -10,7 +10,7 @@ public class FinishLevelFase_1 : MonoBehaviour
     public Timer timer;
     public GameObject finishLevelPanel;
     public FinalDialogueRiver finalDialogueRiver;
-    public GameObject startPanel2;
+    //public GameObject startPanel2;
     public StarController starController;
     public Button retryButton;
     public Button nextButton;
@@ -24,7 +24,7 @@ public class FinishLevelFase_1 : MonoBehaviour
         retryButton.onClick.AddListener(Retry);
         nextButton.onClick.AddListener(Next);
         cenaAtual = SceneManager.GetActiveScene().name;
-        startPanel2.SetActive(false);
+        //startPanel2.SetActive(false);
     }
 
     void Update()
@@ -50,7 +50,7 @@ public class FinishLevelFase_1 : MonoBehaviour
         {
             finishLevelPanel.SetActive(false);
             finalDialogueRiver.enabled = true;
-            startPanel2.SetActive(true);
+            //startPanel2.SetActive(true);
             print("clicou next fase 4 river");
             
         }

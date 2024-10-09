@@ -20,8 +20,11 @@ public class ProgressCounter : MonoBehaviour
 
     public string tagToCheck = "Trash"; // tag para verificar
 
+    private Language languageScript;
+
     void Start()
     {
+        languageScript = FindObjectOfType<Language>(); // Encontrar o script de idioma
         if (finishLevel != null)
         {
             finishLevel.SetActive(false); // Inicialmente, deixe o texto de vitória desativado
@@ -56,26 +59,19 @@ public class ProgressCounter : MonoBehaviour
     {
         string trashCounterString = "";
         string trashBinCounterString = "";
-        string language = Language.Instance.getLanguage();
+        string language = languageScript.getLanguage(); // Obter o idioma
 
         switch (language)
         {
-            case "pt":
+            case "Portuguese":
                 trashCounterString = "Lixos restantes: ";
                 trashBinCounterString = "Lixeiras restantes: ";
                 break;
-            case "en":
+            case "English":
                 trashCounterString = "Remaining trash: ";
                 trashBinCounterString = "Remaining trash bins: ";
                 break;
-            case "es":
-                trashCounterString = "Basuras restantes: ";
-                trashBinCounterString = "Papelera restante: ";
-                break;
-            case "fr":
-                trashCounterString = "Déchets restants : ";
-                trashBinCounterString = "Poubelles restantes : ";
-                break;
+            // Adicione outros idiomas aqui
             default:
                 trashCounterString = "Lixos restantes: ";
                 trashBinCounterString = "Lixeiras restantes: ";
@@ -90,22 +86,17 @@ public class ProgressCounter : MonoBehaviour
     string GetFinalTimerText()
     {
         string finalTimerString = "";
-        string language = Language.Instance.getLanguage();
+        string language = languageScript.getLanguage(); // Obter o idioma
 
         switch (language)
         {
-            case "pt":
+            case "Portuguese":
                 finalTimerString = "Tempo restante: ";
                 break;
-            case "en":
+            case "English":
                 finalTimerString = "Remaining time: ";
                 break;
-            case "es":
-                finalTimerString = "Tiempo restante: ";
-                break;
-            case "French":
-                finalTimerString = "Temps restant : ";
-                break;
+            // Adicione outros idiomas aqui
             default:
                 finalTimerString = "Tempo restante: ";
                 break;

@@ -11,13 +11,14 @@ public class Timer : MonoBehaviour
     public bool timerRunning = true; // Controle se o timer está ativo
     public PlayerController playerController;
     public PlayerControllerRiver playerControllerRiver;
+    public string penis = "pt";
 
     private Language languageScript; // Declaração da variável languageScript
 
     void Start()
     {
         // Inicializa o script de linguagem no Start
-        languageScript = FindObjectOfType<Language>();
+        //languageScript = FindObjectOfType<Language>();
     }
 
     void Update()
@@ -53,7 +54,7 @@ public class Timer : MonoBehaviour
         string timerString = "";
 
         // Obter o idioma através de languageScript
-        switch (Language.Instance.getLanguage())
+        switch (penis)
         {
             case "pt":
                 timerString = "Tempo: ";
