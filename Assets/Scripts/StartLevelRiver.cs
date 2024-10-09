@@ -28,9 +28,9 @@ public class StartLevelRiver : MonoBehaviour
         skipButton.onClick.AddListener(SkipDialogue);
 
         // Definindo os diálogos com base na linguagem
-        //COLOCAR Language languageScript = FindObjectOfType<Language>();
+        Language languageScript = FindObjectOfType<Language>();
         
-        switch (penis)
+        switch (languageScript.getLanguage())
         {
             case "pt":
                 dialogues = new string[]
