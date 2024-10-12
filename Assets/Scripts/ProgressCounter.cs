@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ProgressCounter : MonoBehaviour
 {
     public int miniGamesCompletedCounter = 0;
-    public int quantidadeMinigames = 2;
+    public int quantidadeMinigames = 6;
     private int quantidadeInversaParaExibir;
     public TextMeshProUGUI trashCounterText;
     public TextMeshProUGUI trashBinCounterText;

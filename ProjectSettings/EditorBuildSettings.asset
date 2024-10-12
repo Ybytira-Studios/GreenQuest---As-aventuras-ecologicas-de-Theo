@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro-Theo-Quarto.unity
     guid: c978a753823c15445a27e204caf21ed0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Intro-Theo-Escola.unity
     guid: 32c863a5f847530489fc207395f2cfe3
   - enabled: 1

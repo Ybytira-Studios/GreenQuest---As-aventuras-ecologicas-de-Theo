@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 205795974}
   m_Layer: 5
   m_Name: ButtonToggleVolumme
-  m_TagString: Untagged
+  m_TagString: VolumeButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,8 +350,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 949144813}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.7, y: 0}
+  m_AnchorMax: {x: 0.7, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 561198439}
   m_Layer: 5
   m_Name: Sair
-  m_TagString: Untagged
+  m_TagString: QuitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1060939372}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainInterface, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 753639346}
   m_Layer: 5
   m_Name: Jogar
-  m_TagString: Untagged
+  m_TagString: PlayButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,7 +995,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1060939372}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainInterface, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
@@ -1059,7 +1059,7 @@ GameObject:
   - component: {fileID: 832267419}
   m_Layer: 5
   m_Name: Dropdown
-  m_TagString: Untagged
+  m_TagString: LanguageDropdown
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1332,7 +1332,7 @@ GameObject:
   - component: {fileID: 876066985}
   m_Layer: 5
   m_Name: Slider
-  m_TagString: Untagged
+  m_TagString: VolumeSlider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1497,6 +1497,8 @@ GameObject:
   - component: {fileID: 902736686}
   - component: {fileID: 902736688}
   - component: {fileID: 902736689}
+  - component: {fileID: 902736690}
+  - component: {fileID: 902736691}
   m_Layer: 0
   m_Name: GameManagerMenu
   m_TagString: Untagged
@@ -1518,9 +1520,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 876066985}
   volumeButton: {fileID: 205795974}
-  volumeOnSprite: {fileID: 2012250095, guid: c56814e7977e6d44a83f321a17b3c443, type: 3}
-  volumeOffSprite: {fileID: 382430245, guid: c56814e7977e6d44a83f321a17b3c443, type: 3}
+  buttonExit: {fileID: 2011535693}
   menuOptions: {fileID: 1601440268}
+  volumeOnSprite: {fileID: 21300000, guid: 3516f8a5796c8994aa400996c41cd992, type: 2}
+  volumeOffSprite: {fileID: 21300000, guid: 35333eb9f6039494eb32be617ba9f703, type: 2}
 --- !u!4 &902736687
 Transform:
   m_ObjectHideFlags: 0
@@ -1549,7 +1552,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   languageDropdown: {fileID: 832267419}
-  language: {fileID: 902736689}
 --- !u!114 &902736689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1563,6 +1565,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   language: 
+--- !u!114 &902736690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902736685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0203d851607928847acd0d88faaf83b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionMenu: {fileID: 1601440268}
+  mainMenu: {fileID: 1060939367}
+  playButton: {fileID: 753639346}
+  optionsButton: {fileID: 1514290366}
+  quitButton: {fileID: 561198439}
+--- !u!114 &902736691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902736685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26343e965055974eaf53493c07fc479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToPersist:
+  - {fileID: 1060939367}
+  - {fileID: 1601440268}
 --- !u!1 &949144812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1702,7 @@ RectTransform:
   m_Father: {fileID: 1566504871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.7, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1725,7 +1759,7 @@ GameObject:
   - component: {fileID: 1060939372}
   m_Layer: 5
   m_Name: Main Menu
-  m_TagString: Untagged
+  m_TagString: MainMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1827,11 +1861,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1060939367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0203d851607928847acd0d88faaf83b2, type: 3}
+  m_Script: {fileID: 11500000, guid: ceedfb1f8bd92fa419defe460f505a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OptionMenu: {fileID: 1601440268}
-  MainMenu: {fileID: 1060939367}
 --- !u!1 &1171346668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,7 +2380,7 @@ GameObject:
   - component: {fileID: 1514290366}
   m_Layer: 5
   m_Name: "Op\xE7\xF5es"
-  m_TagString: Untagged
+  m_TagString: OptionsButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2417,7 +2449,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1060939372}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainInterface, Assembly-CSharp
         m_MethodName: Options
         m_Mode: 1
@@ -2584,11 +2616,11 @@ GameObject:
   - component: {fileID: 1601440270}
   m_Layer: 5
   m_Name: MenuOption
-  m_TagString: Untagged
+  m_TagString: OptionsMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1601440270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3361,7 +3393,7 @@ GameObject:
   - component: {fileID: 2011535693}
   m_Layer: 5
   m_Name: ButtonExit
-  m_TagString: Untagged
+  m_TagString: ExitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

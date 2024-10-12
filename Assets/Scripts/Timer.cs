@@ -11,12 +11,12 @@ public class Timer : MonoBehaviour
     public bool timerRunning = true; // Controle se o timer está ativo
     public PlayerController playerController;
     public PlayerControllerRiver playerControllerRiver;
+    public string penis = "pt";
 
     private Language languageScript; // Declaração da variável languageScript
 
     void Start()
     {
-
     }
 
     void Update()

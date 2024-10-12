@@ -1,36 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainInterface : MonoBehaviour
 {
-    public GameObject OptionMenu;
-    public GameObject MainMenu;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject optionMenu;
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private Button playButton;
+    [SerializeField] private Button optionsButton;
+    [SerializeField] private Button quitButton;
+
+    void Awake()
     {
-        
+        mainMenu.SetActive(true);
+        // Adiciona eventos aos botões
+        playButton.onClick.AddListener(Play);
+        optionsButton.onClick.AddListener(Options);
+        quitButton.onClick.AddListener(Quit);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Play()
     {
-        
-    }
-
-    public void Play(){
-        MainMenu.SetActive(false);
         SceneManager.LoadScene("Intro-City", LoadSceneMode.Single);
     }
 
-    public void Options(){
-        OptionMenu.SetActive(true);
+    public void Options()
+    {
+        optionMenu.SetActive(true);
     }
 
-    public void Quit(){
+    public void Quit()
+    {
         Application.Quit();
     }
+     void Start(){
+    mainMenu.SetActive(true);
+    }
 
+    void OnEnable()
+    {
+        // Garante que o menu esteja ativo ao ser habilitado
+        mainMenu.SetActive(true);
+    }
 }
