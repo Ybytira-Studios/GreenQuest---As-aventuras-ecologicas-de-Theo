@@ -23,10 +23,10 @@ public class FinalDialogueRiver : MonoBehaviour
     {
         blackScreen.gameObject.SetActive(false); // Certifique-se de que a tela preta esteja desativada inicialmente
         newSkipButton.onClick.AddListener(SkipNewDialogue);
-        Language languageScript = FindObjectOfType<Language>();
+        //Language languageScript = FindObjectOfType<Language>();
 
         // Definindo os diálogos com base na linguagem
-        switch (languageScript.getLanguage())
+        switch (penis)
         {
             case "pt":
                 newDialogues = new string[]

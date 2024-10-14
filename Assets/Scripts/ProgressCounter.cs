@@ -14,6 +14,7 @@ public class ProgressCounter : MonoBehaviour
     public Image timerIcon;
     public PlayerControllerRiver playerControllerRiver;
     public GameObject finishLevel;
+    private string testeTexto = "pt";
     public TextMeshProUGUI finalTimer;
     public Animator playerAnimator;
     public AudioSource audioSourcePlayer;
@@ -24,7 +25,7 @@ public class ProgressCounter : MonoBehaviour
 
     void Start()
     {
-        languageScript = FindObjectOfType<Language>(); // Encontrar o script de idioma
+        //languageScript = FindObjectOfType<Language>(); // Encontrar o script de idioma
         if (finishLevel != null)
         {
             finishLevel.SetActive(false); // Inicialmente, deixe o texto de vitória desativado
@@ -59,9 +60,9 @@ public class ProgressCounter : MonoBehaviour
     {
         string trashCounterString = "";
         string trashBinCounterString = "";
-        string language = languageScript.getLanguage(); // Obter o idioma
+        //string language = languageScript.getLanguage(); // Obter o idioma
 
-        switch (language)
+        switch (testeTexto)
         {
             case "Portuguese":
                 trashCounterString = "Lixos restantes: ";

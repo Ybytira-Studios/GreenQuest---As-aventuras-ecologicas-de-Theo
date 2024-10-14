@@ -21,6 +21,7 @@ public class MainInterface : MonoBehaviour
 
     public void Play()
     {
+        mainMenu.SetActive(false);   
         SceneManager.LoadScene("Intro-City", LoadSceneMode.Single);
     }
 

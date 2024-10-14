@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         // Inicializa o script de linguagem no Start
-        //languageScript = FindObjectOfType<Language>();
+        //languageScript = FindObjectOfType<Language>();a
     }
 
     void Update()

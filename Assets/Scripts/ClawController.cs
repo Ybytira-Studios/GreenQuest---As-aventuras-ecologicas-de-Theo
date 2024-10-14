@@ -8,6 +8,7 @@ public class ClawController : MonoBehaviour
     public AudioSource audioSourceClaw;
     public Vector3 initialPosition;
     public Vector3 targetPosition;
+    public string penis = "pt";
     public float speed = 4.0f;
     private bool movingDown = false;
     private bool isMoving = false;
@@ -19,39 +20,38 @@ public class ClawController : MonoBehaviour
     }
 
     void Update()
+{
+    // Verifica se o jogador está segurando a garra
+    GameObject carriedObject = grabObject.GetCarriedObject();
+    if (carriedObject != null && carriedObject.CompareTag("claw"))
     {
-        // Verifica se o jogador está segurando a garra
-        GameObject carriedObject = grabObject.GetCarriedObject();
-        if (carriedObject != null && carriedObject.CompareTag("claw"))
-        {
-            pressQ.SetActive(true); // Mostra a indicação para pressionar Q
-        }
-        else
-        {
-            pressQ.SetActive(false); // Esconde a indicação se não estiver segurando a garra
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q) && !isMoving && carriedObject != null && carriedObject.CompareTag("claw"))
-        {
-            playerControllerRiver.disparaGarraAudioSource.Play();
-            initialPosition = transform.position;
-            targetPosition = new Vector3(initialPosition.x, initialPosition.y - 3f, initialPosition.z);
-            grabObject.DropObject(); // Dropa o objeto
-            
-            // Ativa a animação idle do jogador
-            //playerControllerRiver.playerAnimator.SetTrigger("DispararGarra");
-            
-            playerControllerRiver.canMove = false; // Impede o movimento do jogador
-            playerControllerRiver.playerAnimator.enabled = true;
-            isMoving = true; // Ativa o movimento da garra
-        }
-
-        if (isMoving)
-        {
-            MoveObject();
-        }
+        pressQ.SetActive(true); // Mostra a indicação para pressionar Q
+    }
+    else
+    {
+        pressQ.SetActive(false); // Esconde a indicação se não estiver segurando a garra
     }
 
+    if (Input.GetKeyDown(KeyCode.Q) && !isMoving && carriedObject != null && carriedObject.CompareTag("claw"))
+    {
+        playerControllerRiver.disparaGarraAudioSource.Play();
+        initialPosition = transform.position;
+        targetPosition = new Vector3(initialPosition.x, initialPosition.y - 3f, initialPosition.z);
+        grabObject.DropObject(); // Dropa o objeto
+
+        // Transição para o estado Idle do jogador
+        playerControllerRiver.playerAnimator.SetFloat("Speed", 0f); // Força o Idle
+        playerControllerRiver.canMove = false; // Impede o movimento do jogador
+        
+        playerControllerRiver.playerAnimator.enabled = true;
+        isMoving = true; // Ativa o movimento da garra
+    }
+
+    if (isMoving)
+    {
+        MoveObject();
+    }
+}
     void MoveObject()
     {
         if (!movingDown)
