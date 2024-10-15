@@ -37,20 +37,23 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
 
         // Pausa o áudio e animação do player
-        if(SceneManager.GetActiveScene().name == "Fase4_river"){
-        if (playerControllerRiver.footStepAudioSource.isPlaying)
+        if (SceneManager.GetActiveScene().name == "Fase4_river")
         {
-            playerControllerRiver.footStepAudioSource.Pause(); // Para o áudio de passos
+            if (playerControllerRiver.footStepAudioSource.isPlaying)
+            {
+                playerControllerRiver.footStepAudioSource.Pause(); // Para o áudio de passos
+            }
+            playerControllerRiver.playerAnimator.enabled = false; // Pausa a animação do player
+            playerControllerRiver.canMove = false; // Impede o movimento
         }
-        playerControllerRiver.playerAnimator.enabled = false; // Pausa a animação do player
-        playerControllerRiver.canMove = false; // Impede o movimento
-        }  else if(SceneManager.GetActiveScene().name == "Fase1_beach"){
-        if (playerController.footStepAudioSource.isPlaying)
+        else if (SceneManager.GetActiveScene().name == "Fase1_beach")
         {
-            playerController.footStepAudioSource.Pause(); // Para o áudio de passos
-        }
-        playerController.playerAnimator.enabled = false; // Pausa a animação do player
-        playerController.canMove = false; // Impede o movimento
+            if (playerController.footStepAudioSource.isPlaying)
+            {
+                playerController.footStepAudioSource.Pause(); // Para o áudio de passos
+            }
+            playerController.playerAnimator.enabled = false; // Pausa a animação do player
+            playerController.canMove = false; // Impede o movimento
         }
     }
 
@@ -61,14 +64,17 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
 
         // Retoma o áudio e animação do player
-        if(SceneManager.GetActiveScene().name == "Fase4_river"){
-        playerControllerRiver.footStepAudioSource.UnPause(); // Retoma o áudio de passos
-        playerControllerRiver.playerAnimator.enabled = true; // Retoma a animação do player
-        playerControllerRiver.canMove = true; // Permite o movimento novamente
-        } else if(SceneManager.GetActiveScene().name == "Fase1_beach"){
-        playerController.footStepAudioSource.UnPause(); // Retoma o áudio de passos
-        playerController.playerAnimator.enabled = true; // Retoma a animação do player
-        playerController.canMove = true; // Permite o movimento novamente
+        if (SceneManager.GetActiveScene().name == "Fase4_river")
+        {
+            playerControllerRiver.footStepAudioSource.UnPause(); // Retoma o áudio de passos
+            playerControllerRiver.playerAnimator.enabled = true; // Retoma a animação do player
+            playerControllerRiver.canMove = true; // Permite o movimento novamente
+        }
+        else if (SceneManager.GetActiveScene().name == "Fase1_beach")
+        {
+            playerController.footStepAudioSource.UnPause(); // Retoma o áudio de passos
+            playerController.playerAnimator.enabled = true; // Retoma a animação do player
+            playerController.canMove = true; // Permite o movimento novamente
         }
     }
 

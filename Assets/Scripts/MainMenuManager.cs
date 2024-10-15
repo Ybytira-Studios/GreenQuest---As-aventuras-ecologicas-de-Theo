@@ -11,7 +11,7 @@ public class MainMenuManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Não destrói este objeto ao mudar de cena
+            //DontDestroyOnLoad(gameObject); // Não destrói este objeto ao mudar de cena
             // Certifique-se de que o menu esteja ativo
             gameObject.SetActive(true);
         }
@@ -21,8 +21,9 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
-    void Start(){
-    gameObject.SetActive(true);
+    void Start()
+    {
+        gameObject.SetActive(true);
     }
 
     void OnEnable()

@@ -50,7 +50,10 @@ public class Cutscene2 : MonoBehaviour
                 break;
 
             default:
-                textos[0] = "Language not supported.";
+                 textos[0] = "Theodoro Correia Junior, apelidado de Theo, é uma criança alegre e agitada. Ele não gosta muito da escola, mas é um bom aluno. Tem 12 anos e sempre viveu na Baía da Aventura.";
+                textos[1] = "A mãe de Theo, Daniela Regina, é uma mulher ativista, empoderada e muito simpática. Aos 35 anos, acredita no bem da humanidade e na organização coletiva.";
+                textos[2] = " Por isso, ela fundou a LAL (Liga Anti-Lixo), acreditando que, com a organização da cidade, é possível que ela volte a ser como antes.";
+                textos[3] = "Nestas férias, Theo não terá descanso. Ele vai ajudar a Liga, pois fica muito triste ao ver como a cidade ficou. Mal sabe ele o que o aguarda nessas férias nada convencionais…";
                 break;
         }
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ProgressCounter : MonoBehaviour
 {
     public int miniGamesCompletedCounter = 0;
-    public int quantidadeMinigames = 6;
+    public int quantidadeMinigames = 10;
     private int quantidadeInversaParaExibir;
     public TextMeshProUGUI trashCounterText;
     public TextMeshProUGUI trashBinCounterText;
@@ -25,7 +25,7 @@ public class ProgressCounter : MonoBehaviour
 
     void Start()
     {
-        //languageScript = FindObjectOfType<Language>(); // Encontrar o script de idioma
+        languageScript = FindObjectOfType<Language>(); // Encontrar o script de idioma
         if (finishLevel != null)
         {
             finishLevel.SetActive(false); // Inicialmente, deixe o texto de vitória desativado
@@ -60,19 +60,25 @@ public class ProgressCounter : MonoBehaviour
     {
         string trashCounterString = "";
         string trashBinCounterString = "";
-        //string language = languageScript.getLanguage(); // Obter o idioma
 
-        switch (testeTexto)
+        switch (languageScript.getLanguage())
         {
-            case "Portuguese":
+            case "pt":
                 trashCounterString = "Lixos restantes: ";
                 trashBinCounterString = "Lixeiras restantes: ";
                 break;
-            case "English":
+            case "en":
                 trashCounterString = "Remaining trash: ";
                 trashBinCounterString = "Remaining trash bins: ";
                 break;
-            // Adicione outros idiomas aqui
+            case "es":
+                trashCounterString = "Residuos restantes: ";
+                trashBinCounterString = "Contenedores restantes: ";
+                break;
+                case "fr":
+                trashCounterString = "Déchets restants: ";
+                trashBinCounterString = "Bacs restants: ";
+                break;
             default:
                 trashCounterString = "Lixos restantes: ";
                 trashBinCounterString = "Lixeiras restantes: ";

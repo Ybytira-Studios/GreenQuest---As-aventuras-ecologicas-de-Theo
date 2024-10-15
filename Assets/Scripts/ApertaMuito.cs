@@ -23,7 +23,7 @@ public class ApertaMuito : MonoBehaviour
 
     public GameObject panel; // Referência ao painel
     private bool isPanelActive; // Estado do painel
-
+    public AudioSource audioSource;
     public PlayerControllerRiver playerControllerRiver; // Referência ao controle do jogador
 
     void Start()
@@ -54,6 +54,7 @@ public class ApertaMuito : MonoBehaviour
         {
             playerControllerRiver.canMove = false;
         }
+        //audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -98,6 +99,7 @@ public class ApertaMuito : MonoBehaviour
         // Se a variável atingir o limite, feche o painel, troque o sprite e permita que o jogador se mova novamente
         if (variableValue >= limit)
         {
+            audioSource.Play();
             progressCounter.miniGamesCompletedCounter++;
             isCompleted = true;
             if (panel != null)

@@ -29,7 +29,7 @@ public class Fase4_TextMae : MonoBehaviour
                 textMeshPro.text = "Nous pouvons aider la population locale en enlevant les déchets de la rivière. Tu ne peux pas entrer dans le ruisseau comme les professionnels, fils, car c'est dangereux ! Au lieu de cela, utilise la griffe nettoie-nettoie pour ramasser les déchets tout en restant sur la berge !";
                 break;
             default:
-                textMeshPro.text = "We can help the local population by removing the waste from the river. You cannot enter the stream like the professionals, son, because it is dangerous! Instead, use the clean-clean claw to pick up the trash while staying on the bank!";
+                textMeshPro.text = "Nós podemos ajudar a população local retirando os dejetos do rio. Você não poderá entrar dentro do córrego como os profissionais, filho, pois é perigoso! Ao invés disso, use a garra limpa-limpa para pegar os lixos estando na margem!";
                 break;
         }
     }

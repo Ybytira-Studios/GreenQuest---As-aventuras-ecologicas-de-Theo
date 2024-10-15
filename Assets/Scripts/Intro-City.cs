@@ -44,8 +44,9 @@ public class Cutscene1 : MonoBehaviour
                 break;
 
             default:
-                // Caso não encontre o idioma, exibe uma mensagem padrão (opcional)
-                textos[0] = "Language not supported.";
+                 textos[0] = "Baía da Aventura é uma cidade do litoral com belas praias e outras paisagens naturais,";
+                textos[1] = "entretanto com o crescimento desordenado da cidade, o descarte irregular de lixo e a poluição das praias e dos rios aumentou drasticamente.";
+                textos[2] = "Pensando nisso, as pessoas da cidade criaram a LAL(Liga anti lixo), uma OSC ambiental que vai ajudar a cidade a ficar limpa e bonita de novo.";
                 break;
         }
 
