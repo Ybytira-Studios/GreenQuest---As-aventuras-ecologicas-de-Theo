@@ -3,13 +3,13 @@ using UnityEngine.UI;
 
 public class MenuOptions : MonoBehaviour
 {
-    [SerializeField] private Slider volumeSlider; 
+    [SerializeField] private Slider volumeSlider;
     [SerializeField] private Button volumeButton;
     [SerializeField] private Button buttonExit;
     [SerializeField] private GameObject menuOptions;
     [SerializeField] private Sprite volumeOnSprite;
     [SerializeField] private Sprite volumeOffSprite;
-    
+
     private float previousVolume = 1f;
     private bool isMuted = false;
 

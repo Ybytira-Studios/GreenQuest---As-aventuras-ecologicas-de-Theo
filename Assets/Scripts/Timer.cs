@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timerText; // Texto para exibir o timer
     public Animator playerAnimator;
     public TextMeshProUGUI endText; // Texto para exibir quando o tempo acabar
-    public float timeLevel = 120f; // Inicialize o tempo
+    public float timeLevel = 240f; // Inicialize o tempo
     public bool timerRunning = true; // Controle se o timer está ativo
     public PlayerController playerController;
     public PlayerControllerRiver playerControllerRiver;
@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         // Inicializa o script de linguagem no Start
-        //languageScript = FindObjectOfType<Language>();
+        languageScript = FindObjectOfType<Language>();
     }
 
     void Update()
@@ -54,7 +54,7 @@ public class Timer : MonoBehaviour
         string timerString = "";
 
         // Obter o idioma através de languageScript
-        switch (penis)
+        switch (languageScript.getLanguage())
         {
             case "pt":
                 timerString = "Tempo: ";

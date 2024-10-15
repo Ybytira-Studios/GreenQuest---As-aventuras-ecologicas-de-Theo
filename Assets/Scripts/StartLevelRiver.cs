@@ -29,7 +29,7 @@ public class StartLevelRiver : MonoBehaviour
 
         // Definindo os diálogos com base na linguagem
         Language languageScript = FindObjectOfType<Language>();
-        
+
         switch (languageScript.getLanguage())
         {
             case "pt":
@@ -66,9 +66,10 @@ public class StartLevelRiver : MonoBehaviour
 
             default:
                 dialogues = new string[]
-                {
-                    "Language not supported." // Posição 0
-                };
+               {
+                    "We can help the local community by removing debris from the river. You can't go into the stream like the professionals, son, because it's dangerous! Instead, use the clean-clean claw to grab the trash from the shore!", // Posição 0
+                    "Also, we need to install trash bins around here, as this encourages people not to litter in nature." // Posição 1
+               };
                 break;
         }
 

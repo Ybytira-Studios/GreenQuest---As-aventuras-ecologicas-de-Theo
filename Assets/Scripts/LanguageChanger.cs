@@ -9,7 +9,8 @@ public class LanguageChanger : MonoBehaviour
     void Awake()
     {
         language = FindObjectOfType<Language>();
-        languageDropdown.onValueChanged.AddListener(delegate {
+        languageDropdown.onValueChanged.AddListener(delegate
+        {
             DropdownValueChanged(languageDropdown);
         });
     }

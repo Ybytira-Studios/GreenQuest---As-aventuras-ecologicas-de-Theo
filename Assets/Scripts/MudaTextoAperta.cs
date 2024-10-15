@@ -5,6 +5,8 @@ public class MudaTextoAperta : MonoBehaviour
 {
     public TextMeshProUGUI text1; // Primeiro texto
     public TextMeshProUGUI text2; // Segundo texto
+    public string penis = "pt";
+
 
     void Start()
     {
@@ -19,8 +21,8 @@ public class MudaTextoAperta : MonoBehaviour
         switch (languageScript.getLanguage())
         {
             case "pt": // Português
-                text1.text = "Pressione espaço para parafusar!";
-                text2.text = "Pressione espaço para parafusar!";
+                text1.text = "Pressione espaco para parafusar!";
+                text2.text = "Pressione espaco para parafusar!";
                 break;
             case "en": // Inglês
                 text1.text = "Press space to screw!";
@@ -34,7 +36,6 @@ public class MudaTextoAperta : MonoBehaviour
                 text1.text = "Appuyez sur espace pour visser!";
                 text2.text = "Appuyez sur espace pour visser!";
                 break;
-            // Adicione outros idiomas aqui, se necessário
             default: // Idioma padrão
                 text1.text = "Pressione espaço para parafusar!";
                 text2.text = "Pressione espaço para parafusar!";

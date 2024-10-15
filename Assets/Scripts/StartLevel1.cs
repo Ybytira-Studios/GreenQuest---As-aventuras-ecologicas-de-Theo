@@ -106,7 +106,7 @@ public class StartLevel1 : MonoBehaviour
         // Espera o tempo mínimo antes de permitir o pulo
         timeUntilCanSkip = skipDelay; // Inicia o timer
         yield return new WaitForSeconds(skipDelay);
-        
+
         canSkip = true; // Agora o jogador pode pular
 
         // Espera até que o tempo de exibição do painel passe ou o jogador pule
@@ -210,12 +210,14 @@ public class StartLevel1 : MonoBehaviour
             case "fr": // Francês
                 welcomeText.text = "Bienvenue à cette activité côtière de LAL ici à la Baie de l'Aventure ! La première chose que nous devons comprendre est : il ne suffit pas de nettoyer et de décontaminer ; le principal objectif est d'arrêter de polluer et de salir ! Une fois que nous avons compris cela, nous devons nettoyer ce triste désordre que les gens ont fait ici dans la ville !";
                 break;
-            // Adicione mais idiomas conforme necessário
+            default:
+                welcomeText.text = "Sejam muito bem vindos à esta atividade litorânea da LAL aqui na Baia da Aventura! A primeira atitude que temos que entender é: Não basta limparmos e despoluir, o foco principal é parar de poluir e sujar! Depois de entendido isso, temos que limpar essa triste sujeira que o povo fez aqui na cidade!";
+                break;
         }
     }
 
     // Função para atualizar o texto do membro
-     void SetMemberText()
+    void SetMemberText()
     {
         Language languageScript = FindObjectOfType<Language>();
         string memberName = "Leonardo"; // Nome padrão do membro

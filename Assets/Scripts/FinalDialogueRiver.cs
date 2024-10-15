@@ -61,9 +61,10 @@ public class FinalDialogueRiver : MonoBehaviour
                 break;
 
             default:
-                newDialogues = new string[]
+              newDialogues = new string[]
                 {
-                    "Language not supported." // Posição 0
+                    "Muito bem Theo! Você foi muito eficiente para pegar o lixo e instalar as lixeiras!", // Posição 0
+                    "Vamos para casa que amanhã a LAL estará na praia da ampulheta e nós vamos acompanhá-los." // Posição 1
                 };
                 break;
         }
